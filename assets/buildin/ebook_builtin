@@ -1,0 +1,37 @@
+{
+    "ebook_builtin":[
+        {
+            "id":30000002,
+            "path":"30000002.epub",
+            "bookcover":"30000002.jpg",
+            "bookName":"铁梨花",
+            "bookAuthor":"严歌苓",
+            "opf_md5":"508644F5BA5216BEA3EB51D87905F02A"
+        },
+        {
+            "id":30069576,
+            "path":"30069576.epub",
+            "bookcover":"30069576.jpg",
+            "bookName":"有些事现在不做，一辈子都不会做了",
+            "bookAuthor":"韩梅梅",
+            "opf_md5":"4827802DBFF06DD57DFEB876F70F846C"
+        },
+        {
+            "id":30167420,
+            "path":"30167420.epub",
+            "bookcover":"30167420.jpg",
+            "bookName":"好妈妈胜过好老师姊妹篇：最美的教育最简单",
+            "bookAuthor":"尹建莉",
+            "opf_md5":"7F1E6CA1EE7B7D93A86B4F65BF1DF1A7"
+        },
+        {
+            "id":30188296,
+            "path":"30188296.epub",
+            "bookcover":"30188296.jpg",
+            "bookName":"恨着恨着就爱上了：杜子建谬论集",
+            "bookAuthor":"杜子建",
+            "opf_md5":"4532E6993AEAE0D1768C6D7FDBD1903D"
+        }
+    ]
+}
+

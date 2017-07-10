@@ -1,0 +1,237 @@
+/* CSS Document */
+
+h1{
+    display:block;
+    margin-top:1em;
+    margin-bottom:2em;
+    font-weight:bold;
+    font-size: 1.6em;
+    line-height:150%;
+    text-align:left;
+}
+
+h2{
+    display:block;
+    margin-top:1em;
+    margin-bottom:1.5em;
+    font-weight:bold;
+    font-size: 1.5em;
+    line-height:120%;
+    text-align:left;
+}
+
+h3{
+    display:block;
+    margin-top:1em;
+    margin-bottom:1em;
+    font-weight:bold;
+    font-size: 1.4em;
+    line-height:120%;
+    text-align:left;
+}
+
+h4{
+    display:block;
+    font-weight:bold;
+    line-height:120%;
+    margin-bottom:1em;
+}
+
+h5{
+    display:block;
+    font-weight:bold;
+    line-height:120%;
+    margin-bottom:1em;
+}
+
+h6{
+    display:block;
+    font-weight:bold;
+    line-height:120%;
+    margin-bottom:1em;
+}
+
+b{
+    font-weight:bold;
+}
+
+p{
+    font-size:1em;
+    line-height:150%;
+    margin-bottom:1em;
+    text-indent:2em;
+    text-align:justify;
+    display:block;
+     
+}
+
+p.mzfootnote{
+    text-indent:0em;
+    font-size:0.8em;
+    line-height:130%;
+}
+
+hr{
+    text-indent:0;
+    margin-bottom:1em;
+    margin-top:0em;
+}
+
+span{
+    text-align:justify;
+     
+}
+
+span.western{
+	font-family:verdana;
+}
+
+a{
+    text-decoration:underline;
+    color:#806b60;
+    line-height:inherit;
+    font-size:inherit;
+}
+
+strong{
+    font-weight:bold;
+}
+
+cite {
+	text-align: right;
+	font-style: normal; 
+     
+}
+
+img{
+    max-width:99%;
+    text-indent: 0em;
+    text-align:center;
+    margin-bottom:1em;
+    display:block;
+}
+
+img.cover{
+    width:100%;
+    height:100%;
+}
+
+img.tip{
+    width:1em;
+    height:1em;
+    display:inline;
+    vertical-align:text-top;
+}
+
+img.left{
+    display: block;
+    float: left;
+    width: 50%;
+    margin-bottom: 0em;
+    margin-right: 1em;
+    margin-top: 0em;
+}
+
+img.right{
+    display: block;
+    float: right;
+    width: 50%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 1em;
+}
+
+
+div{
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 0em; 
+	margin-right:0em; 
+    margin-left:0em;
+    line-height:150%;
+    font-size:1em;
+     
+}
+
+div.left{
+    display:block;
+    float:left;
+    margin-top: 0em; 
+    margin-bottom: 0em;
+    margin-right: 1em;
+    margin-left:0em;
+    padding:0px;
+}
+
+div.right{
+    display:block;
+    float:right;
+    margin-top: 0em; 
+    margin-bottom:0em; 
+    margin-right: 0em;
+    margin-left: 1em;
+    padding:0px;
+}
+
+blockquote{
+    font-size:1em;
+    line-height:150%;
+    margin-bottom:1em;
+    text-indent:2em;
+    text-align:justify;
+    display:block;
+    font-family:"FZKai-Z03S";
+}
+
+ul{
+    font-size:1em;
+    line-height:120%;
+     
+}
+
+ul.mzfootnote{
+    list-style:none;
+    text-align:left;
+    line-height:150%;
+     
+}
+
+ol{
+    font-size:1em;
+    line-height:120%;
+     
+}
+
+.mzfootnote{
+    text-indent:0em;
+    list-style:none;
+    text-align:left;
+    line-height:150%;
+}
+
+.mz-footnote{
+    display:none;
+    text-indent:0em;
+    line-height:1.5;
+}
+
+.mz-footnote-link{
+    vertical-align : baseline;
+}
+
+code{
+    font-family:Courier;
+    white-space:pre;
+}
+td{
+    display:block;
+}
+li{
+    display:list-item;
+}
+pre{
+    font-family:Courier;
+    white-space:pre;
+    display:block;
+}

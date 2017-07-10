@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jingdong.app.reader"
+    android:versionCode="243000"
+    android:versionName="2.4.3" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <permission
+        android:name="com.jingdong.app.reader.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.jingdong.app.reader.permission.JPUSH_MESSAGE" />
+ 		<!-- Required  一些系统要求的权限，如访问网络等 -->
+        <!-- <uses-permission android:name="com.jingdong.app.reader.permission.JPUSH_MESSAGE" /> -->
+        <uses-permission android:name="android.permission.GET_TASKS" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.SEND_SMS"/>
+        <!-- <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/> -->
+        <!-- 极光推送需要此权限 -->
+        <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <!-- 极光推送end -->
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <uses-permission android:name="android.permission.BLUETOOTH" />
+        
+        <!-- 统一登陆SDK权限 -->
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+      
+        <!-- 新浪微博权限 -->
+        <!-- 微信权限 -->
+        <!-- 调用摄像头权限 -->
+        <uses-permission android:name="android.permission.CAMERA" />
+
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+
+        <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+        <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+        <!-- 在某些特殊情况下， wifi的开启可能需要这个权限 -->
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+        <!-- 语音搜索 -->
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.FLASHLIGHT" />
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.REORDER_TASKS" />
+        <!-- talking data 新增权限 -->
+
+		<!-- 添加拨出电话的权限 -->
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+        <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+        <application
+            android:name="com.jingdong.app.reader.application.MZBookApplication"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:logo="@drawable/icon"
+            android:theme="@style/AppBaseTheme" >
+
+            <!-- 百度MTJ配置信息 -->
+            <meta-data android:name="BaiduMobAd_STAT_ID" android:value="e2defa5c13" />
+            <!-- 渠道商编号 -->
+			<meta-data android:name="BaiduMobAd_CHANNEL" android:value="BaiDu Market" />
+			<!-- 是否开启错误日志统计，默认为false -->
+			<meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
+            <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START" />
+            <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+			<!-- 是否获取基站位置信息 ,默认为true-->
+			<meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="false" />
+			<!-- 是否获取GPS位置信息，默认为true -->
+			<meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="false" />
+			<!-- 是否获取WIFI位置信息，默认为true -->
+			<meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="false" />
+			
+            
+            <!-- 您从京东获取的APP KEY -->
+			<meta-data android:name="JD_APPKEY" android:value="50001" />
+			<meta-data android:name="JD_CHANNEL" android:value="" />
+			<!-- accesskey-->
+			<meta-data android:name="JD_ACCESSKEY" android:value="334146de1b9346272cb013adf1a35aea" />
+
+            <provider
+                android:name=".data.db.DataProvider"
+                android:authorities="com.jingdong.app.reader.provider"
+                android:exported="false" >
+            </provider>
+
+            <!-- activity android:screenOrientation="portrait" 是限制此页面数竖屏显示 -->
+            <activity
+                android:name=".activity.MainActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait" 
+                android:theme="@style/LauncherTheme" >
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data android:mimeType="application/epub+zip" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data
+                        android:host=""
+                        android:mimeType="application/pdf"
+                        android:scheme="file" >
+                    </data>
+                    <data android:pathPattern=".*\\.pdf" />
+                    <data android:pathPattern=".*\\..*\\.pdf" />
+                    <data android:pathPattern=".*\\..*\\..*\\.pdf" />
+                    <data android:pathPattern=".*\\..*\\..*\\..*\\.pdf" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data
+                        android:host=""
+                        android:mimeType="application/pdf"
+                        android:scheme="content" >
+                    </data>
+                    <data android:pathPattern=".*\\.pdf" />
+                    <data android:pathPattern=".*\\..*\\.pdf" />
+                    <data android:pathPattern=".*\\..*\\..*\\.pdf" />
+                    <data android:pathPattern=".*\\..*\\..*\\..*\\.pdf" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data
+                        android:host=""
+                        android:mimeType="text/plain"
+                        android:scheme="file" />
+                    <!-- Android Framework的bug，目前只能写成这个样子，参见 http://yhcting.tistory.com/m/post/316 -->
+                    <data android:pathPattern=".*\\.epub" />
+                    <data android:pathPattern=".*\\..*\\.epub" />
+                    <data android:pathPattern=".*\\..*\\..*\\.epub" />
+                    <data android:pathPattern=".*\\..*\\..*\\..*\\.epub" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data
+                        android:host=""
+                        android:mimeType="text/plain"
+                        android:scheme="content" />
+                    <!-- Android Framework的bug，目前只能写成这个样子，参见 http://yhcting.tistory.com/m/post/316 -->
+                    <data android:pathPattern=".*\\.epub" />
+                    <data android:pathPattern=".*\\..*\\.epub" />
+                    <data android:pathPattern=".*\\..*\\..*\\.epub" />
+                    <data android:pathPattern=".*\\..*\\..*\\..*\\.epub" />
+                </intent-filter>
+            </activity>
+
+            <service android:name=".service.OpdsBookDownloadService" />
+            <service android:name=".service.PurchaseBookService" />
+            <service android:name=".service.MediaDownloadService" />
+            <service android:name=".service.PostDataService" />
+            <service android:name=".service.ReadNoteSyncService" />
+            <service android:name=".service.ImportNotesService" />
+            <service android:name=".service.CpaService" />
+            <service
+                android:name=".service.NotificationService"
+                android:exported="false" />
+
+            <activity
+                android:name=".activity.BookPageViewActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+            <activity
+                android:name=".extension.giftbag.GiftBagAcitivity"
+                android:label="@string/book_home"
+                android:logo="@drawable/actionbar_mzread"
+                android:screenOrientation="portrait"
+                android:theme="@style/transparent" >
+                <intent-filter>
+                    <action android:name="com.jingdong.app.reader.giftbag.GiftBagAcitivity" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
+
+            <activity
+                android:name="com.jingdong.app.reader.login.LoginActivity"
+                android:label="@string/login"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTop"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustResize" />
+            <activity
+                android:name=".activity.ReadOverlayActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".activity.ReaderSettingActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".pdf.PDFReadOverlayActivity"
+                android:screenOrientation="behind"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".activity.BookTOCActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.CatalogActivity"
+                android:screenOrientation="behind"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            <activity
+                android:name=".timeline.actiivity.TimelineActivity"
+                android:label="@string/timeline"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.SettingsActivity"
+                android:label="@string/settings"
+                android:logo="@drawable/tabbar_icon_settings_highlight"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".message.activity.MessageActivity"
+                android:label="@string/notification"
+                android:logo="@drawable/tabbar_icon_notification_highlight"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.BookPlayListActivity"
+                android:label="@string/all_audio"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".activity.WebViewActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineTweetActivity"
+                android:label="@string/timeline"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineCommentsActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustResize" />
+            <activity
+                android:name=".timeline.actiivity.TimelinePostTweetActivity"
+                android:label="@string/timeline_post_title"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustResize" />
+            <activity
+                android:name=".timeline.actiivity.TimelineSearchPeopleActivity"
+                android:label="@string/choose_people"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustResize" />
+            <activity
+                android:name=".me.activity.BookListActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".me.activity.UserListActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".me.activity.UserActivity"
+                android:label="@string/user_profile"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookSummaryActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".timeline.actiivity.TweetListActivity"
+                android:logo="@drawable/actionbar_mzread"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.FocusActivity"
+                android:label="@string/user_follow"
+                android:logo="@drawable/actionbar_mzread"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.RecommendActivity"
+                android:label="@string/recommand_user"
+                android:logo="@drawable/actionbar_mzread"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.FansActivity"
+                android:label="@string/user_fans"
+                android:logo="@drawable/actionbar_mzread"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".bookstore.search.SearchActivity"
+                android:label="@string/search"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateVisible"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".bookstore.search.MipcaCaptureActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookStoreBookListActivity"
+                android:label="@string/bookList"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".pay.OnlinePayActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+            </activity>
+            
+            <activity
+                android:name=".setting.activity.RecommendUsersActivity"
+                android:label="@string/find_friends"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".me.activity.MoreInfoActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".me.activity.EditInfoActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" />
+            <activity
+                android:name=".me.activity.ReadingDataActivity"
+                android:label="@string/reading_code"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookReadNoteActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".activity.BookNoteActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".activity.BookNoteListActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".message.activity.ChatActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="stateHidden" />
+            <activity
+                android:name=".activity.UploadToCloudDiskActivity"
+                android:label="@string/upload_book"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.UploadActivity"
+                android:label="@string/upload_localbook"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineSearchBookActivity"
+                android:label="@string/choose_somebook"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineBookListActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineBookListCommentsActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.FollowedUserReadingActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".timeline.selected.activity.BooksSelectedTimelineActivity"
+                android:label="@string/books_selected"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".setting.activity.ThirdPartyBindActivity"
+                android:label="@string/thirdBind"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".setting.activity.SupplementAcitivity"
+                android:label="@string/supplementAccount"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".timeline.selected.activity.BooksSelectedTimelineTopBannerActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.ShareEditorActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" />
+            <activity
+                android:name=".me.activity.UserPhotoActivity"
+                android:label="@string/preview_photo"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.OrderingBookCaseActivity"
+                android:label="@string/reorganize"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.FileBrowserActivity"
+                android:label="@string/importBookTip"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.FileResultActivity"
+                android:label="@string/searchResult"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <!-- 
+            <activity
+                android:name=".activity.BookStoreBookListNewUIActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" >
+            </activity>
+            -->
+            <activity
+                android:name=".activity.BookInfoAuthorActivity"
+                android:label="@string/bookinfo_newui_authorinfo"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <!-- 
+            <activity
+                android:name=".activity.BookStoreCategoryActivity"
+                android:label="@string/category"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" /> -->
+            <activity
+                android:name=".activity.BookcaseOthersReadingActivity"
+                android:label="@string/others_reading"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.AboutPhoneActivity"
+                android:label="@string/settings_about_phone"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.BookPageImageEnlargeActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            <activity
+                android:name=".pdf.PDFBookViewActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="sensor"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            <!-- <activity
+                android:name=".test.TestLayoutActivity"
+                android:label="@string/test_layout"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" /> -->
+            <activity
+                android:name=".notes.AlreadyAddedNotesActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".notes.AllNotesActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".notes.OthersNotesListActivity"
+                android:label="@string/others_notes_title"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+         
+            <activity
+                android:name="com.jingdong.app.reader.login.VerifyPhoneActivity"
+                android:label="@string/sign"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustResize" />
+            <activity
+                android:name=".activity.ForgetPasswordActivity"
+                android:label="@string/forget_title"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.ProtocolActivity"
+                android:label="@string/protocol"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.LauncherActivity"
+                android:launchMode="singleTask"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".activity.ChangDuActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name="com.jingdong.app.reader.bookshelf.ChangduListActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name="com.jingdong.app.reader.bookshelf.BorrowBookMainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookcaseCloudActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookcaseCloudDiskActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            
+            <activity
+                android:name=".bookstore.search.BookShelfSearchActivity"
+                android:label="@string/search"
+                android:logo="@drawable/tabbar_icon_search"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="stateVisible" />
+            <activity
+                android:name=".bookstore.search.BookStoreSearchActivity"
+                android:windowSoftInputMode="adjustPan|stateVisible" 
+                android:label="@string/search"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookInfoNewUIActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:label="@string/book_home"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <!-- <activity
+                android:name=".activity.Bookcase3rdBindActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" /> -->
+            <activity
+                android:name=".setting.activity.RecommendUsersActivity"
+                android:label="@string/find_friends"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".me.activity.MoreInfoActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".me.activity.EditInfoActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" />
+            <activity
+                android:name=".me.activity.ReadingDataActivity"
+                android:label="@string/reading_code"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookReadNoteActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".activity.BookNoteActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".activity.BookNoteListActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".message.activity.ChatActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="stateHidden" />
+            <activity
+                android:name=".activity.UploadToCloudDiskActivity"
+                android:label="@string/upload_book"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.UploadActivity"
+                android:label="@string/upload_localbook"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineSearchBookActivity"
+                android:label="@string/choose_somebook"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineBookListActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.TimelineBookListCommentsActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.FollowedUserReadingActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".timeline.selected.activity.BooksSelectedTimelineActivity"
+                android:label="@string/books_selected"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".setting.activity.ThirdPartyBindActivity"
+                android:label="@string/thirdBind"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".setting.activity.SupplementAcitivity"
+                android:label="@string/supplementAccount"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".timeline.selected.activity.BooksSelectedTimelineTopBannerActivity"
+                android:label="@string/empty_string"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.ShareEditorActivity"
+                android:label="@string/app_name"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden" />
+            <activity
+                android:name=".me.activity.UserPhotoActivity"
+                android:label="@string/preview_photo"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.OrderingBookCaseActivity"
+                android:label="@string/reorganize"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.FileBrowserActivity"
+                android:label="@string/importBookTip"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.FileResultActivity"
+                android:label="@string/searchResult"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+
+            <activity
+                android:name=".activity.BookInfoAuthorActivity"
+                android:label="@string/bookinfo_newui_authorinfo"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+
+            <activity
+                android:name=".activity.BookcaseOthersReadingActivity"
+                android:label="@string/others_reading"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.AboutPhoneActivity"
+                android:label="@string/settings_about_phone"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".activity.BookPageImageEnlargeActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            <activity
+                android:name=".pdf.PDFBookViewActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="sensor"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+            <activity
+                android:name=".notes.AlreadyAddedNotesActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".notes.AllNotesActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/LightTranslucent" />
+            <activity
+                android:name=".notes.OthersNotesListActivity"
+                android:label="@string/others_notes_title"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait" />
+
+            <activity
+                android:name="com.jingdong.app.reader.login.VerifyPhoneActivity"
+                android:label="@string/sign"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustResize" />
+            <activity
+                android:name=".activity.ForgetPasswordActivity"
+                android:label="@string/forget_title"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.ProtocolActivity"
+                android:label="@string/protocol"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.LauncherActivity"
+                android:launchMode="singleTask"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".activity.ChangDuActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name="com.jingdong.app.reader.bookshelf.ChangduListActivityduListActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BorrowedBookActivity"
+                android:label="@string/borrow_info"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookcaseCloudActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookcaseCloudDiskActivity"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+
+            <activity
+                android:name=".bookstore.search.BookShelfSearchActivity"
+                android:label="@string/search"
+                android:logo="@drawable/tabbar_icon_search"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="stateVisible" />
+            <activity
+                android:name=".bookstore.search.BookStoreSearchActivity"
+                android:windowSoftInputMode="adjustPan|stateVisible" 
+                android:label="@string/search"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookInfoNewUIActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:label="@string/book_home"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+
+            </activity>
+            <activity
+                android:name=".activity.BookInfoItemDetailActivity"
+                android:label="@string/book_detail"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookCommentsListActivity"
+                android:label="@string/book_comments_list"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.LackBookSignActivity"
+                android:label="@string/book_sign"
+                android:logo="@drawable/tabbar_icon_bookshelf_highlight"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".activity.BookCartActivity"
+                android:label="@string/bookcart"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.BalanceActivity"
+                android:label="@string/book_sign"
+                android:logo="@drawable/tabbar_icon_bookshelf_highlight"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.OrderActivity"
+                android:label="@string/book_sign"
+                android:logo="@drawable/tabbar_icon_bookshelf_highlight"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.OrderDetailActivity"
+                android:label="@string/order_detail_title"
+                android:logo="@drawable/tabbar_icon_bookshelf_highlight"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.BindReadingCardActivity"
+                android:label="@string/readingcard_bind"
+                android:logo="@drawable/tabbar_icon_bookshelf_highlight"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <!-- 条码扫描器 -->
+            <activity
+                android:name="com.jingdong.lib.zxing.client.android.CaptureActivity"
+                android:configChanges="orientation|keyboardHidden"
+                android:screenOrientation="landscape"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:windowSoftInputMode="stateAlwaysHidden" >
+            </activity>
+
+            <!-- 银联支付相关 - 开始 -->
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.SplashActivity"
+                android:screenOrientation="portrait" >
+            </activity>
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.CardMainActivity"
+                android:screenOrientation="portrait" >
+            </activity>
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.PayMainActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.PayItActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.PayResultActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.AccountMainActivity"
+                android:screenOrientation="portrait" />
+            
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.LoginActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.RegisterActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.GetpassActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.EditpassActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.EditinfoActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.AddCardActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.UserProtocalActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.CheckCardBalanceActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.CardInfoActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.CardBalanceResultActivity"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name="com.unionpay.upomp.bypay.activity.CardBankResultActivity"
+                android:screenOrientation="portrait" />
+            <!-- 银联支付相关 - 结束 -->
+            <activity
+                android:name=".me.activity.WantActivity"
+                android:label="@string/my_want"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.FeedBackActivity"
+                android:label="@string/feedback"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+           
+            <activity
+                android:name=".me.activity.FeedBackTypeActivity"
+                android:label="@string/feedback_type"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.SettingActivity"
+                android:label="@string/settings"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.ModifyUserInfoActivity"
+                android:label="@string/modify_info"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.ReadingCardActivity"
+                android:label="@string/readingcard"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.OverTimeReadCard"
+                android:label="@string/overtimereadingcard"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.IntegrationActivity"
+                android:label="@string/integration"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.ContactUsActivity"
+                android:label="@string/contact_us"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <!-- 微博授权 -->
+            <activity
+                android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+                android:configChanges="keyboardHidden|orientation"
+                android:exported="false"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+                android:windowSoftInputMode="adjustResize" >
+            </activity>
+            <activity
+                android:name=".me.activity.MessageCenterActivity"
+                android:label="@string/message_center"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".reading.BookSearchActivity"
+                android:label="@string/message_center"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateVisible"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+ 			
+            <service android:name=".service.download.DownloadService" />
+            <service android:name=".bookmark.BookMarksSyncService" />
+            <service
+                android:name=".client.DownloadService"
+                android:enabled="true" />
+
+            <activity
+                android:name=".wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="singleTop"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".wxapi.WXEntryActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            <activity
+                android:name=".activity.BookCommentNewuiActivity"
+                android:label="@string/book_comment"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookStorePaperBookActivity"
+                android:label="@string/paperbook_store"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookBasicInfoActivity"
+                android:label="@string/bookinfo_newui_basicinfo"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.ReadingDataChartActivity"
+                android:label="@string/bookinfo_newui_basicinfo"
+                android:logo="@drawable/actionbar_jd"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".wbapi.WBRespActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:exported="true"
+                android:screenOrientation="portrait" >
+                <intent-filter>
+                    <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
+            <activity
+                android:name=".activity.UserGuidSplashActivity"
+                android:label="@string/user_guid"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+            <activity
+                android:name=".me.activity.HelpActivity"
+                android:label="@string/help"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.OnlineReadHelpActivity"
+                android:label="@string/online_read"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.BuyEbookHelpActivity"
+                android:label="@string/buy_ebook"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.MyActivity"
+                android:exported="true"
+                android:theme="@android:style/Theme.Black.NoTitleBar" />
+            <activity
+                android:name=".me.activity.NotificationMainActivity"
+                android:label="@string/notification_message"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".me.activity.PrivateMessageActivity"
+                android:label="@string/private_message"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".timeline.actiivity.CommentActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.DraftsActivity"
+                android:label="@string/drafts"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.SelectSaveDirActivity"
+                android:label="@string/select_dir"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".reading.BackCoverRecommendActivity"
+                android:label="@string/book_recommend"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".reading.OtherBookList"
+                android:label="@string/other_book"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+            <activity
+                android:name=".activity.BookStoreBookBigViewActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent" />
+
+            <activity
+                android:name=".me.activity.UserReadingBookActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".activity.DictionarySettingActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+             <activity
+                android:name=".community.CommunityUserListActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".community.CommunitySearchActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateVisible"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+            <activity
+                android:name=".community.SearchUserListActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            </activity>
+
+            <!-- QQ登录配置
+            <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:launchMode="singleTask"
+                android:noHistory="true" >
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+
+                    <data android:scheme="tencent100827021" />
+                </intent-filter>
+            </activity>
+            <activity
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+ 			-->
+            <!-- Talking Data SDK -->
+            <meta-data
+                android:name="TD_APP_ID"
+                android:value="BF8850873C1661A325DE5BF56740B236" />
+            <meta-data
+                android:name="TD_CHANNEL_ID"
+                android:value="EB0007" />
+
+            <!-- 外部任务 -->
+            <activity
+                android:name=".opentask.InterfaceActivity"
+                android:exported="true"
+                android:label="@string/app_name"
+                android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+
+                    <data android:scheme="openapp.jdebook" />
+                </intent-filter>
+            </activity>
+
+            <receiver android:name=".opentask.InterfaceBroadcastReceiver" >
+                <intent-filter>
+                    <action android:name="com.jdreader.interfaceBroadcastReceiver" >
+                    </action>
+                </intent-filter>
+            </receiver>
+            <!-- 外部任务 结束 -->
+           <!--  <receiver android:name=".UiCacheUpdate" >
+                <intent-filter>
+                    <action android:name="com.jingdong.app.reader.UiCacheUpdate" >
+                    </action>
+                </intent-filter>
+            </receiver>
+             -->
+            <!--
+        <receiver
+            android:name="com.jingdong.app.reader.receiver.NetworkBroadcast"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+        </receiver>
+            -->
+
+
+            <!-- 极光推送 -->
+
+
+            <!-- Required SDK 核心功能 -->
+            <service
+                android:name="cn.jpush.android.service.PushService"
+                android:enabled="true"
+                android:exported="false" >
+                <intent-filter>
+                    <action android:name="cn.jpush.android.intent.REGISTER" />
+                    <action android:name="cn.jpush.android.intent.REPORT" />
+                    <action android:name="cn.jpush.android.intent.PushService" />
+                    <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+                </intent-filter>
+            </service>
+
+            <!-- Required SDK核心功能 -->
+            <receiver
+                android:name="cn.jpush.android.service.PushReceiver"
+                android:enabled="true" >
+                <intent-filter android:priority="1000" >
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                    <!-- Required  显示通知栏 -->
+                    <category android:name="com.jingdong.app.reader" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.USER_PRESENT" />
+                    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                </intent-filter>
+                <!-- Optional -->
+                <intent-filter>
+                    <action android:name="android.intent.action.PACKAGE_ADDED" />
+                    <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                    <data android:scheme="package" />
+                </intent-filter>
+            </receiver>
+ 
+            <!-- Required SDK核心功能 -->
+            <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+            <!-- User defined.  For test only  用户自定义的广播接收器 -->
+            <receiver
+                android:name="com.jingdong.app.reader.extension.jpush.JDMessageReceiver"
+                android:enabled="true" >
+                <intent-filter>
+                    <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                    <!-- Required  用户注册SDK的intent -->
+                    <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                    <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                    <!-- Required  用户接收SDK消息的intent -->
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                    <!-- Required  用户接收SDK通知栏信息的intent -->
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                    <!-- Required  用户打开自定义通知栏的intent -->
+                    <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                    <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                    <action android:name="cn.jpush.android.intent.CONNECTION" />
+                    <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                    <category android:name="com.jingdong.app.reader" />
+                </intent-filter>
+            </receiver>
+
+            <!-- Required  . Enable it you can get statistics data with channel -->
+            <meta-data
+                android:name="JPUSH_CHANNEL"
+                android:value="developer-default" />
+            <meta-data
+                android:name="JPUSH_APPKEY"
+                android:value="8803e1ae0beee0dd9f00befb" />
+            <!-- </>值来自开发者平台取得的AppKey -->
+
+           <!--  <service android:name=".CacheService" >
+                <intent-filter>
+                    <action android:name="com.jingdong.app.reader.CacheService" />
+                </intent-filter>
+            </service>
+             -->
+            <service android:name=".extension.giftbag.GiftBagService" >
+                <intent-filter>
+                    <action android:name="com.jingdong.app.reader.CacheService" />
+                </intent-filter>
+            </service>
+            
+            <activity android:name="com.jingdong.app.reader.download.test.DownloadTestActivity"></activity>
+            <activity android:name="com.jingdong.app.reader.download.test.DownloadDetailActivty"></activity>
+            <service android:name="com.jingdong.app.reader.download.service.DownloadService"></service>
+            
+            
+            <activity 
+	            android:name="com.jingdong.app.reader.album.AlbumActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"
+	            ></activity>
+        
+        	<activity 
+	            android:name="com.jingdong.app.reader.album.PreviewPhotoActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"
+	            ></activity>
+        	
+        	<activity 
+	            android:name="com.jingdong.app.reader.community.PreviewActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"
+	            ></activity>
+        	
+        	<activity 
+	            android:name="com.jingdong.app.reader.bookstore.buyborrow.UserBuyBorrowActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"
+	            ></activity>
+        	
+        	<!-- 购买送书 -->
+        	<activity android:name=".bookstore.sendbook.SendBookOrderActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"/>
+            <activity android:name=".bookstore.sendbook.SendBookFirstPageActivity"
+	            android:theme="@style/MyNoTitleBar"
+	            android:screenOrientation="portrait"/>
+            <!-- 登录输入验证码页面 -->
+            <activity android:name=".login.LoginVerificationActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"/>
+            <!-- 电话号码快速注册 -->
+            <activity android:name=".login.PhoneRegisterActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"/>
+            <!-- 电话号码快速注册输入验证码 -->
+            <activity android:name=".login.RegisterVerificationActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"/>
+            <!-- 注册设置密码页面 -->
+            <activity android:name=".login.RegisterPasswordSetActivity"
+	            android:theme="@android:style/Theme.NoTitleBar"
+	            android:screenOrientation="portrait"/>
+        </application>
+</manifest>
