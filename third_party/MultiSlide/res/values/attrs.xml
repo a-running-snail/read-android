@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="Workspace">
+		<attr name="pageWidth" format="dimension" />
+	</declare-styleable>
+	<declare-styleable name="Indicator">
+		<attr name="barColor" format="color" />
+		<attr name="highlightColor" format="color" />
+		<attr name="fadeDelay" format="integer" />
+		<attr name="fadeDuration" format="integer" />
+		<attr name="roundRectRadius" format="dimension" />
+	</declare-styleable>
+ <declare-styleable name="DragableSpace">
+ <attr name="default_screen" format="integer"/>
+ </declare-styleable>
+</resources>

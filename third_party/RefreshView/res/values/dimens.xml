@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="footer_height">44dp</dimen>
+    <dimen name="footer_width">1080dp</dimen>
+   
+</resources>

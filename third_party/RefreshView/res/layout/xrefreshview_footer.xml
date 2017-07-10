@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xrefreshview_footer_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="#ECECEC">
+    
+    <ProgressBar
+    	android:id="@+id/xrefreshview_footer_progressbar"
+        style="@style/loading"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="6dp" />
+   
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/xrefreshview_footer_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="加载更多..."
+        android:gravity="center"
+        android:textColor="#909090"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/xrefreshview_footer_hint_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#909090"
+        android:textSize="15sp" 
+        android:text="@string/xrefreshview_footer_hint_normal" />
+
+    <TextView
+        android:id="@+id/xrefreshview_footer_click_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#909090"
+        android:textSize="15sp" 
+        android:text="@string/xrefreshview_footer_hint_ready" />
+</LinearLayout>
