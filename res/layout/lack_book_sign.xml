@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_top"
+            android:background="@color/bg_sub" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left" >
+
+            <EditText
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/book_name"
+                android:textColorHint="@color/hariline"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size" >
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left" >
+
+            <EditText
+                android:id="@+id/book_author"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/book_author_edit"
+                android:textColorHint="@color/hariline"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size" >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left" >
+
+            <EditText
+                android:id="@+id/publishing_house"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/publishing_house"
+                android:textColorHint="@color/hariline"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size" >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_top"
+            android:background="@color/bg_sub"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="horizontal" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textSize="12dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/lackbook_contact_info"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left" >
+
+            <EditText
+                android:id="@+id/contact_qq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/qq"
+                android:textColorHint="@color/hariline"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size" >
+            </EditText>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_marginRight="@dimen/padding_left"
+            android:background="@color/hariline" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left" >
+
+            <EditText
+                android:id="@+id/contact_tel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="手机号码"
+                android:textColorHint="@color/hariline"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size" >
+            </EditText>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+    </LinearLayout>
+
+</ScrollView>

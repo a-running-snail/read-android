@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_black"
+    android:orientation="vertical"
+    android:paddingTop="2dp" >
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pop_item_notification"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/actionbar_dropdown_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/notification"
+                android:textColor="@color/dark_grey"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/notification_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/actionbar_highlight"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:id="@+id/pop_item_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/actionbar_dropdown_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/search"
+                android:textColor="@color/dark_grey"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:id="@+id/pop_item_my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/actionbar_dropdown_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/my_profile"
+                android:textColor="@color/dark_grey"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/follow_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/actionbar_highlight"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:id="@+id/pop_item_settings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/actionbar_dropdown_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/settings"
+                android:textColor="@color/dark_grey"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/upgrade_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/upgrade"
+                android:src="@drawable/icon_new" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+	
+<!--   bg_menu_shadow <com.jingdong.app.reader.view.bookstore.ImageTouchView   
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        android:src="@drawable/bg_default_cover"  
+        android:scaleType="fitCenter" 
+        android:layout_centerInParent="true"
+        android:id="@+id/img"  
+        />  
+ --> 	
+ <ImageView   
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:src="@drawable/rcd_cancel_icon"  
+        android:scaleType="centerInside" 
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/close"  
+        android:visibility="gone"
+        /> 
+ 
+  <ImageView   
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:src="@drawable/progressbar_loading"  
+        android:scaleType="centerInside" 
+        android:layout_centerInParent="true"
+        android:id="@+id/img"  
+        />  
+</RelativeLayout>

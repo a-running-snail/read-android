@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">京东阅读</string>
+    <string name="you_are_what_you_read">You are what you read</string>
+    <string name="back_exit_warning">再按一次退出程序</string>
+    <!--<string name="done">完成</string>-->
+    <!--<string name="action_settings">设置</string>-->
+    <string name="hello_world">Hello world!</string>
+    <!--<string name="button_placehold">Button</string>-->
+    <!--<string name="free_book_rank">免费图书排行</string>-->
+    <!--<string name="banner">banner%d</string>-->
+    <string name="empty_string"></string>
+    <!-- <string name="book_author">作者：%s</string> -->
+    <!--<string name="book_publisher">出版社：%s</string>-->
+    <!--<string name="book_size">图书大小：%s</string>-->
+    <!--<string name="author_summary">作者简介</string>-->
+    <!--<string name="book_price">￥%.2f</string>-->
+    <!--<string name="book_trial">试读</string>-->
+    <!-- <string name="comment">评论</string> -->
+    <!--<string name="summary">简介</string>-->
+    <string name="book_comment">评论</string>
+    <!--<string name="note_person">做笔记的人</string>-->
+    <!--<string name="all_tweet">所有动态</string>-->
+    <!--<string name="who_is_reading">谁在阅读</string>-->
+    <!--<string name="mark_as_want">标记为想读</string>-->
+    <!--<string name="as_want">我想读这本书</string>-->
+    <!--<string name="mark_as_read">标记为已读</string>-->
+    <!--<string name="as_read">我已读完这本书</string>-->
+    <string name="remove">移除</string>
+    <!--<string name="recommend_book">推荐这本书</string>-->
+    <!--<string name="bookcase_book_count">书架共有%d本书</string>-->
+    <string name="download">下载</string>
+    <string name="book_store">书城</string>
+    <string name="book_case">书架</string>
+    <string name="community">社区</string>
+    <string name="timeline">动态</string>
+    <!--<string name="friends_timeline">好友动态</string>-->
+    <!--<string name="selected_everyday">每日精选</string>-->
+    <!--<string name="bookbars">书吧</string>-->
+    <string name="me">我</string>
+    <string name="email">电子邮件</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="nickname">昵称</string>
+    <string name="register">注册</string>
+    <string name="unknown_error">未知网络错误，请稍后重试！</string>
+    <!-- <string name="logout">登出</string> -->
+    <!--<string name="tencent_weibo">腾讯微博（稍候支持）</string>-->
+    <!--<string name="douban">豆瓣（稍候支持）</string>-->
+    <!--<string name="other_account_login">或直接使用下列账号登录</string>-->
+    <!--<string name="register_protocol">点击注册，代表你同意</string>-->
+    <!--<string name="user_agreement">拇指阅读用户协议</string>-->
+    <string name="logging_in">登录中，请稍后……</string>
+    <string name="back">返回</string>
+    <string name="edit">编辑</string>
+    <string name="go_on">继续</string>
+    <string name="note_line">划线</string>
+    <string name="dictionary_and_baike">词典百科</string>
+    <string name="baike">百度百科</string>
+    <string name="youdao">有道词典</string>
+    <string name="iciba">金山词霸</string>
+    <string name="dictionnary_support">金山词霸技术支持</string>
+    <string name="dictionnary_download_text">下载-汉英·英汉·汉汉词典</string>
+    <string name="progress_sync_alert">是否同步到云端阅读进度：</string>
+    <string name="progress_continue_alert">是否继续上次的阅读进度？</string>
+    <!--<string name="downloading">下载中…</string>-->
+    <!--<string name="cloud_downloading">下载中</string>-->
+    <string name="download_error">下载失败</string>
+    <string name="free">免费</string>
+    <string name="can_buy">书城有售</string>
+    <string name="can_borrow">可借阅</string>
+    <string name="borrow">借阅</string>
+    <!--<string name="download_percent">%d%%</string>-->
+    <!--<string name="not_download">未下载</string>-->
+    <!--<string name="logout_error">登出失败，请稍后重试！</string>-->
+    <!--<string name="paging_not_finish">图书分页尚未结束，请稍等片刻再操作</string>-->
+    <string name="string_placeholder">Lorem ipsum dolor</string>
+    <string name="read_finish">阅读结束</string>
+    <string name="hour">小时</string>
+    <!--<string name="read_time">阅读时间</string>-->
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+    <string name="purchase_full_book_indicator">试读结束，更多精彩尽在完整版。</string>
+    <string name="purchase_full_book">购买完整版</string>
+    <string name="purchase">购买</string>
+    <!--<string name="total_time">总时间</string>-->
+    <!--<string name="rating">评分</string>-->
+    <string name="rating_please">轻按评分</string>
+	<string name="no_comment">暂无书评</string>
+    <!--<string name="cant_comment">打个分或留个评论吧</string>-->
+    <!--<string name="comment_success">成功发布书评</string>-->
+    <!--<string name="comment_fail">发布书评失败，请稍后重试！</string>-->
+    <string name="time_placehold">--</string>
+    <!--<string name="coming_soon">社区动态正在紧张施工中，先去书架和书城看看吧！</string>-->
+    <string name="waiting">请稍候…</string>
+    <string name="find_new_version">发现新版本（%s）</string>
+    <string name="current_version">当前版本（%s）\n\n</string>
+    <string name="no_upgrade">已经是最新版本</string>
+    <!--<string name="purchased_book">已购图书</string>-->
+    <string name="book_home">图书主页</string>
+    <string name="settings">设置</string>
+    <string name="settings_more">高级阅读设置</string>
+    <string name="adjust_layout">调整文字排版间距</string>
+    <string name="settings_read_section">阅读设置</string>
+    <string name="settings_account_section">帐号信息设置</string>
+    <string name="settings_other_section">其他</string>
+    <string name="soft_render">文字效果优先</string>
+    <string name="third_party">第三方</string>
+    <string name="font_zoom">文字</string>
+    <!--<string name="shucang">书仓</string>-->
+    <!--<string name="coay">coay</string>-->
+    <string name="cover">cover</string>
+    <string name="book_downloading">正在下载</string>
+    <string name="start_download">开始下载</string>
+    <string name="download_finish">下载完成</string>
+    <!--<string name="add_opds">添加第三方书库</string>-->
+    <!--<string name="opds_name">第三方书库名</string>-->
+    <!--<string name="opds_url">第三方书库地址</string>-->
+    <!--<string name="import_book">外部导入</string>-->
+    <!--<string name="third_bookstore">第三方书库</string>-->
+    <string name="to_3rd_bookcase">-&gt;本地</string>
+    <!--<string name="re_try">重试</string>-->
+    <string name="update">更新</string>
+    <!--<string name="can_update">可更新</string>-->
+    <!--<string name="successful">成功</string>-->
+    <string name="deny">拒绝</string>
+    <string name="copy">复制</string>
+    <string name="share">分享</string>
+    <string name="share_success">恭喜客官，已成功分享到社区</string>
+    <!--<string name="cancel_share">取消分享</string>-->
+    <string name="cancel_share_success">已取消分享</string>
+    <!--<string name="share_to">分享到</string>-->
+    <string name="share_to_timeline">分享到动态</string>
+    <string name="share_to_mzread">同时分享到社区</string>
+    <!--<string name="share_to_wechat">分享给微信好友</string>-->
+    <string name="note_private_to_jdreader">设为私密</string>
+    <string name="note_public_to_jdreader">京东阅读</string>
+    <string name="note_share_to_weibo">新浪微博</string>
+    <string name="note_share_to_wxfriend">微信好友</string>
+    <string name="note_share_to_wechat">微信朋友圈</string>
+    <string name="can_open_by_mzread">可用最新版拇指阅读客户端打开。</string>
+    <!--<string name="sync_read_fail">登录状态失效，同步阅读停止</string>-->
+    <string name="file_read_fail">图书文件出错</string>
+    <!--<string name="drawer_open">Open navigation drawer</string>-->
+    <!--<string name="drawer_close">Close navigation drawer</string>-->
+    <string name="notification">消息</string>
+    <string name="my_profile">我的主页</string>
+    <string name="user_profile">个人主页</string>
+    <string name="user_profile_tv">我的书评、笔记、收藏</string>
+    <string name="drafts">草稿箱</string>
+    <string name="recommend">推荐</string>
+    <string name="mypurchase">已购</string>
+    <string name="mychangdu">畅读</string>
+    <!--<string name="more_category">更多分类</string>-->
+    <string name="publisher">出版方</string>
+    <!--<string name="waiting_trade_finish">等待交易完成</string>-->
+    <!--<string name="pay_success">支付成功，马上开始下载</string>-->
+    <!--<string name="pay_failed">支付失败</string>-->
+    <string name="all_audio">本书所有曲目</string>
+    <string name="download_notify_title">是否下载</string>
+    <string name="download_notify">该曲目需要下载才能播放，是否现在立刻下载？（下载完成将自动开始播放）</string>
+    <string name="open_in_browser">浏览器中打开</string>
+    <string name="reading_data">阅历</string>
+    <string name="reading_code">阅读记录</string>
+    <string name="justnow">刚刚</string>
+    <string name="seconds_ago">秒前</string>
+    <string name="minutes_ago">分钟前</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="delete_timeline">该动态已删除</string>
+    <!-- <string name="loading">正在加载</string> -->
+    <string name="loading_fail">加载失败，网络无连接</string>
+    <!--<string name="terrific">赞</string>-->
+    <string name="favourite">收藏</string>
+    <string name="forward">转发</string>
+    <string name="forward_info">转发动态</string>
+    <!--<string name="timeline_comment_post">发布</string>-->
+    <string name="timeline_post_title">发布新动态</string>
+    <string name="reply">回复</string>
+    <!--<string name="common_comment_count">%d评论</string>-->
+    <!--<string name="common_recommend_count">%d赞</string>-->
+    <string name="timeline_comment_reply">回复</string>
+    <string name="timeline_comment_forward_btw">同时转发到我的动态</string>
+    <string name="timeline_comment_comment_btw">同时评论</string>
+    <string name="timeline_booklist_only_myself">只允许自己添加图书</string>
+    <string name="timeline_booklist_hint">通过发起书单，你既可以向大家提问求推荐图书，也可以分享一个自己喜欢的列表。首先，你需要有一个明确的主题，比如：学习哲学有哪些入门读物值得推荐？</string>
+    <string name="timeline_post_tweet">说说</string>
+    <!--<string name="booksbar_create">发现书吧</string>-->
+    <string name="timeline_at">\@</string>
+    <string name="timeline_thumbnail">用户头像</string>
+    <string name="user_follow">关注</string>
+    <string name="follow_each_other">互相关注</string>
+    <string name="user_fans">粉丝</string>
+    <string name="user_more">更多资料</string>
+    <string name="user_all_timeline">全部动态</string>
+    <string name="user_book_comment">书评</string>
+    <string name="user_note">笔记</string>
+    <string name="user_book_buy">书城购买</string>
+    <string name="user_book_import">外部导入</string>
+    <string name="user_read_done">已读</string>
+    <string name="user_read_want">喜欢</string>
+    <string name="user_follow_done">已关注</string>
+    <string name="user_follow_not">加关注</string>
+    <!--<string name="user_follow_mutual">相互关注</string>-->
+    <string name="user_modify">修改个人资料</string>
+    <string name="user_no_more">没有更多内容了</string>
+    <string name="delete_entity">删除动态</string>
+    <string name="delete_comment">删除评论</string>
+    <!--<string name="delete_note">删除笔记</string>-->
+    <string name="delete_entity_confirm">确定删除这条动态吗</string>
+    <string name="delete_comment_confirm">确定删除这条评论吗</string>
+    <string name="delete_note_confirm">确认删除这条笔记吗</string>
+    <string name="post_without_word">请至少输入一个字符</string>
+    <string name="max_entity_text">字数太多了，单条动态不能超过60000字滴</string>
+    <string name="max_comment_text">字数太多了，单条动态不能超过3000字滴</string>
+    <string name="user_not_found">不存在此用户</string>
+    <string name="find_friends">查找好友</string>
+    <string name="search">搜索</string>
+    <!-- <string name="book">图书</string> -->
+    <string name="user">用户</string>
+    <!--<string name="search_bookstore">搜索书城</string>-->
+    <string name="follow_all">全部关注</string>
+    <string name="recommand_user">推荐用户</string>
+    <string name="sina_error">新浪微博登录失败，请重新登录</string>
+    <!--<string name="sina_auth_fail">新浪微博授权失败</string>-->
+    <string name="next">下一步</string>
+    <string name="finish">完成</string>
+    <string name="followed_user_book_not_exist">关注的人没有正在读的书籍</string>
+    <string name="followed_user_reading">你关注的人正在读</string>
+    <string name="follow_all_success">成功关注了所有用户</string>
+    <string name="follow_all_fail">全部关注失败</string>
+    <string name="followers_list_title">粉丝列表</string>
+    <string name="followings_list_title">关注列表</string>
+    <!--<string name="reading_users_title">谁在阅读</string>-->
+    <string name="sex">性别</string>
+    <string name="introduction">介绍</string>
+    <string name="email_english">Email</string>
+    <string name="blog">博客</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="user_modify_summary">一句话介绍自己 (比如：railsgirl/吃货)</string>
+    <string name="user_modify_email">联系邮箱</string>
+    <string name="change_thumbnail">更换头像</string>
+    <string name="no_camera">找不到相机应用</string>
+    <string name="no_image_chooser">找不到图片资源管理器</string>
+    <string name="no_user_name">用户名不能为空，请重新输入</string>
+    <string name="updating">正在更新个人资料</string>
+    <string name="updating_fail">修改失败，请重试</string>
+    <!--<string name="note_number">笔记数量</string>-->
+    <!--<string name="slice">篇</string>-->
+    <!--<string name="reading_data_title">%s的阅历</string>-->
+    <!--<string name="view">查看</string>-->
+    <string name="make_public">设为公开并分享到社区</string>
+    <string name="make_private">设为不公开</string>
+    <string name="is_private">未公开</string>
+    <string name="deleting">正在删除</string>
+    <!--<string name="note_count">%d篇</string>-->
+    <!--<string name="content_size">%d字</string>-->
+    <!--<string name="composite_list">合集图书列表</string>-->
+    <!--<string name="pay_composite_success">购买成功，请到书架中下载</string>-->
+    <!--<string name="purchased">已购买</string>-->
+    <string name="clear_cache">清除动态缓存</string>
+    <string name="clear_cache_done">缓存已清除</string>
+    <string name="write_message">写私信</string>
+    <string name="confirm_bookname">确定正在阅读的图书</string>
+    <string name="cannot_find_bookname">搜索找不到合适的书？也可以手工输入书名</string>
+    <string name="private_message">私信</string>
+    <string name="private_message_sending">私信发送中...</string>
+    <string name="private_message_send_fail">发送失败</string>
+    <string name="send">发送</string>
+    <string name="delete_conversation">删除对话</string>
+    <string name="delete_conversation_confirm">你确认删除这条对话么，删除后将不可恢复。</string>
+    <string name="borrowing">正在借阅图书中，请稍候</string>
+    <string name="confirm_dialog_title">请输入书籍的名称</string>
+    <string name="confirm_dialog_ok">本地书籍绑定成功了</string>
+    <!--<string name="search_book_error">没有搜索到哦！</string>-->
+    <string name="rebind_book_button">重新确定</string>
+    <string name="rebind_book_title">确定本书信息</string>
+    <!--<string name="cloud_disk">云盘</string>-->
+    <!--<string name="search_on_cloud_disk">搜索图书</string>-->
+    <!--<string name="cloud_book_count">共%d本图书</string>-->
+    <string name="upload_book">一键上传</string>
+    <string name="upload_localbook">上传图书</string>
+    <string name="accept">同意</string>
+    <string name="waiting_accept">等待同意</string>
+    <string name="accepted">已同意</string>
+    <string name="click_download">点击下载</string>
+    <string name="reject">已拒绝</string>
+    <string name="rejected">已被拒绝</string>
+    <string name="hide">设为隐藏</string>
+    <string name="unhide">设为公开</string>
+    <string name="ishide">已隐藏</string>
+    <string name="books_selected">精选</string>
+    <!--<string name="upload">上传</string>-->
+    <!--<string name="onekey_upload_book">一键上传</string>-->
+    <string name="upload_book_msg">建议在Wi-Fi环境下上传图书</string>
+    <string name="upload_not_find_synbook_msg">本地没有需要上传的图书文件</string>
+    <string name="upload_find_synbook_msg">本地有%d本需要上传的图书文件</string>
+    <string name="uploaded">已上传</string>
+    <!--<string name="file_uploaded">上传成功</string>-->
+    <string name="file_uploading">正在上传&#8230;</string>
+    <!--<string name="task_is_over">书籍上传完成</string>-->
+    <!--<string name="book_path_error">本地书籍路径有错误</string>-->
+    <!--<string name="book_bind_error">服务器同步失败</string>-->
+    <!--<string name="file_uploaded_error">上传失败</string>-->
+    <string name="can_not_open">本书格式错误，无法阅读</string>
+    <!--<string name="upload_server_error">服务器开小差了</string>-->
+    <string name="network_not_find">亲，网络没有连接哦，检查一下下啊</string>
+    <string name="search_local_book">正在查找您的书架，请稍候</string>
+    <string name="reject_borrow">拒绝借阅</string>
+    <string name="reject_borrow_msg">发现您的本地书架也无法找到该书电子版，是否拒绝该借阅请求？</string>
+    <string name="whatever">算了</string>
+    <string name="wait_uploaded">待上传&#8230;</string>
+    <string name="denying">正在拒绝借阅请求</string>
+    <!--<string name="uploading_book">正在上传图书中，请稍候&#8230;</string>-->
+    <string name="upload_success">图书上传成功了，请再次点击同意</string>
+    <string name="upload_fail">图书上传失败了，请重试。</string>
+    <string name="private_msg_share_book">私信分享</string>
+    <string name="private_msg_sharing">正在分享图书中，请稍候&#8230;</string>
+    <string name="private_msg_share_success">成功分享</string>
+    <!--<string name="upload_in_second">云盘上已存在，秒传了&#8230;</string>-->
+    <!--<string name="tab_menu_clouddisk_title">云盘</string>-->
+    <!--<string name="tab_menu_localbook_title">本地</string>-->
+    <!--<string name="tab_menu_purchased_title">已购</string>-->
+    <!--<string name="mention_somebook">提到某本书</string>-->
+    <string name="choose_somebook">选择一本书</string>
+    <string name="recently_mention">最近提到</string>
+    <string name="recently_reading">最近在读图书</string>
+    <string name="no_recently_reading">您最近还没有阅读的书籍哦</string>
+    <!--<string name="no_shelf_book">您的书架还没有书籍哦</string>-->
+    <string name="no_sdcard_storage">没有SD存储卡</string>
+    <string name="sqlite_open_error">数据库文件出错</string>
+    <!--<string name="post_book_list">发起了书单</string>-->
+    <string name="invited_to_answer">邀请回答</string>
+    <string name="recommended_books">推荐图书</string>
+    <!--<string name="tab_to_rating">轻敲评分</string>-->
+    <!--<string name="post_forward_or_invited_ok">动态发布成功</string>-->
+    <!--<string name="post_forward_or_invited_error">动态发布失败</string>-->
+    <string name="loading_data">正在上传数据&#8230;</string>
+    <string name="waiting_load_data">请稍等，正在获得数据&#8230;</string>
+    <!--<string name="not_find_data">"您的云盘中没有数据哦"</string>-->
+    <!--<string name="please_input">请输入搜索内容!</string>-->
+    <string name="database_not_exist">数据库不存在，要不你重装试试</string>
+    <string name="bug_upload">错误反馈</string>
+    <string name="database_info">您的数据库文件的路径是\n%s\n，请把该文件发送到feedback@mzread.com邮箱，并在邮件中注明您在拇指阅读社区中的用户名。你也可以点击下面的按钮，直接发送邮件。</string>
+    <string name="send_email">发送邮件</string>
+    <string name="i_known_it">知道了</string>
+    <string name="database_email_subject">错误反馈</string>
+    <string name="database_email_text">我是拇指阅读Android版的用户，社区用户名为%s，我的拇指阅Android版读出现了一些问题，请求帮助（已在附件中添加了数据库文件）。</string>
+    <string name="email_not_exit">您的手机上不存在Email客户端，您只能用电脑手动发送Email了。记得要附上数据库文件啊。</string>
+    <string name="thirdBind">第三方帐号设置</string>
+    <!--<string name="unBind">未绑定</string>-->
+    <string name="supplementEmail">完善电子邮箱和密码</string>
+    <string name="supplementAccount">完善帐号信息</string>
+    <!--<string name="noEmailOrPassword">请先完善您的邮箱和密码等帐号信息，再解绑第三方帐号。</string>-->
+    <string name="emailEmpty">对不起，Email不能为空，请重新输入。</string>
+    <string name="emailIllegal">Email格式不合法，请重新输入。</string>
+    <string name="emailLength">Email长度不合法，Email长度的取值范围为5&#8211;50，请重新输入。</string>
+    <string name="pswEmpty">对不起，密码不能为空，请重新输入。</string>
+    <string name="pswLength">密码长度不合法，密码长度的取值范围为6&#8211;128，请重新输入。</string>
+    <string name="nameEmpty">对不起，用户名不能为空，请重新输入。</string>
+    <string name="nameLength">用户名长度不合法，用户名长度不可超过20个字符，请重新输入。</string>
+    <string name="unableUnbind">您的个人信息不完整，请补充完整后，再解除绑定。</string>
+    <string name="confirmUnbind">确定是否解除绑定？</string>
+    <string name="reach_book_start_page">已翻到第一页了</string>
+    <string name="plus">+</string>
+    <string name="unableToShare">该动态不能分享</string>
+    <!--<string name="undoFavourite">取消收藏</string>-->
+    <!--<string name="atMzRead">在@拇指阅读</string>-->
+    <string name="atJdRead">在@京东阅读</string>
+    <string name="postComment">发表评论</string>
+    <!--<string name="postCommentSuccess">评论成功</string>-->
+    <!--<string name="postCommentFail">评论失败</string>-->
+    <string name="postTweet">说</string>
+    <string name="postBookComment">评论</string>
+    <string name="postBookCommentNew">写了评论</string>
+    <string name="postNote">分享笔记</string>
+    <!--<string name="weixinCircle">朋友圈</string>-->
+    <!--<string name="weixin">微信</string>-->
+    <!--<string name="shareToSinaWeibo">分享到新浪微博</string>-->
+    <!--<string name="shareToWeixinCircle">分享到微信朋友圈</string>-->
+    <!--<string name="umengSuccess">分享成功</string>-->
+    <!--<string name="umengFail">分享失败</string>-->
+    <!--<string name="umengErrorOne">没有Oauth授权</string>-->
+    <!--<string name="umengErrorTwo">未知错误</string>-->
+    <!--<string name="umengErrorThree">服务器没响应</string>-->
+    <!--<string name="umengErrorFour">初始化失败</string>-->
+    <!--<string name="umengErrorFive">参数错误</string>-->
+    <!--<string name="creater">创建人</string>-->
+    <!--<string name="channel_info">频道信息</string>-->
+    <!--<string name="channel_summary">频道简介：</string>-->
+    <!--<string name="user_menbers">成员列表</string>-->
+    <!--<string name="find_booksbar">发现书吧</string>-->
+    <!--<string name="join_booksbar">加入书吧</string>-->
+    <string name="sayAtMzread">%s在拇指阅读说</string>
+    <!--<string name="socialShareTitle">社交分享</string>-->
+    <!--<string name="socialshareMsg">正在分享，请稍候&#8230;</string>-->
+    <!--<string name="cancelShare">您取消了分享</string>-->
+    <!--<string name="shareLongListMsg">云端的私人图书馆</string>-->
+    <!--<string name="shareLongListBottom">更多图书请下载拇指阅读查看</string>-->
+    <string name="bookList">图书列表</string>
+    <!--<string name="booksbar_info">书吧信息</string>-->
+    <!--<string name="inviting">邀请</string>-->
+    <!--<string name="hintofbars">搜索频道名称或简介</string>-->
+    <!--<string name="dot">&#160;&#160;&#8230;</string>-->
+    <!--<string name="recommend_books">提到的读物</string>-->
+    <!--<string name="hint_search_bars">搜索书吧</string>-->
+    <!--<string name="default_message">发现一个好玩的书吧，快进来一起玩吧，书吧名称：</string>-->
+    <!--<string name="default_channel_info">吧主比较懒，还没有更新简介呢</string>-->
+    <string name="flow_window_lists">书单</string>
+    <string name="flow_window_review">书评</string>
+    <string name="flow_window_compose">随便说说</string>
+    <string name="post_book_comment_ok">书评发布成功</string>
+    <string name="post_book_comment_error">书评发布失败</string>
+    <!--<string name="post_book_list_ok">书单发布成功</string>-->
+    <!--<string name="post_book_list_error">书单发布成功</string>-->
+    <string name="recommendApp">推荐应用</string>
+    <string name="upgrade">版本更新</string>
+    <!--<string name="guideAddBar">添加更多书吧</string>-->
+    <!--<string name="guideClickAddBar">点击添加书吧</string>-->
+    <string name="choose_people">选择好友</string>
+    <!--<string name="scheme">mzbook</string>-->
+    <!--<string name="bookHost">books</string>-->
+    <!--<string name="docHost">document_shelf</string>-->
+    <string name="reorganize">整理</string>
+    <!--<string name="errorBookId">图书编号错误</string>-->
+    <!--<string name="errorReadingData">用户或图书不存在</string>-->
+    <string name="preview_photo">头像查看</string>
+    <string name="version_code">版本: %s</string>
+    <string name="upDir">上一级</string>
+    <string name="searchFile">智能扫描</string>
+    <!-- <string name="localBook">本机书籍</string> -->
+    <!--<string name="editor_recommend">编辑推荐</string>-->
+    <!--<string name="noFontFile">没有可导入的字体文件</string>-->
+    <string name="noEpubFile">没有可导入的图书文件</string>
+    <string name="alreadySearchBook">已扫描%1$d个文件&#8230;\n\n找到%2$d本图书</string>
+    <string name="alreadySearchFont">已扫描%1$d个文件&#8230;\n\n找到%2$d个字体</string>
+    <string name="font_destory">字体文件已损坏</string>
+    <string name="searchResult">智能扫描结果</string>
+    <!--<string name="importBook">导入</string>-->
+    <string name="selectAll">全选</string>
+    <!--<string name="friends_recommend">新浪好友推荐</string>-->
+    <!--<string name="egnore_friends_recommend">跳过</string>-->
+    <!--<string name="friends_recommend_info">是否关注新浪微博中自己的好友?</string>-->
+    <!--<string name="not_found_friends_recommend_info">目前还没有在拇指阅读找到您的微博好友</string>-->
+    <string name="importBookTitle">导入图书</string>
+    <string name="importBookMsg">正在导入，请稍候&#8230;</string>
+    <string name="selectAtLeastOneBook">请至少选中一本图书</string>
+    <string name="selectAtLeastOneFont">请至少选中一个字体</string>
+    <string name="importBookNumber">您成功导入了%d本书</string>
+    <string name="importBookFail">导入失败</string>
+    <string name="alreadyImport">已导入</string>
+    <string name="exitImport">字体已经存在。</string>
+    <string name="fontSwitch">切换字体</string>
+    <string name="importLocalFont">导入字体</string>
+    <!--<string name="changeFont">字体已改变</string>-->
+    <string name="verticalPageingText">纵向翻页</string>
+    <string name="PageAnimation">翻页动画</string>
+    <string name="PageAnimationDefault">连续</string>
+    <string name="PageAnimationSlide">滑动</string>
+    <string name="PageAnimationTurning">仿真</string>
+    <string name="PageNoAnimation">无</string>
+    <string name="PageSetting">翻页设置</string>
+    <string name="userVolumeChangePage">音量键翻页</string>
+    <string name="notification_switch">开启通知</string>
+    <string name="putintofolder">移动到</string>
+    <string name="uptocloud">上传至云盘</string>
+    <string name="sharebymsg">私信分享</string>
+    <string name="sharebywechat">微信分享</string>
+    <!--<string name="sharebymsg1">私信分享</string>-->
+    <string name="sharebywechat1">微信好友分享文件</string>
+    <!--<string name="selectedcount">选中%1$d本</string>-->
+    <string name="warings">警告</string>
+    <string name="info">提示</string>
+    <string name="no_delete_selected">您还没有选中要删除的书籍</string>
+    <string name="warings_content">您确定要删除选中的书籍吗?</string>
+    <!--<string name="choose_folder">选择文件夹</string>-->
+    <!--<string name="putitback">放回书架</string>-->
+    <!--<string name="new_catagory">请输入新分类的名称</string>-->
+    <!--<string name="unselected">未选中书籍</string>-->
+    <!--<string name="bookscount">共%1$d本</string>-->
+    <string name="selectbooksfirst">请先选择书籍</string>
+    <string name="string_input_error">请不要使用空字符作为文件夹名称</string>
+    <!--<string name="string_share_error">书城下载的书籍不可以分享喔</string>-->
+    <!--<string name="string_share_more_error">不可以批量分享喔</string>-->
+    <string name="string_upload_error">批量上传请至云盘 一键上传</string>
+    <string name="string_selected_3rdbook">请选择第三方导入的书籍哦</string>
+    <string name="string_dialog_delete_info">正在删除书籍，请稍候...</string>
+    <!--<string name="magazine">杂志</string>-->
+    <!--<string name="store_recommend_title_more">更多</string>-->
+    <string name="no_more_data">已经没有数据了...</string>
+    <string name="post_tweet_success">发布成功</string>
+    <string name="weibosdk_toast_auth_failed">新浪微博授权失败</string>
+    <string name="weibosdk_toast_auth_canceled">新浪微博授权取消</string>
+    <string name="reading_data_reg_day">%d天</string>
+    <string name="reading_data_book_comment_count">%d条</string>
+    <string name="reading_data_read_time">%s小时</string>
+    <string name="reading_data_book_share_count">%d本</string>
+    <string name="pdf_open_fail">PDF打开失败</string>
+    <string name="pdf_font_reopen">PDF字体下载完成，需要重新打开！</string>
+    <string name="read_book_try_over_chapter">请购买后继续阅读本章节！</string>
+
+    <!-- 图书主页新版 资源 开始 -->
+    <!--<string name="bookinfo_newui_intro">简介</string>-->
+    <!--<string name="bookinfo_newui_comments">书评</string>-->
+    <!--<string name="bookinfo_newui_notes">做笔记的人</string>-->
+    <!--<string name="bookinfo_newui_composite">优惠合集</string>-->
+    <!--<string name="bookinfo_newui_current_composite">合集图书列表</string>-->
+    <!--<string name="bookinfo_newui_theme">主题阅读</string>-->
+    <!--<string name="bookinfo_newui_famous">名家系列</string>-->
+    <!--<string name="bookinfo_newui_buypaper">购买纸质版</string>-->
+    <string name="bookinfo_newui_basicinfo">基本信息</string>
+    <string name="bookinfo_newui_basicinfo_title">标题</string>
+    <!--<string name="bookinfo_newui_basicinfo_sub_title">副标题</string>-->
+    <string name="bookinfo_newui_basicinfo_author">作者</string>
+    <!--<string name="bookinfo_newui_basicinfo_translator">译者</string>-->
+    <string name="bookinfo_newui_basicinfo_publisher">出版方</string>
+    <string name="bookinfo_newui_basicinfo_publish_time">出版时间</string>
+    <string name="bookinfo_newui_basicinfo_publish_isbn">ISBN</string>
+    <!--<string name="bookinfo_newui_basicinfo_publish_update_time">更新时间</string>-->
+    <string name="bookinfo_newui_basicinfo_publish_file_size">文件大小</string>
+    <string name="bookinfo_newui_authorinfo">作者信息</string>
+    <!--<string name="bookinfo_newui_publisher">出版社信息</string>-->
+    <!-- 图书主页新版 资源 结束 -->
+
+
+    <!-- 个人主页新版 资源 开始 -->
+    <!--<string name="user_homepage_newui_profile">个人主页</string>-->
+    <string name="user_homepage_newui_edit">修改</string>
+    <!--<string name="user_homepage_newui_book">著作</string>-->
+    <!--<string name="user_homepage_newui_timeline">动态</string>-->
+    <string name="user_homepage_newui_compose">随便说说</string>
+    <string name="user_homepage_newui_bookComments">书评</string>
+    <string name="user_homepage_newui_bookNotes">笔记</string>
+    <string name="user_homepage_newui_collection">收藏</string>
+    <!--<string name="user_homepage_newui_reading_data">阅历</string>-->
+    <string name="user_homepage_newui_readed">已读</string>
+    <!--<string name="user_homepage_newui_reading_data_collection">想读</string>-->
+    <string name="user_homepage_newui_3rd_import">外部导入</string>
+    <!--<string name="user_homepage_newui_3rd_import_other">外部导入</string>-->
+    <!--<string name="user_homepage_newui_sns">社交网络</string>-->
+    <!--<string name="user_homepage_newui_website">网站</string>-->
+    <!--<string name="user_homepage_newui_email">邮箱</string>-->
+    <!--<string name="user_homepage_newui_sina">新浪微博</string>-->
+    <!--<string name="user_homepage_newui_tencent">腾讯微博</string>-->
+    <!--<string name="user_homepage_newui_douban">豆瓣帐号</string>-->
+    <string name="user_homepage_newui_num_focus">关注</string>
+    <string name="user_homepage_newui_num_fans">粉丝</string>
+    <!--<string name="user_homepage_newui_send_msg">发私信</string>-->
+    <string name="user_homepage_newui_focus">加关注</string>
+    <string name="user_homepage_newui_focused">已关注</string>
+    <string name="user_homepage_newui_focus_each_other">相互关注</string>
+
+    <!-- 个人主页新版 资源 结束 -->
+
+    <string name="bookshelf_folder_default_name">未命名</string>
+    <!--<string name="bookshelf_free_gifts">免费礼包</string>-->
+    <!--<string name="bookshelf_add_books">添加图书</string>-->
+    <!--<string name="bookshelf_enter_bookstore">进入书城</string>-->
+    <!--<string name="bookshelf_imoport_books">导入本地图书</string>-->
+    <!--<string name="bookshelf_other_reading">大家都在读</string>-->
+    <!--<string name="bookshelf_free_gifts_info">拇指阅读送上图书%1$d本，下载即可阅读，你也可以随时在已购书架里找到它们。</string>-->
+    <!--<string name="bookshelf_recent_reading_info">您最近还没有阅读的书籍哦</string>-->
+    <!--<string name="search_u_cloud_disk">搜索您的云盘</string>-->
+    <!--<string name="search_u_purchased">搜索您的已购</string>-->
+    <!--<string name="onekeydownload">一键下载</string>-->
+    <string name="others_reading">大家都在读</string>
+    <string name="user_feedback">用户反馈</string>
+    <string name="upload_db_file">上传数据</string>
+    <string name="bookshelf_ordering_move_to_folder">移动图书到</string>
+    <string name="bookshelf_ordering_move_to_desktop">桌面书架</string>
+    <string name="bookshelf_ordering_move_to_new_folder">新建文件夹</string>
+    <string name="settings_about_phone">关于手机</string>
+    <string name="settings_phone_RELEASE">系统版本</string>
+    <string name="settings_phone_SDK">系统型号</string>
+    <string name="settings_resolution_ratio">分辨率</string>
+    <string name="settings_dpi">屏幕密度</string>
+    <string name="settings_belong_folder">资源目录</string>
+    <string name="settings_ram">可用运行内存</string>
+    <string name="settings_sdcard">可用SDCard内存</string>
+    <string name="settings_activity">测试跳转入口</string>
+    <string name="read_light_sync_to_system">使用系统亮度</string>
+    <!--<string name="booktocactivity_bookmarks">书签</string>-->
+    <!--<string name="booktocactivity_chapters">目录</string>-->
+    <!--<string name="booktocactivity_notes">笔记</string>-->
+    <!--<string name="booktocactivity_import">导入其他人笔记</string>-->
+    <string name="test_layout">测试布局</string>
+    <string name="read_catalogue">目录</string>
+    <string name="read_setting">设置</string>
+    <!--<string name="read_progress">进度</string>-->
+    <string name="read_more">更多</string>
+    <string name="read_note">笔记</string>
+    <string name="write_note">写笔记</string>
+    <string name="read_white">日常</string>
+    <string name="read_yellow">护眼</string>
+    <string name="read_mint">清新</string>
+    <string name="read_beige">米黄</string>
+    <string name="read_allwhite">纯白</string>
+    <string name="read_whitepaper">白纸</string>
+    <string name="read_pink">粉色</string>
+    <string name="read_paper_yellow">纸黄色</string>
+    <string name="read_blue">海军蓝</string>
+    <string name="read_grey">暗绿</string>
+    <string name="read_caramel">酱色</string>
+    <string name="read_sepia">深褐</string>
+    <string name="wl1">纹理一</string>
+    <string name="wl2">纹理二</string>
+    <string name="wl3">纹理三</string>
+    <string name="wl4">纹理四</string>
+    <string name="wl5">纹理五</string>
+    <string name="wl6">纹理六</string>
+    <string name="wl7">纹理七</string>
+    <string name="wl8">纹理八</string>
+    <string name="wl9">纹理九</string>
+    <string name="read_add_bookmark_1">下拉添加书签</string>
+    <string name="read_add_bookmark_2">松手添加书签</string>
+    <string name="read_remove_bookmark_1">下拉删除书签</string>
+    <string name="read_remove_bookmark_2">松手删除书签</string>
+    <string name="read_toast_add_bookmark">已添加书签</string>
+    <string name="read_toast_remove_bookmark">已删除书签</string>
+    <string name="read_bookmark_null_1">你还没有添加书签</string>
+    <string name="read_bookmark_null_2">阅读时点击页面右上角书签即可添加</string>
+    <string name="read_note_null_1">你还没有添加笔记</string>
+    <string name="read_note_null_2">阅读时长按以选中文字可添加笔记/书摘</string>
+    <string name="read_note_need_login">写笔记需要登录京东阅读账号</string>
+    <string name="read_font_download_cancel">已取消下载字体</string>
+    <string name="read_font_download_start">开始下载字体</string>
+    <!--<string name="migrating">正在迁移数据，请等待...</string>-->
+    <!--<string name="already_added_notes">已经添加的笔记</string>-->
+    <!--<string name="edit_notes">编辑导入笔记</string>-->
+    <!--<string name="add_notes">添加导入笔记</string>-->
+    <!--<string name="add_notes_description">你还没导入笔记,请添加导入笔记;导入笔记后,在阅读书籍时会显示导入的笔记。</string>-->
+    <!--<string name="all_notes">所有做过笔记的人</string>-->
+    <string name="item_notes_description">共%1$d条笔记</string>
+    <string name="item_local_notes_description">共%1$d篇</string>
+    <string name="backover_notes">共%1$d条笔记</string>
+    <string name="other_notes_notfound">还没有用户做笔记哦，要不自己动手写点!</string>
+    <string name="show_others_notes">显示所有书友笔记</string>
+    <string name="import_others_notes">导入其他书友笔记</string>
+    <string name="import_text">导入的笔记，将显示在本书的相应页面中</string>
+    <string name="imported_text">已导入的笔记</string>
+    <string name="others_notes_title">Ta的笔记</string>
+    <string name="select_notes_for_remove">选择要移除的笔记</string>
+    <string name="tranlate_text_too_long">查询内容过长&#046;&#046;&#046;</string>
+    <string name="tranlate_unable_to_translate">无法进行翻译&#046;&#046;&#046;</string>
+    <string name="tranlate_unsupported_language">不支持的语言&#046;&#046;&#046;</string>
+    <string name="tranlate_invalid_key">无效的key值&#046;&#046;&#046;</string>
+    <string name="tranlate_no_dictionary_results">没有词典结果&#046;&#046;&#046;</string>
+    <string name="tranlate_some_probleam">查询出现问题&#046;&#046;&#046;</string>
+    <string name="file_has_exist">书架已经存在这本书了！</string>
+    <string name="bind3rd_origin_book">原始书籍</string>
+    <string name="bind3rd_server_book">链接书籍</string>
+    <string name="font">字体</string>
+    <string name="syncText">同步</string>
+    <string name="importText">导入</string>
+    <!--<string name="read_font_is_max">字体已经最大</string>-->
+    <!--<string name="read_font_is_min">字体已经最小</string>-->
+    <!--<string name="read_zoom_is_max">已经最大化</string>-->
+    <!--<string name="read_zoom_is_min">已经最小化</string>-->
+    <string name="changdu_card">畅读卡</string>
+    <string name="order">订单</string>
+    <string name="extra_money">钱包</string>
+    <string name="extra_lottery">抽奖</string>
+    <string name="feedback">意见反馈</string>
+    <string name="download_test">下载测试</string>
+    <string name="feedback_types">反馈类型</string>
+    <string name="out_bind">解绑设备</string>
+    <string name="book_save_mkdir">图书存储目录</string>
+    <string name="message_push">消息推送</string>
+    <string name="clean_cookie">清除缓存</string>
+    <!--<string name="scoring">给应用打分</string>-->
+    <string name="help">帮助</string>
+    <string name="contact_us">联系我们</string>
+    <string name="switch_accounts">切换账号</string>
+    <!--<string name="exit_current_acc">退出当前账号</string>-->
+    <string name="jd_settingtext1">京东阅读Android V2.0.1</string>
+    <string name="jd_settingtext2">京东JD.COM 版本所有 Copyright © 2012-2016</string>
+    <string name="personal">个人简介</string>
+    <string name="file_dont_exist">文件不存在了！</string>
+    <string name="service_phone">客服电话</string>
+    <string name="service_phone_content">400—606—5500</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="sina_weibo_content">京东电子书LEBOOK</string>
+    <string name="qq_group">QQ群</string>
+    <string name="qq_group_content">216654341/144943755</string>
+    <string name="activity_reading_data_title">我的阅历</string>
+    <string name="books_num">账号</string>
+    <string name="exchange_code">兑换码</string>
+    <string name="integration">积分</string>
+    <string name="tip_compose">随便说说...</string>
+
+    <string-array name="size">
+        <item>KB</item>
+        <item>MB</item>
+    </string-array>
+    <string-array name="change_thumbnail">
+        <item>拍照</item>
+        <item>选择本地图片</item>
+    </string-array>
+    <string-array name="message_tab_names">
+        <item>提到我</item>
+        <item>评论</item>
+        <item>@string/private_message</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="timeline_tweet_list_normal">
+        <item>@string/timeline_comment_reply</item>
+    </string-array>
+    <string-array name="timeline_tweet_list_delte">
+        <item>@string/timeline_comment_reply</item>
+        <item>@string/delete</item>
+    </string-array>
+
+    <plurals name="numberOfThirdPartyFriends">
+        <item quantity="other">共找到%d位</item>
+    </plurals>
+    <plurals name="shareCloudDiskMsg">
+        <item quantity="other">分享我在@拇指阅读 的云端图书馆文件列表，共%d本。</item>
+    </plurals>
+    <!-- action bar -->
+    <string name="actionbar_dropdown">下拉菜单</string>
+    <!-- read book -->
+    <string name="book_load_error">解析文件出错，加载失败</string>
+    <string name="phone_number">手机号</string>
+    <!--<string name="verify_code">验证码</string>-->
+    <!--<string name="send_code">发送</string>-->
+    <string name="network_connect_error">网络不可用，请稍后重试！</string>
+    <string name="permission_denied">身份信息失效，请重新登录!</string>
+
+    <!-- 平台自适应分辨率 开始 -->
+    <!--<string name="default_bookcover_size">!w300h452</string>-->
+    <!--<string name="default_banner_image_size">!w730h250</string>-->
+    <!-- 平台自适应分辨率 结束 -->
+
+
+    <!-- 京东阅读 -->
+
+    <string name="login_title">登 录</string>
+    <string name="jd_login_text">使用京东账号登录</string>
+    <string name="account_text">用户名/邮箱/手机号</string>
+    <string name="verification_text_tip">请输入验证码</string>
+    <string name="forget_pwd">密码忘记了？</string>
+    <!--<string name="cooperation_account">使用合作网站账号登录</string>-->
+    <string name="input_phone_num">请输入手机号</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="verification_code">验证码</string>
+    <string name="input_verification_code">输入手机验证码</string>
+    <string name="input_password">请输入6-20位字符</string>
+    <string name="sign">注册</string>
+    <string name="agreement">点击注册，代表你同意</string>
+    <string name="click_agreement">《京东阅读用户协议》</string>
+    <string name="forget_title">忘记密码</string>
+    <string name="protocol">京东阅读用户协议</string>
+    <string name="please_input_search_word">搜索书名/作者/出版社</string>
+    <string name="bookshelf_search_text_hit">请输入搜索关键字</string>
+    <string name="book_detail">更多信息</string>
+    <string name="book_sign">缺书登记</string>
+    <string name="changdu_button">了解畅读卡</string>
+    <string name="to_bookstore">去书城搜索</string>
+    <string name="book_sign_option">书城中暂无您搜索的书籍</string>
+    <!--<string name="timeline_search">社区中暂无您搜索的动态</string>-->
+    <string name="user_search">社区中暂无您搜索的用户</string>
+    <string name="bookshelf_sign_option">书架中暂无您搜索的书籍</string>
+    <!--<string name="book_sign_content">请登记您想看的书籍，我们将尽快引进</string>-->
+    <!--<string name="lockbook_contact_hint">电话号码</string>-->
+    <string name="lockbook_content_hint">请留下您的宝贵意见，我们会努力改进.(5~1000字)</string>
+    <!--<string name="lockbook_type">反馈类型</string>-->
+    <!--<string name="lockbook_type_text_hint">缺书登记</string>-->
+    <!-- 语音搜索 -->
+    <string name="voice_search_title">语音识别</string>
+    <string name="voice_search_please_choose">您是不是要找：</string>
+    <string name="voice_search_message_hint">抱歉，您的手机不支持语音识别功能</string>
+    <string name="like">喜欢</string>
+    <!--<string name="menu_settings">Settings</string>-->
+    <string name="scan_text">将条形码放入框内, 即可自动扫描</string>
+    <string name="capicture_title">条形码扫描</string>
+    <string name="book_name">书名(必填)</string>
+    <string name="book_author_edit">作者(选填)</string>
+    <string name="publishing_house">出版社(选填)</string>
+    <string name="qq">QQ号码</string>
+    <!--<string name="tel">电话号码</string>-->
+    <!-- xlistview -->
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- xlistview -->
+    <string name="book_comments_list">书评列表</string>
+    <string name="bookcart">购物车</string>
+    <string name="bookcart_gotopay">去结算</string>
+
+    <!-- 订单 -->
+    <!--<string name="one_month">近一个月订单</string>-->
+    <!--<string name="one_month_ago">一个月前订单</string>-->
+    <string name="order_id">订单编号:</string>
+    <string name="order_money">订单金额:</string>
+    <string name="order_time">下单时间:</string>
+    <string name="to_pay">去支付</string>
+    <!--<string name="complete">已完成</string>-->
+    <!--<string name="cancle">已取消</string>-->
+    <!--<string name="order_detail">订单详情:</string>-->
+    <string name="order_statue">订单状态:</string>
+    <string name="good_detail">商品详情</string>
+    <string name="order_detail_title">订单详情</string>
+    <string name="beibi">贝币</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <!--<string name="weibosdk_demo_token_to_string_format">Token：%1$s \nRefresh Token：%2$s \nexpires_in：%3$s</string>-->
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <!--<string name="weibosdk_demo_not_support_api_hint">微博客户端不支持 SDK 分享或微博客户端未安装或微博客户端是非官方版本。</string>-->
+    <!--<string name="weibosdk_demo_toast_share_success">分享成功</string>-->
+    <!--<string name="weibosdk_demo_toast_share_failed">分享失败</string>-->
+    <!--<string name="weibosdk_demo_toast_share_canceled">取消分享</string>-->
+    <!--<string name="errcode_success">发送成功</string>-->
+    <!--<string name="errcode_cancel">发送取消</string>-->
+    <!--<string name="errcode_deny">发送被拒绝</string>-->
+    <!--<string name="errcode_unknown">发送返回</string>-->
+    <string name="my_want">我的喜欢</string>
+    <string name="feedback_type">反馈类型</string>
+    <string name="message_center">消息中心</string>
+    <string name="modify_info">编辑资料</string>
+    <string name="change_avatar">更换头像</string>
+    <!--<string name="personal_web">个人网站</string>-->
+    <!--<string name="chat_email">联系邮箱</string>-->
+    <string name="author_unknown">佚名</string>
+    <string name="book_cart">购物车</string>
+    <string name="order_paper_book">购买纸质版</string>
+    <string name="changdu_info">畅读</string>
+    <string name="read_info">阅读</string>
+    <string name="buy_info">购买</string>
+    <string name="tryread_info">试读</string>
+    <string name="borrow_info">借阅</string>
+    <string name="write_comment">写书评...</string>
+    <string name="paperbook_store">纸书商城</string>
+    <string name="bookinfo_newui_basicinfo_edition">版次</string>
+    <string name="upgrade_app">安装升级</string>
+    <string name="appNewVersion">新版本</string>
+    <string name="go91Mark">去91升级</string>
+    <string name="download_err">下载失败</string>
+    <string name="buy_readingcard">购买畅读卡</string>
+    <!--<string name="outtime_read_card">已过期的畅读卡</string>-->
+    <string name="readingcard_bind">绑定畅读卡</string>
+    <string name="month_card">包月服务</string>
+    <string name="statue">状态</string>
+    <string name="end_time">结束时间</string>
+    <string name="renewals">续费</string>
+    <string name="readingcard">畅读卡</string>
+    <string name="overtimereadingcard">已失效的畅读卡</string>
+    <!--<string name="cardnum">卡号</string>-->
+    <!--<string name="value">面值</string>-->
+    <!--<string name="lastbook">已使用</string>-->
+    <!--<string name="validity">有效期</string>-->
+    <!--<string name="bookcart_empty_promot">"购物车空空的哦，去看看想读的书吧。去书城..."</string>-->
+    <string name="user_guid">新手引导</string>
+    <string name="online_read">在线畅读帮助</string>
+    <string name="buy_ebook">电子书购买帮助</string>
+    <string name="what_readingcard">1、畅读卡是什么？</string>
+    <string name="what_readingcard_content">答：是京东阅读客户端推出的阅读服务卡。“畅读卡”分季卡（90天）、半年卡（180天）、年卡（360天）三种，面额分别是30元、50元和90元。每张“畅读卡”可支持1000本中文电子书不限次数的畅读。</string>
+    <string name="use_readingcard">2、“畅读卡”如何使用？</string>
+    <string name="use_readingcard_content">答：购买“畅读卡”的订单支付成功后，系统将自动将您“畅读卡”与您购买时使用的账户绑定，该卡同时被激活，开始计算阅读期限。然后，您在“在线书城”找到喜欢的电子书后，每点击单本电子书的“在线畅读”按钮一次，系统就认为您已“在线畅读”了1本。用户已点击过“在线畅读”的电子书，在有效期内可反复阅读，不重复计算本数。</string>
+    <string name="buy_readcard">3、“畅读卡”如何购买？</string>
+    <string name="buy_readingcard_content">答：“畅读卡”是虚拟商品,只支持在线支付，支付方式包括：快捷支付、网银支付、礼品卡、京券/东券、余额等。</string>
+    <string name="deferent_readcard">4、不同设备是否可用同一个用户名“在线畅读”？</string>
+    <string name="deferent_readcard_content">答：不可。当一个用户在线畅读时，如其他使用同一账户在另外设备登录点击“在线畅读”时，第一个用户会接到提示，然后下线；第二个用户也会接到提示，然后开始“在线畅读”。</string>
+    <string name="readcard_books">5、如何知道我的畅读卡有效期和已畅读的本数？</string>
+    <string name="readcard_books_content">答：进入“我-畅读卡”，就可查看。</string>
+    <string name="readcard_invoice">6、购买“畅读卡”如何获得发票？</string>
+    <string name="readcard_invoice_content">答：最快捷的方式是：购买京东礼品卡后，用礼品卡购买畅读卡；购买礼品卡时选择“开发票”。如您使用他其他方式支付畅读卡，当您需要发票时请联系客服为您处理，开发票时间受第三方邮寄影响，可能耗时较长，请谅解。</string>
+    <string name="find_ebook">1、如何找到自己喜欢的电子书刊？</string>
+    <string name="find_ebook_content">您可以通过我们的推荐选择自己喜欢的商品，也可以通过搜索功能找到自己喜欢的商品。</string>
+    <string name="hwo_to_buy_ebook">2、如何加入购物车进行批量购买？</string>
+    <string name="hwo_to_buy_ebook_content">答：当您选好喜欢的电子书刊后，点击“加入购物车”即可；当您选好所有的商品后，可在“我的京东”-“购物车”中结算。</string>
+    <string name="pay_ebook">3、电子书刊有哪些支付方式？</string>
+    <string name="pay_ebook_content">答：电子书刊是虚拟商品，需要通过在线支付方式进行支付，不支持货到付款。在线支付方式包括：礼品卡、信用卡快捷支付、余额、网银在线支付、京/东券。</string>
+    <string name="download_ebook">4、电子书刊订单“支付完成”后，如何进行下载？</string>
+    <string name="download_ebook_content">答：在支付完成后，您在“书架-已购”里可以找到该书。</string>
+    <string name="download_ebook_divice">5、一本电子书刊支持多少台设备下载，每个设备可以下载多少次？</string>
+    <string name="download_ebook_divice_content">答：一本电子书刊最多支持10个不同的设备进行下载，每台设备可多次下载，次数没有限制。</string>
+    <string name="order_ebook">6、订单提交后多长时间内需要支付？</string>
+    <string name="order_ebook_content">答：请您在订单提交成功后24小时之内付款完毕，否则订单将被自动取消。</string>
+    <string name="hwoto_return_ebook">7、如何进行退货或换货？</string>
+    <string name="hwoto_return_ebook_content">答：由于电子书刊商品的特殊性，只要支付完成，不支持退货或换货服务。如果您提交订单，支付未成功，不会扣除您任何费用。</string>
+    <string name="delete_ebook">8、软件升级或重复安装后本地的书会不会被删除？</string>
+    <string name="printf_info">9、电子书支持“打印”吗？</string>
+    <string name="printf_info_answer">答：不支持。出版社处于保护作者的著作权，不允许打印，我们也没开发这个功能。</string>
+    <string name="copy_info">10、电子书，用户可以“复制”书中文字或者“拷贝”到其他设备上自由阅读吗？</string>
+    <string name="copy_info_answer">答：出版社为了保护作者的权利，只允许“复制”部分文字。电子书是加密的，“拷贝”到其他设备上，将无法正常阅读。</string>
+    <string name="delete_ebook_content">答：已经下载的电子书和导入的电子书不会被删除。</string>
+    <string name="contact_costomer">联系客服</string>
+    <string name="costomer_center">京东全国客服中心电话：</string>
+    <string name="costomer_center_contetnt">400-606-5500（7x24小时全天候服务。未开通400服务地区的客户请拨打0527-88105500或者0527-88120410)</string>
+    <string name="input_readingcard_num">请输入畅读卡卡号</string>
+    <string name="input_exchange_num">请输入兑换码</string>
+    <!--<string name="input_readingcard_password">请输入畅读卡密码</string>-->
+    <string name="big_and_small">均不区分大小写</string>
+    <!--<string name="notifity_me">我的</string>-->
+    <string name="notification_message">通知</string>
+    <string name="feedback_chat">联系方式(至少填一项)</string>
+    <!--<string name="no_recommend_msg">暂时还无人点赞</string>-->
+    <!--<string name="no_comments_msg">暂时还无人评论</string>-->
+    <string name="copy_comment">复制</string>
+    <string name="delete_comments">删除</string>
+    <!--<string name="shareTo">分享到</string>-->
+    <string name="people_recently_mention">最近提到过的书友</string>
+    <string name="people_recently_follow">我关注的书友</string>
+    <string name="book_recommend">相关图书推荐</string>
+    <string name="readed">阅读结束</string>
+    <string name="share_book">分享本书</string>
+    <string name="other_book">作者的其他图书</string>
+    <string name="integration_record">积分记录</string>
+    <string name="exchange_description">兑换说明</string>
+    <string name="award_exchange">奖品兑换</string>
+    <string name="award_lottery">积分抽奖</string>
+    <!--<string name="sign_btn">签到领积分</string>-->
+    <string name="tip_focus">您目前还没有关注任何人</string>
+    <string name="tip_books">您目前还没有阅读过任何书</string>
+    <string name="tip_drafts">取消发布或发布失败的内容\n可以保存在草稿箱</string>
+    <string name="select_dir">设置图书存储目录</string>
+    <string name="download_jdreader_to_grand_integration">感谢您下载京东阅读，新用户登录领取积分,可兑换畅读卡和礼品</string>
+    <string name="changduka_exchange_bind">兑换码绑定方式</string>
+    <string name="changduka_account_bind">账号密码绑定方式</string>
+    <string name="importBookTip">导入本地图书</string>
+    <string name="importBookToBookcase">导入书架</string>
+    <string name="onLoadiing">重新加载</string>
+    <string name="network_fail">网络连接失败</string>
+    <string name="read_search_loading">搜索中…</string>
+    <string name="read_search_no_result">书中没有搜索到结果</string>
+
+    <!-- Error View -->
+    <!--<string name="error_view_click_to_refresh">点击屏幕,重新加载</string>-->
+    <!--<string name="error_view_no_data">暂无内容</string>-->
+    <string name="error_view_loading">加载中…</string>
+    <!--<string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>-->
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="not_login_text">登录京东账号即可查看社区精彩内容</string>
+    <!--<string name="tip_network_error">没有可用的网络</string>-->
+    <string name="custom">自定义颜色</string>
+    <!--<string name="rule_account">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>-->
+
+    <!-- =========================================================================== -->
+    <!-- 书城首页 -->
+    <!--<string name="limit_time_free">限时免费</string>-->
+    <!--<string name="focus_recommend">重磅推荐</string>-->
+    <!--<string name="new_book_express">新书速递</string>-->
+    <!--<string name="bargain_zone">特价专区</string>-->
+
+    <!-- 后加入的数据 -->
+    <!--<string name="only_for_onlineRead">仅支持畅读</string>-->
+    <!--<string name="please_login_and_retry">请登录后重试</string>-->
+    <!--<string name="version">版本：</string>-->
+    <!--<string name="device_cannot_support">暂时不支持您的设备</string>-->
+    <!--<string name="logout_yes_or_no">是否注销账号 [ %1$s ] ?</string>-->
+    <!--<string name="net_error_and_access_later">网络错误，请稍后访问</string>-->
+    <!--<string name="read">阅读</string>-->
+    <!--<string name="please_input_bookname">请输入书名</string>-->
+    <!--<string name="bookpath_cant_not_find">"此文件不存在或已被挪走"</string>-->
+    <!--<string name="write">著</string>-->
+    <string name="authorNameDefault">佚名</string>
+    <!--<string name="bookAuthor">作 者：</string>-->
+    <!--<string name="bookSize">大 小：</string>-->
+    <!--<string name="bookInfo">图书详情</string>-->
+    <!--<string name="key2buy">立即购买</string>-->
+    <!--<string name="bookprice">下载价 : ￥</string>-->
+    <!--<string name="buynotice">购买提示</string>-->
+    <!--<string name="gotoPay">支付</string>-->
+    <!--<string name="gotoLoad">去下载</string>-->
+    <!--<string name="item_progress_loading">加载数据中，请稍候...</string>-->
+    <!--<string name="item_progress_loading_failed">加载数据失败</string>-->
+    <!--<string name="loadFailedPleaseRetry">加载失败，请重试</string>-->
+    <!--<string name="unsupportDevice">该终端不是此书所支持的载体，请在PC或IPAD上阅读!</string>-->
+    <!--<string name="nohaveOrders">您当前没有订单！</string>-->
+    <!--<string name="AKeyBuy">一键购买</string>-->
+    <string name="category">分类</string>
+    <string name="myjd">我的京东</string>
+    <string name="refresh">刷新</string>
+    <string name="more">更多</string>
+    <!--<string name="more1">更多...</string>-->
+    <!--<string name="ranking">排行</string>-->
+    <!--<string name="net_original">网络原创</string>-->
+    <!--<string name="eBook">电子书</string>-->
+    <string name="book">纸质书</string>
+    <!--<string name="mediaBook">多媒体书</string>-->
+    <!--<string name="onelineShop">在线书城</string>-->
+    <string name="onlineShop">书城</string>
+    <!--<string name="localBook">书架</string>-->
+    <string name="bookShelf">书架</string>
+    <!--<string name="allCategory">全部商品分类</string>-->
+    <!--<string name="tryRead">试读</string>-->
+    <!--<string name="collect">关  注</string>-->
+    <!--<string name="uplevel">上一级</string>-->
+    <!--<string name="classOfGoods">本类商品</string>-->
+    <!--<string name="classOfBookTitle">纸质图书分类</string>-->
+    <!--<string name="settlement">去结算</string>-->
+    <!--<string name="a_key_buy">一键购买</string>-->
+    <!--<string name="add_buy_car">加入购物车</string>-->
+    <!--<string name="free_download">免费下载</string>-->
+    <!--<string name="free_get">免费领取</string>-->
+    <!--<string name="clear">清  空</string>-->
+    <!--<string name="goShopping">去逛逛</string>-->
+    <!--<string name="shopIntroduction">内容介绍</string>-->
+    <!--<string name="like_book_title">购买本书的人还喜欢</string>-->
+    <!--<string name="like_book_title_m">多媒体图书截图</string>-->
+    <!--<string name="sales">销量</string>-->
+    <!--<string name="download_count">下载量</string>-->
+    <!--<string name="price">价格</string>-->
+    <!--<string name="receivedDegrees">好评度</string>-->
+    <!--<string name="online_time">上架时间</string>-->
+    <!--<string name="locked_content">该目录已锁定，需购买才可阅读</string>-->
+    <!--<string name="please_input_title">请输入标题</string>-->
+    <!--<string name="input_what_you_want">说点儿什么吧......</string>-->
+    <!--<string name="mine">我的</string>-->
+    <string name="add_bookshelf">加入书架</string>
+    <!-- 本地书架菜单 -->
+    <!--<string name="edit_menu_local">编辑</string>-->
+    <!--<string name="sort_menu_local">排序</string>-->
+    <!--<string name="version_menu_local">版本更新</string>-->
+    <!--<string name="inport_menu_local">导入</string>-->
+    <!--<string name="about_menu_local">关于</string>-->
+    <!--<string name="more_menu_local">更多...</string>-->
+    <!--<string name="onlinereadbookList">畅读列表</string>-->
+    <!--<string name="onlinemybuyedList">已购列表</string>-->
+    <!--<string name="onlineList">云端</string>-->
+    <!-- 我的京东 -->
+    <!--<string name="my_care">我的关注</string>-->
+    <!--<string name="my_digital_goods">已购电子书</string>-->
+    <!--<string name="my_try_read">我的试读</string>-->
+    <!--<string name="my_account_money">账户余额</string>-->
+    <!--<string name="my_jd_coupon">我的优惠券</string>-->
+    <!--<string name="my_coupon">优惠券</string>-->
+    <!--<string name="my_card">畅读卡</string>-->
+    <!--<string name="remaining_count">剩%1$d本</string>-->
+    <!--<string name="my_enjoy_read">我的畅读</string>-->
+    <string name="logout">注销</string>
+    <!--<string name="already_buy">已购</string>-->
+    <!--<string name="already_buy_book">已购图书</string>-->
+    <!--<string name="enjoy_read">畅读</string>-->
+    <!--<string name="pay">付款</string>-->
+    <!--<string name="querying">查询中</string>-->
+    <!--<string name="you_have_not_buy_googs">您目前还没有购买过商品</string>-->
+
+    <!-- 启动工作 -->
+    <string name="alert_title_poor_network">网络不佳</string>
+    <string name="alert_message_poor_network">您当前的网络情况不佳，请稍后再次尝试。</string>
+    <!--<string name="alert_title_network_type">网络类型</string>-->
+    <!--<string name="alert_message_network_type">本软件仅支持NET接入，在您的APN列表中发现有合适的项，可以手动切换到NET网络继续使用。</string>-->
+    <!--<string name="alert_title_error_login">自动登录失败</string>-->
+    <!--<string name="alert_message_error_login">请手动登录。</string>-->
+    <!--<string name="check_version">检查版本...</string>-->
+    <!--<string name="check_property">检查配置...</string>-->
+    <!--<string name="auto_login">自动登录</string>-->
+    <!--<string name="cost_hint_message">本软件在使用过程中，会产生流量费用，该费用由运营商收取。点击确定开始使用。</string>-->
+    <!--<string name="no_show_again">下次不再提示</string>-->
+    <!--<string name="add_shortcut_dialog_success">添加桌面快捷方式成功</string>-->
+    <!--<string name="add_shortcut_dialog_title">添加桌面快捷方式</string>-->
+    <!--<string name="delete_local_file">同时删除本地文件</string>-->
+    <!--<string name="add_shortcut_dialog_message">添加快捷方式到桌面，随身购物更便捷！</string>-->
+    <!-- 启动工作 -->
+    <!-- 公共 -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出</string>
+    <!--<string name="yes">是</string>-->
+    <!--<string name="no">否</string>-->
+    <!--<string name="add">添加</string>-->
+    <!--<string name="modify">修改</string>-->
+    <string name="delete">删除</string>
+    <!--<string name="move">移动</string>-->
+    <!--<string name="operation_option">操作</string>-->
+    <!--<string name="gotoHelp">查看帮助</string>-->
+    <!--<string name="net_connect">网络连接</string>-->
+    <!--<string name="set_net_connect">设置网络</string>-->
+    <!--<string name="connect">连接</string>-->
+    <!-- 公共 -->
+    <!-- 退出对话框 -->
+    <!--<string name="background">后台更新</string>-->
+    <!-- 退出对话框 -->
+    <!-- 服务器状况 -->
+    <string name="server_busy">服务器忙，请稍后重试。</string>
+    <!-- 服务器状况 -->
+    <!-- 突发状况 -->
+    <string name="network_error">对不起哦，网络错误，请返回重试！</string>
+    <string name="alert_title_poor_network2">服务器繁忙</string>
+    <!--<string name="no_price_fail_buy">暂无报价，无法购买</string>-->
+    <string name="alert_message_poor_network2">服务器繁忙，可选择重试，或者取消。</string>
+    <string name="retry">重试</string>
+    <!-- 突发状况 -->
+    <!-- 软件升级 -->
+    <!--<string name="software_need_update_msg">目前有新版本，是否升级？</string>-->
+    <string name="software_must_update_msg">您所使用版本太低，请点击确定升级</string>
+    <!-- <string name="download_error_msg">下载出错,请重试</string> -->
+    <!-- <string name="download_error_title">下载出错</string> -->
+    <!-- 阅读设置文案 -->
+    <!--<string name="book_zoom_num">放大倍数：%1$s 倍</string>-->
+    <!--<string name="book_goto_page">已滑动到本书的：%1$s 页</string>-->
+    <!--<string name="book_scream_bri">屏幕亮度 :</string>-->
+    <!--<string name="system">系统</string>-->
+    <!--<string name="notes">标注</string>-->
+    <string name="comment">笔记</string>
+    <string name="save">保存</string>
+    <!-- epub阅读界面 -->
+    <!--<string name="pull_add_mark">下拉添加书签</string>-->
+    <!--<string name="up_add_mark">松手添加书签</string>-->
+    <!--<string name="pull_del_mark">下拉删除书签</string>-->
+    <!--<string name="up_del_mark">松手删除书签</string>-->
+    <!--<string name="text_setting">文字</string>-->
+    <!--<string name="light_setting">亮度</string>-->
+    <!--<string name="theme_setting">主题</string>-->
+    <!--<string name="comment_setting">评论</string>-->
+    <!--<string name="more_setting">更多</string>-->
+    <!--<string name="line_space">行间距</string>-->
+    <!--<string name="night_mode">夜间模式</string>-->
+    <!--<string name="long_click">长按</string>-->
+    <!--<string name="edit_byself">自定义</string>-->
+    <!--<string name="already_arrived_first_page">已是第一页！</string>-->
+    <!--<string name="already_arrived_last_page">已是最后一页！</string>-->
+    <!--<string name="fail_get_read_authority">获取阅读权限失败！</string>-->
+    <!--<string name="fail_open_book">打开图书失败</string>-->
+    <!--<string name="online_reading_connect">该账户在其他客户端登录,稍后请重新连接</string>-->
+    <!--<string name="read_authority">阅读权限</string>-->
+    <!--<string name="is_connect_net">当前处于离线模式，是否连接网络？</string>-->
+    <!--<string name="cannot_sync_progress">抱歉，导入和内置的书不能同步！</string>-->
+    <!--<string name="cannot_comment">抱歉，导入书不能评论！</string>-->
+    <!--<string name="loading_video">Loading video</string>-->
+    <!--<string name="menu_barcode">条码购</string>-->
+    <!--<string name="menu_search">搜索</string>-->
+    <!--<string name="menu_setup">设置</string>-->
+    <!--<string name="menu_setup_no_image_title">节省流量设置</string>-->
+    <!--<string name="menu_setup_message_title">站内消息设置</string>-->
+    <!--<string name="menu_feedback">意见反馈</string>-->
+    <!--<string name="local_category">本地</string>-->
+    <!--<string name="menu_other">其它</string>-->
+    <!--<string name="menu_about">关于</string>-->
+    <!--<string name="menu_help">帮助</string>-->
+    <!--<string name="menu_exit">退出</string>-->
+    <!--<string name="db_authorities">com.jingdong.app.reader.provider</string>-->
+    <string name="jingong_lebook">京东LeBook</string>
+    <!--<string name="homeActivity_autoComplete">商品搜索</string>-->
+    <!--<string name="categoryText">全部分类</string>-->
+    <!-- 商品详情 -->
+    <!--<string name="product_jd_price">京东价：</string>-->
+    <!--<string name="product_market_price">市场价：</string>-->
+    <!--<string name="product_detail">商品详情</string>-->
+    <!--<string name="product_detail_id">商品编号：</string>-->
+    <!--<string name="product_detail_packs">优惠套装</string>-->
+    <!--<string name="product_comment">商品评论</string>-->
+    <!--<string name="product_consultation_count">购买咨询</string>-->
+    <!--<string name="product_collect_must_login">使用收藏功能需要先进行登录</string>-->
+    <!--<string name="product_province_beijing">北京</string>-->
+    <!--<string name="no_recommend">该本书暂无推荐书籍</string>-->
+    <!-- 商品详情 -->
+    <!--<string name="alert_message_no_camera">对不起，您的机型无摄像头，不能进行拍照。</string>-->
+    <!--<string name="gift_label">赠品：</string>-->
+    <!--<string name="no_author">佚名</string>-->
+    <!--<string name="comment_reply">回复评论</string>-->
+    <!--<string name="comment_list">评论</string>-->
+    <!--<string name="product_no_comment_hint">暂无评价！</string>-->
+    <!--<string name="product_no_discuss_hint">暂无晒单帖！</string>-->
+    <!--<string name="comment_list_all">全部评论</string>-->
+    <!--<string name="comment_list_g">好评</string>-->
+    <!--<string name="comment_list_c">中评</string>-->
+    <!--<string name="comment_list_b">差评</string>-->
+    <!--<string name="comment_list_pros">优点：</string>-->
+    <!--<string name="comment_list_cons">缺点：</string>-->
+    <!--<string name="comment_list_content">使用心得：</string>-->
+    <!--<string name="comment_list_add_comment">添加新评论</string>-->
+    <!--<string name="product_order_comment_count">晒单讨论</string>-->
+    <!--<string name="comment_list_reply">回复</string>-->
+    <!-- 评论 -->
+    <!--<string name="pre_user_comment_title">对《</string>-->
+    <!--<string name="after_user_comment_title">》的评论</string>-->
+    <!-- <string name="user_comment_title">对《%1$s》的评论</string> -->
+    <!--<string name="user_comment_count">(已有%1$d人评价)</string>-->
+    <!--<string name="comment_all">全部</string>-->
+    <!--<string name="comment_very_like">很喜欢</string>-->
+    <!--<string name="comment_like">喜欢</string>-->
+    <!--<string name="comment_ok">一般</string>-->
+    <!--<string name="comment_no_like">不喜欢</string>-->
+    <!--<string name="left_bracket">(</string>-->
+    <!--<string name="num_in_bracket">0</string>-->
+    <!--<string name="right_bracket">)</string>-->
+    <!--<string name="comment_like_count">喜欢(%1$d)</string>-->
+    <!--<string name="comment_ok_count">一般(%1$d)</string>-->
+    <!--<string name="comment_no_like_count">不喜欢(%1$d)</string>-->
+    <!--<string name="user_name">账户名：</string>-->
+    <!--<string name="user_password">密码：</string>-->
+    <!--<string name="user_login">用户名登录</string>-->
+    <!--<string name="email_phone_login">邮箱和手机登录</string>-->
+    <!--<string name="email_phone_login_hint">请输入邮箱或手机号</string>-->
+    <!--<string name="user_email_login">邮箱/手机号：</string>-->
+    <!--<string name="login_failed_title">登录失败</string>-->
+    <!--<string name="login_data_error">您输入的用户名或者密码错误</string>-->
+    <!--<string name="login_failed_message">登录失败: 用户名或密码错误</string>-->
+    <!--<string name="login_user_name_hint">请输入用户名</string>-->
+    <!--<string name="login_user_password_hint">请输入密码</string>-->
+    <!--<string name="user_name_hint">请输入用户名，长度在4-20个字符之间, 由中文（一个中文算2个字符），字母，数字，\"_\"，\"-\"组成</string>-->
+    <!--<string name="user_password_hint">请输入密码，长度在6-16个字之间，由字母，数字，\"_\"，\"-\"组成</string>-->
+    <!--<string name="union_login">用合作网站账号进行登录</string>-->
+    <!--<string name="remember_user">记住我</string>-->
+    <!--<string name="dialog_register_error">错误</string>-->
+    <!--<string name="new_user_register">新用户注册</string>-->
+    <string name="login">登录</string>
+    <!--<string name="login_name_hint">账号</string>-->
+    <!--<string name="register_name_hint">请输入用户名</string>-->
+    <!--<string name="register_mail_addr">请输入邮箱地址</string>-->
+    <!--<string name="register_first_password">密码</string>-->
+    <!--<string name="please_register_first_password">请输入密码</string>-->
+    <!--<string name="register_second_password">请再输一次密码</string>-->
+    <!--<string name="register_error_no_service">用户名或者邮箱已被注册，请重新输入</string>-->
+    <!--<string name="register_err_busy">服务器正忙，请稍后再试...</string>-->
+    <!--<string name="password_again">请再一次输入您的密码</string>-->
+    <!--<string name="password_not_same">您输入的密码不一致，请重新输入</string>-->
+    <!--<string name="not_mail_format">您输入的邮箱格式不正确，请验证</string>-->
+    <!--<string name="not_mailPhone_format">您输入的格式不正确，请验证</string>-->
+    <!--<string name="not_phoneNumber_format">您输入手机号码不正确请验证</string>-->
+    <!--<string name="not_phoneNumber_empty">输入手机号码不能为空</string>-->
+    <!--<string name="available_use">可以使用</string>-->
+    <string name="name_common">用户名</string>
+    <!--<string name="register_alert_title">提示</string>-->
+    <!--<string name="register_alert_ok_button_text">确定</string>-->
+    <!--<string name="demanding">查询中...</string>-->
+    <string name="loading">加载中...</string>
+    <string name="no_image">暂无图片</string>
+    <!--<string name="register_success">注册成功</string>-->
+    <!--<string name="register_mail_addr_text">邮箱:</string>-->
+    <!--<string name="register_confirm_password">确认密码:</string>-->
+    <!--<string name="show_password">显示密码</string>-->
+    <!--<string name="accept_agreement">同意，</string>-->
+    <!--<string name="show_agreement"><u>注册协议</u></string>-->
+    <!--<string name="show_agreement_title">注册协议</string>-->
+    <!--<string name="score">积分:</string>-->
+    <!--<string name="left_balance">余额:</string>-->
+    <!--<string name="left_balance2">余额</string>-->
+    <!--<string name="guess_taste">猜你喜欢</string>-->
+    <!--<string name="my_order">我的订单</string>-->
+    <!--<string name="my_collect">我的收藏</string>-->
+    <!--<string name="cancle_collect_fail">取消收藏失败</string>-->
+    <!--<string name="my_discuss">晒单/评价</string>-->
+    <!--<string name="my_message">站内消息</string>-->
+    <!--<string name="my_no_class">游客</string>-->
+    <!--<string name="hello">您好！</string>-->
+    <!--<string name="default_balance">0.0</string>-->
+    <!--<string name="order_bumber">订单号:</string>-->
+    <!--<string name="total_value">总价:</string>-->
+    <!--<string name="submit_time">下单时间:</string>-->
+    <!--<string name="comment_discuss_list">晒单/评价</string>-->
+    <!--<string name="new_comment_discuss">发表</string>-->
+    <string name="submit">提交</string>
+    <!--<string name="joinqqgroupmsg">欢迎加入京东LeBook客户端官方交流群:144943755</string>-->
+    <!--<string name="comment_answer">咨询回复</string>-->
+    <!--<string name="cost_count">降价通知</string>-->
+    <!--<string name="get_by_self">自提提醒</string>-->
+    <!--<string name="softwareUpdate">版本更新</string>-->
+    <!--<string name="choose_email_client">选择邮件发送</string>-->
+    <!-- 畅读 -->
+    <!--<string name="activate">激活</string>-->
+    <!--<string name="bootnull">"数据有更新，请重新下载！"</string>-->
+    <string name="bind">绑定</string>
+    <!--<string name="card_id">卡号：</string>-->
+    <!--<string name="read_card_id">畅读卡卡号</string>-->
+    <!--<string name="read_card_password">畅读卡密码</string>-->
+    <!--<string name="bugReadCard">购买畅读卡</string>-->
+    <!--<string name="buy">购买</string>-->
+    <!--<string name="bind_read_card">绑定畅读卡</string>-->
+    <!--<string name="read_card_bind">畅读卡绑定</string>-->
+    <!--<string name="read_card_id_is_not_null">畅读卡卡号不能为空</string>-->
+    <!--<string name="read_card_pass_is_not_null">畅读卡密码不能为空</string>-->
+    <!--<string name="read_card_or_password_error">畅读卡卡号或密码错误</string>-->
+    <!--<string name="read_card_bind_success">畅读卡绑定成功</string>-->
+    <!--<string name="read_card_is_not_author">畅读卡未授权</string>-->
+    <!--<string name="read_card_service_time_is_expire">畅读卡服务时间已过</string>-->
+    <!--<string name="read_card_bing_fail">畅读卡绑定失败</string>-->
+    <!--<string name="read_card_activate_fail">畅读卡激活失败</string>-->
+    <!--<string name="read_card_activate_already">畅读卡已经激活</string>-->
+    <!--<string name="read_card_activate_success">畅读卡激活成功</string>-->
+    <!--<string name="activate_read_card">激活畅读卡</string>-->
+    <!--<string name="read_card_activate">畅读卡激活</string>-->
+    <!--<string name="is_activate_read_card">是否激活畅读卡？</string>-->
+    <!--<string name="readOnline">畅读</string>-->
+    <!--<string name="request_online_read">请求阅读权限</string>-->
+    <!--<string name="card_item_hint">购买畅读卡，可在畅读卡有效期内任选1000本电子书下载阅读。</string>-->
+    <!--<string name="product_num_out">您购买的商品已达50种，一次性购买不能超过50种商品</string>-->
+    <!-- 购物车相关文案 -->
+    <!--<string name="produce_in_cart">已在您的购物车中！</string>-->
+    <!--<string name="alert_message_canot_buy">请到网站购买此商品，移动终端暂不支持</string>-->
+    <!--<string name="product_canot_easy_buy">此商品暂时不能轻松购</string>-->
+    <!--<string name="product_no_stock">暂时无货或正在统计，不能加入购物车</string>-->
+    <!--<string name="product_canot_add_to_car">该商品暂无报价，无法加入购物车</string>-->
+    <!-- 商品列表排序按钮文字 -->
+    <!--<string name="sort_button_price">价格</string>-->
+    <!--<string name="sort_button_sell">销量</string>-->
+    <!--<string name="sort_button_relative">相关度</string>-->
+    <!--<string name="sort_button_time">上架时间</string>-->
+    <!-- 商品列表长按选项 -->
+    <!--<string name="product_goto_detail">查看商品详情</string>-->
+    <!--<string name="product_add_to_car">加入购物车</string>-->
+    <!--<string name="product_add_title">添加成功！</string>-->
+    <!--<string name="product_add_message">已成功加入购物车</string>-->
+    <!--<string name="product_add_positive">去结算</string>-->
+    <!--<string name="product_add_negative">再逛逛</string>-->
+    <!--<string name="product_no_data">没有商品</string>-->
+    <!--<string name="product_detail_info_branch_intro">商品介绍</string>-->
+    <!--<string name="book_detail_branch_basic">基本信息</string>-->
+    <!--<string name="book_detail_branch_content">内容摘要</string>-->
+    <!--<string name="book_detail_branch_directory">图书目录</string>-->
+    <!--<string name="book_detail_branch_author">作者介绍</string>-->
+    <!--<string name="no_data">暂无数据</string>-->
+    <!--<string name="take_photo">拍摄</string>-->
+    <!--<string name="camera">相机</string>-->
+    <!--<string name="send_success">发表成功！</string>-->
+    <!--<string name="send_failed">发表失败！</string>-->
+    <!-- 更多(pg_more) begain -->
+    <!--<string name="pg_more_ware_history">浏览记录</string>-->
+    <!--<string name="pg_more_clean_history">清空记录</string>-->
+    <!--<string name="pg_more_clean_history_confrim_string">确认清空浏览记录？</string>-->
+    <!--<string name="pg_more_search">搜索</string>-->
+    <!--<string name="pg_more_about">关于</string>-->
+    <!--<string name="pg_more_setting">设置</string>-->
+    <!--<string name="pg_more_help">帮助</string>-->
+    <!--<string name="pg_more_help_lb_company_name">京东LeBook</string>-->
+    <!--<string name="pg_more_help_lb_dimensionalbarcode">扫描二维码，您的朋友也可以下载京东LeBook哦~</string>-->
+    <!--<string name="pg_more_help_lb_copy_right">Copyright ©2012-2014</string>-->
+    <!--<string name="pg_more_about_product_jd">京东JD.COM 版权所有</string>-->
+    <!--<string name="pg_more_help_lb_customer_service_phone">Tel: 400-606-5500</string>-->
+    <!--<string name="pg_more_service_phone">400-606-5500</string>-->
+    <!--<string name="pg_more_service_qq_text">QQ群 :</string>-->
+    <!--<string name="pg_more_service_qq_num1">144943755</string>-->
+    <!--<string name="pg_more_service_qq_num2">216654341</string>-->
+    <!--<string name="pg_more_service_weibo_text">新浪微博 :</string>-->
+    <!--<string name="pg_more_service_weibo_path">http://e.weibo.com/2766241395</string>-->
+    <!-- 更多(pg_more)end -->
+    <!-- 未登录首页 -->
+    <!--<string name="pg_home_jdpirce">￥%1$s</string>-->
+    <!--<string name="pg_home_exit_confrim_string">确认退出京东？</string>-->
+    <!-- 未登录首页 end -->
+    <!-- 我的京东首页 begain -->
+    <!--<string name="pg_my_jd_title">我的京东</string>-->
+    <!--<string name="pg_my_jd_logout">退出登录</string>-->
+    <!--<string name="pg_my_jd_logout_confrim_string">确认退出登录？</string>-->
+    <!--<string name="pg_my_jd_score">积分:</string>-->
+    <!--<string name="pg_my_jd_blance">余额:</string>-->
+    <!--<string name="pg_my_jd_guess_states">猜你喜欢</string>-->
+    <!--<string name="pg_my_jd_my_order">我的订单</string>-->
+    <!--<string name="pg_my_jd_my_collect">我的收藏</string>-->
+    <!--<string name="pg_my_jd_my_discuss">晒单评价</string>-->
+    <!--<string name="pg_my_jd_my_message">站内消息</string>-->
+    <!--<string name="pg_my_jd_no_class">游客</string>-->
+    <!--<string name="pg_my_jd_hello">%1$s  您好！</string>-->
+    <!--<string name="pg_home_logout_successful">注销成功</string>-->
+    <!--<string name="pg_my_jd_get_userinfo_fail">请重新登录</string>-->
+    <!--<string name="pg_make_new_comment_title">对“%1$s”发表评价</string>-->
+    <!--<string name="pg_make_buy_ask_title">对“%1$s”发表咨询</string>-->
+    <!--<string name="pg_make_discuss_title">对“%1$s”发表晒单</string>-->
+    <!--<string name="buy_ask_list_title">“%1$s”的购买咨询</string>-->
+    <!--<string name="comment_list_title">商品“%1$s”的全部评价</string>-->
+    <!--<string name="discuss_list_title">商品“%1$s”的晒单讨论</string>-->
+    <!--<string name="pg_search_result">“%1$s”的搜索结果</string>-->
+    <!--<string name="catelogy_filter_result">“%1$s”在“%2$s”中的结果</string>-->
+    <!--<string name="searchCatelogy_result">“%1$s”共%2$s条结果</string>-->
+    <!--<string name="pg_make_new_comment_submit">提交</string>-->
+    <!--<string name="pg_show_message_order_detail">查看订单详情</string>-->
+    <!--<string name="pg_my_order_one_month">近一个月订单</string>-->
+    <!--<string name="pg_my_help_loading">加载中</string>-->
+    <!--<string name="pg_my_order_pre_month">一个月前订单</string>-->
+    <!--<string name="pg_my_order_total_price">订单总额:</string>-->
+    <!--<string name="pg_my_order_detail_product_number">数量：%1$s个</string>-->
+    <!--<string name="no_trace_info_data">暂无订单跟踪信息</string>-->
+    <!--<string name="pg_show_message_no_order">查看订单详情失败，请返回</string>-->
+    <!--<string name="pg_my_orders_suborder">（子订单）</string>-->
+    <!--<string name="pg_my_message_consulted_by_jd">京东回复</string>-->
+    <!--<string name="pg_my_order_receive_goods">确认收货</string>-->
+    <!--<string name="pg_my_order_receive_goods_failed">确认收货操作失败，请重试</string>-->
+    <!-- 意见反馈 -->
+    <!--<string name="pg_new_feedback_type">反馈类型：</string>-->
+    <!--<string name="pg_new_feedback_type_text_hint">请选择</string>-->
+    <!--<string name="pg_new_feedback_hint">请输入您的反馈意见（300字以内）</string>-->
+    <!--<string name="pg_new_feedback_error">反馈意见不能为少于5个字，请输入</string>-->
+    <!--<string name="pg_new_feedback_type_error">反馈意见不能为空，请选择</string>-->
+    <!--<string name="pg_new_feedback_submit_faill">提交失败，请重试</string>-->
+    <!--<string name="pg_new_feedback_submit_success">提交成功，感谢你的反馈</string>-->
+    <!--<string name="pg_new_feedback_content">反馈内容(限140字)：</string>-->
+    <!--<string name="pg_new_feedback_name">您的姓名（选填）</string>-->
+    <!--<string name="pg_new_feedback_name_hint">您的称呼或者京东ID</string>-->
+    <!--<string name="pg_new_feedback_contact">联系方式：</string>-->
+    <!--<string name="pg_new_feedback_contact_msg">(至少填一项,便于我们给您反馈)</string>-->
+    <!--<string name="pg_new_feedback_contact_hint">请留下您的联系方式</string>-->
+    <!--<string name="pg_new_feedback_mail_hint">邮箱/QQ号</string>-->
+    <!--<string name="pg_new_feedback_say">请写下您的宝贵意见，我们会努力改进。</string>-->
+
+    <string-array name="pg_new_feedback_contact_type">
+        <item>功能意见</item>
+        <item>界面意见</item>
+        <item>您的新需求</item>
+        <item>操作意见</item>
+        <item>流量问题</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 我的京东首页 end -->
+    <!-- 套装 -->
+    <!--<string name="pack_price">套   装  价:</string>-->
+    <!--<string name="pack_list_price">原          价:</string>-->
+    <!--<string name="pack_discount">立即节省:</string>-->
+    <!--<string name="pack_buy">购买套装</string>-->
+    <!--<string name="pack_name">优惠套装</string>-->
+    <!--<string name="too_many_pack">您购买套装商品已达上限9件</string>-->
+    <!--<string name="too_many_prods">您购买的商品已达上限</string>-->
+    <!-- 套装 -->
+    <!--<string name="comment_grade">评分:</string>-->
+    <!--<string name="comment_good">优点:</string>-->
+    <!--<string name="comment_bad">缺点:</string>-->
+    <!--<string name="comment_idea">使用心得:</string>-->
+    <!--<string name="comment_book_idea">心得:</string>-->
+    <!--<string name="check_order">查看订单</string>-->
+    <!--<string name="order_id_num">订单编号:</string>-->
+    <!--<string name="order_status">状 态:</string>-->
+    <!--<string name="order_trace">订单跟踪:</string>-->
+    <!--<string name="full_information">全部信息</string>-->
+    <!--<string name="total_price">总价:</string>-->
+    <!--<string name="order_create_time">下单时间:</string>-->
+    <!--<string name="order_info_detail">订单详情</string>-->
+    <!--<string name="cut_price">优惠金额:</string>-->
+    <!--<string name="receiver_telephone">固定电话:</string>-->
+    <!--<string name="receiver_mobile">手机:</string>-->
+    <!--<string name="receiver_mail">电子邮件:</string>-->
+    <!--<string name="comment_title_name">标题:</string>-->
+    <!--<string name="shopping_cart_header">购物车</string>-->
+    <string name="shopping_cart_empty_txt">购物车还空着呢\n快去选购吧~</string>
+    <!--<string name="count_name_flag">数量:</string>-->
+    <!--<string name="total_cost">共计:</string>-->
+    <!--<string name="settle_accounts">去结算</string>-->
+    <!--<string name="over_cart">一次性购买商品请不要超过50项</string>-->
+    <!--<string name="over_cart_single_item">一次性购买 购买总数不能超过1000，请修改购买数量"</string>-->
+    <!--<string name="denglu_title">京东账号登录</string>-->
+    <!--<string name="use_balance">使用余额:</string>-->
+    <!--<string name="use_balance2">使用余额</string>-->
+    <!--<string name="w_use_balance">是否使用余额:</string>-->
+    <!--<string name="select_you_hui">选择优惠券和礼品卡</string>-->
+    <!--<string name="modify_number">修改</string>-->
+    <!--<string name="book_author">%1$s 著</string>-->
+    <string name="login_first">请您先登录</string>
+    <!--<string name="del_after_click_over">请点击完成再删除</string>-->
+    <!--<string name="cart_op">购物车操作</string>-->
+    <!--<string name="check_prod_info">查看商品详情</string>-->
+    <!--<string name="remark_check">备注中含有特殊字符，请输入英文，中文或者数字</string>-->
+    <!--<string name="no_balance_hint">您没有余额</string>-->
+    <!--<string name="net_err_msg">网络异常，有数据丢失</string>-->
+    <!--<string name="ding_dan_comment">订单备注:</string>-->
+    <!--<string name="prod_jine">商品金额</string>-->
+    <!--<string name="yun_fei">运费</string>-->
+    <!--<string name="li_pin">礼品卡</string>-->
+    <!--<string name="cashBack">返现:</string>-->
+    <!--<string name="last_money">应付金额</string>-->
+    <!--<string name="submit_ding_dan">提交订单</string>-->
+    <!--<string name="jia">+</string>-->
+    <!--<string name="jian">-</string>-->
+    <!--<string name="cart_item_hint">购物车还是空的，快去选购吧～！</string>-->
+    <!--<string name="orignal_price">原始金额:</string>-->
+    <!--<string name="category_filter">分类筛选</string>-->
+    <!--<string name="product_filter">筛选</string>-->
+    <!--<string name="rule_title">活动规则</string>-->
+    <!--<string name="commercial_title_hint">京东活动</string>-->
+    <!--<string name="product_filter_goback">返回</string>-->
+    <!--<string name="product_filter_none_hint">对不起，该类商品暂时没有筛选条件！</string>-->
+    <!--<string name="catelogy_filter_none_hint">对不起，没有筛选条件！</string>-->
+    <!--<string name="product_filter_hint1">全部</string>-->
+    <!--<string name="you_hui_quan_li_pin_ka">优惠券礼品卡</string>-->
+    <!--<string name="pay_money">应付:</string>-->
+    <!--<string name="order_completed">订单已提交!</string>-->
+    <!--<string name="completed">完成</string>-->
+    <!--<string name="confirm_del_cart">确定要删除这个商品吗?</string>-->
+    <!--<string name="confirm_del_cart_title">确认删除 </string>-->
+    <!--<string name="edit_content_limit">请输入1000以内的数字</string>-->
+    <!--<string name="feedbackContent_limit">反馈字数仅限140字</string>-->
+    <!--<string name="add_easy_buy">添加</string>-->
+    <!--<string name="easy_buy_please_login">请登录</string>-->
+    <!--<string name="sdcard_unmounted">没有SD卡或SD未挂载</string>-->
+    <string name="lost_font">缺少字体（%1$s个）,是否下载</string>
+    <!--<string name="font_setting">字体设置</string>-->
+    <!--<string name="font_import">选择存储卡上的字体</string>-->
+    <!--<string name="font_wifi_import">通过WIFI添加字体 </string>-->
+    <!--<string name="plugintitle">插件下载</string>-->
+    <!--<string name="pluginmsg">阅读本书需要下载PDF插件，是否下载</string>-->
+    <!-- 我的晒单/评论，购买咨询 -->
+    <!--<string name="new_discuss">发表晒单</string>-->
+    <!--<string name="new_discuss_from_camera">拍照</string>-->
+    <!--<string name="new_discuss_from_photos">手机相册</string>-->
+    <!--<string name="new_comment">发表评论</string>-->
+    <!--<string name="order_comment_detail_userId">发表用户：%1$s</string>-->
+    <!--<string name="order_comment_detail_Time">发表时间：%1$s</string>-->
+    <!--<string name="order_comment_detail_reply">%1$s 回复</string>-->
+    <!--<string name="order_comment_detail_title">晒单详情</string>-->
+    <!--<string name="alert_camera_choose">请选择</string>-->
+    <!--<string name="alert_hint_comment_title">暂不能对该商品进行评价</string>-->
+    <!--<string name="alert_hint_discuss_title">暂不能对该商品进行晒单</string>-->
+    <!--<string name="alert_comment_discuss_ok">确定</string>-->
+    <!--<string name="discuss_camera_hint_title">打开相机失败</string>-->
+    <!--<string name="discuss_camera_hint_message">您的手机没有安装SD卡，请安装SD卡后重试！</string>-->
+    <!--<string name="discuss_camera_hint">请选择照片</string>-->
+    <!--<string name="discuss_alert_hint">您确定要删除这张图片？</string>-->
+    <!--<string name="comment_good_hint">东西很好哦</string>-->
+    <!--<string name="comment_bad_hint">暂时还没有发现缺点哦！</string>-->
+    <!--<string name="comment_no_title_alert">标题不能为空</string>-->
+    <!--<string name="discuss_no_title_alert">请输入标题，长度在4-50个字之间</string>-->
+    <!--<string name="comment_title_alert">请输入标题，长度在4-20个字之间</string>-->
+    <!--<string name="comment_no_content_alert">心得不能为空</string>-->
+    <!--<string name="comment_content_book_alert">请输入心得，长度在5-200个字之间</string>-->
+    <!--<string name="comment_good_alert">请输入优点，长度在5-100个字之间</string>-->
+    <!--<string name="comment_bad_alert">请输入缺点，长度在5-100个字之间</string>-->
+    <!--<string name="buy_ask_content_alert">请输入内容，长度在4-100个字之间</string>-->
+    <!--<string name="discuss_content_alert">请输入心得，长度在5-200个字之间</string>-->
+    <!--<string name="discuss_picture_alert">请选定照片</string>-->
+    <!--<string name="discuss_error_alert">没有照片或者内容不符，请确认</string>-->
+    <!--<string name="buyask_content_alert">您咨询的内容请不要少于4个字！</string>-->
+    <!--<string name="alert_comment_hint_message">您暂不能对该商品进行评价，可能有以下原因：\n1.您可能没有在京东购买过该商品\n2.购买时间已经超过半年\n3.您已经评价过该商品</string>-->
+    <!--<string name="alert_discuss_hint_message">您暂不能对该商品进行评价，可能有以下原因：\n1.您可能没有在京东购买过该商品\n2.购买时间已经超过半年\n3.您已经对该商品进行过晒单</string>-->
+    <!--<string name="alert_discuss_image_message">为了保证您手机的正常使用，只能晒三张以内的图片</string>-->
+    <!--<string name="pull_service_title">京东消息更新</string>-->
+    <!--<string name="no_image_switch_title">无图版</string>-->
+    <!--<string name="no_image_switch_summary_on">无图版已启用</string>-->
+    <!--<string name="no_image_switch_summary_off">无图版已关闭</string>-->
+    <!--<string name="need_long_click">长按获取图片</string>-->
+    <!--<string name="no_image_switch_key">no_image_switch</string>-->
+    <!--<string name="msg_auto_update_switch_title">消息更新</string>-->
+    <!--<string name="msg_auto_update_switch_key">msg_auto_update_switch</string>-->
+    <!--<string name="msg_auto_update_switch_summary_on">开启消息自动更新</string>-->
+    <!--<string name="msg_auto_update_switch_summary_off">关闭消息自动更新</string>-->
+    <!--<string name="msg_auto_update_frequency_title">消息更新频率</string>-->
+    <!--<string name="msg_auto_update_frequency_key">msg_auto_update_frequency</string>-->
+    <!--<string name="msg_auto_update_frequency_default_value">15</string>-->
+    <!--<string name="msg_auto_update_frequency_summary">设置消息自动更新的时间周期</string>-->
+    <!--<string name="alert_cancel_order_failed">取消订单失败</string>-->
+    <!--<string name="alert_cancel_order_success">取消订单成功</string>-->
+    <!--<string name="check_my_order_detail_cancel_fail">取消订单操作失败，请重试</string>-->
+    <!--<string name="cancel_order_fail_and_check_status">取消订单操作没有完成，请跟踪订单状态</string>-->
+    <!--<string name="check_my_order_detail_cancel_success">成功</string>-->
+    <!--<string name="operation_fail">操作失败</string>-->
+    <!--<string name="error_preview_camera">很抱歉！相机初始化时发生错误，请重启程序。如果您是连续出现此问题，建议您重启机器再尝试!</string>-->
+    <!--<string name="unsopported_camera_data">很抱歉！您的摄像机暂时不支持条码扫描!</string>-->
+    <!-- 崩溃日志 -->
+    <!--<string name="app_error_msg">应用出错 ,即将关闭。</string>-->
+    <!--<string name="app_error_title">警告</string>-->
+    <!--<string name="app_error_submit">发送</string>-->
+    <!--<string name="app_error_close">关闭并保存日志</string>-->
+    <!--<string name="app_error_tag_send">发送中</string>-->
+    <!--<string name="app_error_tag_restart">已发送，自动重启中...请稍后</string>-->
+    <!--<string name="app_error_tag_close">已发送，应用已关闭...</string>-->
+    <!--<string name="app_error_tag_des">您可以对出错情况进行简单描述并提交错误报告，以便我们修复完善。</string>-->
+    <!--<string name="app_error_tag_hint">请对错误信息进行描述(可不填)</string>-->
+    <!--<string name="app_error_checkbox">提交后重启</string>-->
+    <!--<string name="widget_service_stoped">后台更新已停止，点击启动。</string>-->
+    <!--<string name="checked2buy">"  购买选中  "</string>-->
+    <!--<string name="online_book_shop">在线书城</string>-->
+    <!--<string name="best_products">最新推荐</string>-->
+    <!--<string name="tittle_booksonline">在线书城</string>-->
+    <!--<string name="tittle_bookslocale">本地书城</string>-->
+    <!--<string name="loadingText">正在获取数据...</string>-->
+    <!--<string name="browse_catalog">查看目录</string>-->
+    <!--<string name="add_bookmark">添加书签</string>-->
+    <!--<string name="browse_bookmark">查看书签</string>-->
+    <!--<string name="book_theme">背景设置</string>-->
+    <!--<string name="book_review">本书评论</string>-->
+    <!--<string name="font_size">文字大小</string>-->
+    <!--<string name="book_navigation">快速跳转</string>-->
+    <!--<string name="book_setting">阅读设置</string>-->
+    <!--<string name="quit">退出</string>-->
+    <!--<string name="book_theme_white">书页风格</string>-->
+    <!--<string name="book_theme_flower">华丽风格</string>-->
+    <!--<string name="book_theme_none">护眼风格</string>-->
+    <!--<string name="book_theme_night">夜间模式</string>-->
+    <!--<string name="book_theme_skin">羊皮风格</string>-->
+    <!--<string name="book_theme_custom">自定义</string>-->
+    <!--<string name="no_try_read_content_tip_msg">暂无试读内容</string>-->
+    <!--<string name="no_comments_tip_msg">目前还没有评论</string>-->
+    <!--<string name="no_coupons_tip_msg">您的账户中没有优惠券</string>-->
+    <!--<string name="no_order_tip_msg">目前还没有订单</string>-->
+    <!--<string name="book_brightness">屏幕亮度</string>-->
+    <!--<string name="pronouncement_Title">声明</string>-->
+    <!--<string name="pronouncement_Content">京东数字资源手机客户端用户协议\n-->
+                           <!--本协议是您（“用户”）与京东数字资源手机客户端（以下简称为本客户端或本客户端平台）所有者（以下简称为“京东”）就京东数字资源手机客户端服务等相关事宜所订立的契约，请您仔细阅读本协议，您点击同意后，本协议即构成对双方有约束力的法律文件。\n-->
+	  <!--第1条 本客户端服务条款的确认和接纳\n-->
+	    <!--1.1本客户端的版权、知识产权及各项服务的所有权和运作权均归京东所有。用户同意所有用户协议条款并完成安装程序，才能成为本客户端的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，但法律另有强制性规定或双方另有特别约定的，依其规定。\n-->
+	    <!--1.2用户同意本协议的，即视为用户确认自己具有享受本客户端服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。\n-->
+	    <!--1.3如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本客户端。\n-->
+	    <!--1.4京东保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。\n-->
+	  <!--第2条 本客户端服务\n-->
+    	<!--2.1京东通过互联网络依法为用户提供服务，用户在完全同意本协议及本客户端规定的情况下，方有权使用本客户端的相关服务。\n-->
+    	<!--2.2本客户端版本适用于使用Android操作系统的手机，对于在使用其他操作系统的手机或终端上使用本软件，出现的任何问题，京东不承担责任；请您正确安装本客户端，不得违反操作规定擅自采取其他非正常安装方法。\n-->
+    	<!--2.3使用本客户端过程中，若用户下单购物的，根据订单的具体情况，销售方将收取相应的费用；本客户端在下载安装使用等过程中产生的GPRS、3G数据流量等费用由运营商收取，相关事宜请根据用户与运营商的约定及相关法律规定处理，与京东无关。\n-->
+    	<!--2.4用户必须自行准备如下设备和承担如下开支：（1）上网设备，包括并不限于手机等上网终端及其他必备的上网装置；（2）上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。\n-->
+    	<!--2.5 京东不承诺本客户端会提供持续的服务。\n-->
+	  <!--第3条  用户信息\n-->
+    	<!--3.1用户应自行诚信向本客户端提供相关资料，用户确认其提供的资料真实、准确、完整、合法有效，用户资料如有变动的，应及时更新其资料。如果用户提供的资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且京东保留终止用户使用本客户端各项服务的权利。\n-->
+    	<!--3.2用户在本客户端进行浏览、下单购物等活动时，涉及用户真实姓名/名称、通信地址、联系电话、电子邮箱等隐私信息的，京东将予以严格保密，除非得到用户的授权或法律另有规定，京东不会向外界披露用户隐私信息。\n-->
+    	<!--3.3用户同意，京东拥有通过邮件、短信电话等形式，向在本客户端购物用户、收货人发送订单信息、促销活动等告知信息的权利。\n-->
+    	<!--3.4用户在本客户端进行的浏览、下单购物等相关活动，同时受京东网站（首页网址：www.jd.com）用户注册协议和网站相关购物规则的约束。如该等注册协议或规则与本协议冲突的，以本协议为准。\n-->
+	  <!--第4条  用户依法言行义务\n-->
+    	<!--本协议依据国家相关法律法规规章制定，用户同意严格遵守以下义务：\n-->
+    	<!--（1）不得传输或发表：煽动抗拒、破坏宪法和法律、行政法规实施的言论，煽动颠覆国家政权，推翻社会主义制度的言论，煽动分裂国家、破坏国家统一的的言论，煽动民族仇恨、民族歧视、破坏民族团结的言论；\n-->
+    	<!--（2）从中国大陆向境外传输资料信息时必须符合中国有关法规； \n-->
+    	<!--（3）不得利用本客户端从事洗钱、窃取商业秘密、窃取个人信息等违法犯罪活动；\n-->
+    	<!--（4）不得干扰本客户端系统的正常运转，不得侵入本客户端系统及国家计算机信息系统；\n-->
+    	<!--（5）不得传输或发表任何违法犯罪的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的、淫秽的、不文明的信息资料；\n-->
+    	<!--（6）不得传输或发表损害国家社会公共利益和涉及国家安全的信息资料或言论；\n-->
+    	<!--（7）不得教唆他人从事本条所禁止的行为；\n-->
+    	<!--（8）不得利用在本客户端进行牟利性经营活动；\n-->
+    	<!--（9）不得发布任何侵犯他人著作权、商标权等知识产权或合法权利的内容；\n-->
+    	<!--用户应不时关注并遵守本客户端平台及京东网站不时公布或修改的各类合法规则、规定。\n-->
+    	<!--京东保有删除站内各类不符合法律政策或不真实的信息内容而无须通知用户的权利。\n-->
+    	<!--若用户未遵守以上规定的，京东有权作出独立判断并采取暂停或关闭用户服务等措施。用户须对自己的言论和行为承担法律责任。\n-->
+	  <!--第5条  商品信息\n-->
+    	<!--本客户端界面上展示的商品可能含有（但不限于）如下商品：电子书、影视资源、计算机软件等数字资源及图书等实物商品；该等商品的知识产权属于京东合作方或京东所有，受中国法律和相关国际法的保护，请您自觉遵守法律规定，不得以任何方式从事侵权及违法活动。\n-->
+    	<!--通过本客户端获得数字资源等内容，仅应被用于在客户端所在终端进行合法正当目的阅读和观看等正当目的，不得通过本客户端获取的数字资源等信息再次进行传播、互联网内容上传、发布、出版、销售等任何违法违规活动。\n-->
+    	<!--本客户端上的商品价格、数量、是否有货等商品信息随时都有可能发生变动，销售方不作特别通知。由于客户端上商品信息的数量极其庞大，虽然京东会尽最大努力保证您所浏览商品信息的准确性，但由于众所周知的互联网络技术因素等客观原因存在，本客户端网页显示的信息可能会有一定的滞后性或差错，对此情形您知悉并理解；京东欢迎纠错，并会视情况给予纠错者一定的奖励。\n-->
+	  <!--第6条  订单\n-->
+    	<!--6.1在您通过本客户端下订单购买商品时，请您仔细确认所购商品的名称、价格、数量、型号、规格、尺寸、联系地址、电话、收货人等信息。收货人与用户本人不一致的，收货人的行为和意思表示视为用户的行为和意思表示，用户应对收货人的行为及意思表示的法律后果承担连带责任。\n-->
+    	<!--6.2除法律另有强制性规定外，双方约定如下：本客户端上销售方展示的商品和价格等信息仅仅是要约邀请，您下单时须填写您希望购买的商品数量、价款及支付方式、收货人、联系方式、收货地址（合同履行地点）、合同履行方式等内容；系统生成的订单信息是计算机信息系统根据您填写的内容自动生成的数据，仅是您向销售方发出的合同要约；销售方收到您的订单信息后，只有在下述条件之一成就时，方视为您与销售方之间就实际直接向您发出的商品建立了合同关系：①对于数字资源类商品（如电子书、影音电子资源等），您已支付完毕订单所对应的全部款项时；②对于非数字资源类的商品，销售方将您在订单中订购的商品从仓库实际直接向您发出时（以商品出库为标志）。\n-->
+    	<!--对于非数字资源类的商品，如果您在一份订单里订购了多种商品并且销售方只给您发出了部分商品时，您与销售方之间仅就实际直接向您发出的商品建立了合同关系；只有在销售方实际直接向您发出了订单中订购的其他商品时，您和销售方之间就订单中该其他已实际直接向您发出的商品才成立合同关系。\n-->
+    	<!--6.3由于市场变化及各种以合理商业努力难以控制的因素的影响，本客户端无法保证您提交的订单信息中希望购买的商品都会有货；如您拟购买的商品，发生缺货，您有权取消订单。\n-->
+	  <!--第7条  下载展示或配送 \n-->
+    	<!--7.1对于数字资源类的商品，对于因下列原因导致的下载（或展示）阻滞或未成功，京东不承担责任：\n-->
+                      <!--（1）用户终端未联网等原因导致的；\n-->
+    	 <!--（2）用户终端网络不稳定等原因导致的；\n-->
+                      <!--（3）其他非京东的因素导致的技术或机械故障；\n-->
+   	           <!--（4）不可抗力因素导致的，例如：自然灾害、交通戒严、突发战争等。 \n-->
+    	<!--7.2对于非数字资源类的商品，销售方将会把商品（货物）送到您所指定的收货地址，所有在本客户端上列出的送货时间为参考时间，参考时间的计算是根据库存状况、正常的处理过程和送货时间、送货地点的基础上估计得出的。\n-->
+                        <!--因如下情况造成订单延迟或无法配送等，销售方不承担延迟配送的责任：\n-->
+                      <!--（1）用户提供的信息错误、地址不详细等原因导致的；\n-->
+    	<!--（2）货物送达后无人签收，导致无法配送或延迟配送的；\n-->
+   	           <!--（3）情势变更因素导致的； \n-->
+    	<!--（4）不可抗力因素导致的，例如：自然灾害、交通戒严、突发战争等。\n-->
+	  <!--第8条  所有权及知识产权条款\n-->
+    	 <!--8.1用户一旦接受本协议，即表明该用户主动将其在任何时间段在本客户端平台上发表的任何形式的信息内容（包括但不限于客户评价、客户咨询、各类话题文章等信息内容）的财产性权利等任何可转让的权利，如著作权财产权（包括并不限于：复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权以及应当由著作权人享有的其他可转让权利），全部独家且不可撤销地转让给京东所有，用户同意京东有权就任何主体侵权而单独提起诉讼。\n-->
+    	 <!--8.2本协议已经构成《中华人民共和国著作权法》第二十五条（条文序号依照2011年版著作权法确定）及相关法律规定的著作财产权等权利转让书面协议，其效力及于用户在本客户端平台上发布的任何受著作权法保护的作品内容，无论该等内容形成于本协议订立前还是本协议订立后。\n-->
+    	 <!--8.3用户同意并已充分了解本协议的条款，承诺不将已发表于本客户端平台上的信息，以任何形式发布或授权其它主体以任何方式使用（包括但限于在各类网站、媒体上使用）。\n-->
+    	 <!--8.4 本客户端软件著作权属于京东所有；京东是本客户端的制作者,拥有本客户端内容及资源的著作权等合法权利,受国家法律保护,有权不时地对本协议及本客户端的内容进行修改，并在本客户端平台或京东网站上张贴，无须另行通知用户。在法律允许的最大限度范围内，京东对本协议及本客户端上的内容拥有解释权。\n-->
+    	 <!--8.5除法律另有强制性规定外，未经京东明确的特别书面许可,任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本客户端平台上的信息内容，否则，京东有权追究其法律责任。\n-->
+    	 <!--8.6本客户端所刊登的资料信息（诸如文字、图表、标识、按钮图标、图像、声音文件片段、数字下载、数据编辑和软件），均是京东或其内容提供者的财产，受中国和国际版权法的保护。本客户端上所有内容的汇编是京东的排他财产，受中国和国际版权法的保护。本客户端上所有软件都是京东或其关联公司或其软件供应商的财产，受中国和国际版权法的保护。\n-->
+    	 <!--8.7 用户同意，京东可以将用户在本客户端平台上发布的所有信息显示在京东网站的相关页面上，该等信息同样受本协议约束。\n-->
+	  <!--第9条 责任限制及不承诺担保\n-->
+    	<!--除非另有明确的书面说明,本客户端及其所包含的或以其它方式通过本客户端提供给您的全部信息、内容、材料、产品（包括软件）和服务，均是在“按现状”和“按现有”的基础上提供的。\n-->
+    	<!--除非另有明确的书面说明,京东不对本客户端的运营及其包含在本客户端平台上的信息、内容、材料、产品（包括软件）或服务作任何形式的、明示或默示的声明或担保（根据中华人民共和国法律另有规定的以外）。 \n-->
+    	<!--京东不担保本客户端所包含的或以其它方式通过本客户端提供给您的全部信息、内容、材料、产品（包括软件）和服务、其服务器或从本客户端发出的电子信件、信息没有病毒或其他有害成分。\n-->
+    	<!--如因不可抗力或京东无法控制的原因使本客户端系统崩溃或无法正常使用导致交易无法完成或丢失有关的信息、记录等，京东会合理地尽力协助处理善后事宜。\n-->
+	  <!--第10条  协议更新及用户关注义务\n-->
+                    <!--根据国家法律法规变化及网站运营需要，京东有权对本协议条款不时地进行修改，修改后的协议一旦被张贴在本客户端平台上或京东网站上即生效，并代替原来的协议。用户可随时查阅最新协议；用户有义务不时关注并阅读最新版的协议及公告。如用户不同意更新后的协议，可以且应立即停止接受本客户端提供的服务；如用户继续使用本客户端提供的服务的，即视为同意更新后的协议。京东建议您在使用本客户端之前阅读本协议及本客户端发布的相关的公告。\n-->
+   	         <!--如果本协议中任何一条被视为废止、无效或因任何理由不可执行，该条应视为可分的且并不影响任何其余条款的有效性和可执行性。\n-->
+	  <!--第11条  法律管辖和适用\n-->
+                   <!--本协议的订立、执行和解释及争议的解决均应适用在中华人民共和国大陆地区适用之有效法律（但不包括其冲突法规则）。\n-->
+   	        <!--如发生本协议与适用之法律相抵触时，则这些条款将完全按法律规定重新解释，而其它有效条款继续有效。\n-->
+   	        <!--如缔约方就本协议内容或其执行发生任何争议，双方应尽力友好协商解决；协商不成时，任何一方均应将争议提交至京东住所地法院解决。\n-->
+	  <!--第12条  其他 \n-->
+        <!--12.1京东数字资源客户端所有者是指本客户端的合法运营主体。\n-->
+        <!--12.2 京东尊重用户和消费者的合法权利，本客户端平台上发布的各类规则、声明等其他内容，均是为了更好的、更加便利的为用户和消费者提供服务。本客户端欢迎用户和社会各界提出意见和建议，京东将虚心接受并适时修改本协议及本客户端上的各类规则。\n-->
+        <!--12.3本协议内容中以黑体、加粗、下划线、斜体等方式显著标识的条款，请用户着重阅读。\n-->
+   	    <!--12.4您点击同意本协议即视为您完全接受本协议，在点击之前请您再次确认已知悉并完全理解本协议的全部内容。\n</string>-->
+    <!--<string name="agree">同意</string>-->
+    <!--<string name="refuse">退出</string>-->
+    <!--<string name="customized_bookmark_name_or_not_message">您是否对书签重命名？</string>-->
+    <!--<string name="customized_bookmark_name_remember_choice">记住选择</string>-->
+    <!--<string name="customized_bookmark_name_message">书签名称：</string>-->
+    <!--<string name="customized_bookmark_name_message_empty_tip">书签名称不能为空</string>-->
+    <!--<string name="customized_bookmark_name_message_extend_max_tip">最多可输入20个字符</string>-->
+
+    <!-- 书签同步 -->
+    <!--<string name="no_network">没有可以使用的网络</string>-->
+    <!--<string name="bookmark_sync_title">阅读数据同步</string>-->
+    <!--<string name="bookmark_sync_confirm">是否同步书架中所有书籍的阅读数据？</string>-->
+    <!--<string name="bookmark_conflict_message">你现在阅读到%1$s，服务器端的最后阅读位置是%2$s。是否同步服务器端最后阅读位置？</string>-->
+    <!--<string name="book_menu_sync_bookmark">阅读同步</string>-->
+    <!--<string name="book_close">关闭</string>-->
+    <!--<string name="bookmark_sync_start">开始同步</string>-->
+    <!--<string name="bookmark_sync_done">同步完成</string>-->
+    <!--<string name="bookmark_sync_fail">同步出错</string>-->
+    <!--<string name="book_menu_sync_bookmark_confirm_message">是否同步本书的阅读数据？</string>-->
+    <!--<string name="select_all">全选</string>-->
+    <!--<string name="invert_select">反选</string>-->
+    <!--<string name="confirm_import">确认导入</string>-->
+    <!--<string name="category_name_hints">请输入分类名称</string>-->
+    <!--<string name="new_category">创建</string>-->
+    <!--<string name="category_live">分类已存在</string>-->
+    <!--<string name="category_error">分类无效，请重试</string>-->
+    <!--<string name="category_remove">删除后该分组下的书籍将移动至未分组</string>-->
+    <!--<string name="net_connecting">正在连接网络，请稍后</string>-->
+
+    <!-- 阅读设置界面 -->
+    <!--<string name="more_set">更多设置</string>-->
+    <!--<string name="read_set_title">阅读设置</string>-->
+    <!--<string name="read_set_volume_page">音量键翻页</string>-->
+    <!--<string name="page_mode">翻页</string>-->
+    <!--<string name="screen_orientation">屏幕方向</string>-->
+    <!--<string name="view_layout">界面布局</string>-->
+    <!--<string name="system_status_bar">系统状态栏</string>-->
+    <!--<string name="time_power">时间电量</string>-->
+    <!--<string name="screen">屏幕</string>-->
+    <!--<string name="page_animation">翻页动画</string>-->
+    <!--<string name="screen_standby">屏幕待机</string>-->
+    <!--<string name="font_manage">字体管理</string>-->
+    <!--<string name="catalog">目录</string>-->
+    <!--<string name="bookMark">书签</string>-->
+    <string name="line_space_max">行间距已最大</string>
+    <string name="line_space_min">行间距已最小</string>
+    <string name="block_space_max">段间距已最大</string>
+    <string name="block_space_min">段间距已最小</string>
+    <!--<string name="more_recommend">友情推荐</string>-->
+    <!--<string name="wifi_ftp_hint">请在“我的电脑”地址栏中输入：</string>-->
+    <!--<string name="wifi_share">WiFi传书</string>-->
+    <!--<string name="wifi_status">WiFi服务已启动</string>-->
+    <!--<string name="author">作者：</string>-->
+    <!--<string name="size">大小：</string>-->
+    <!--<string name="history_removeall">清空历史记录</string>-->
+    <!--<string name="pdf_not_support">不好意思，暂时没有适合您手机的PDF插件。</string>-->
+    <!--<string name="str_msg_auth">com.jingdong.app.reader.cloudmsg.auth</string>-->
+    <!--<string name="str_msg_action">com.jingdong.app.reader.com.jd.msg</string>-->
+    <string name="str_go_bookshop">去书城逛逛吧</string>
+    <string name="str_go_timeline">去社区逛逛吧</string>
+    <string name="not_love_book">暂无喜欢的书籍</string>
+    <!--<string name="str_msg_rm_title">温馨提示</string>-->
+    <!--<string name="str_msg_rm_one">确认删除该条消息？</string>-->
+    <!--<string name="str_msg_rm_yes">确认</string>-->
+    <!--<string name="str_msg_rm_no">取消</string>-->
+    <!--<string name="str_msg_rm_all">确认删除全部消息？</string>-->
+    <!--<string name="str_msg_nothing">暂无消息</string>-->
+    <string name="lackbook_contact_info">联系方式（至少填写一项）</string>
+    <!-- <string name="str_msg_action">com.jd.app.lib.cloudmsg.com.jd.msg</string> -->
+
+    <string name="pull_to_refresh_pull_label">下拉屏幕刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="integration_info">签到领积分</string>
+    <string name="go_bookstore">去书城</string>
+    <string name="neterror_reload">重新加载</string>
+    <string name="neterror_info">网络连接失败</string>
+    <string name="buy_complement">购买完整版</string>
+    <string name="order_message">您还没有下过订单哦</string>
+    <string name="pull_down_to_next_page">上拉到专属推荐页</string>
+    <string name="title_activity_bookstore_more_readed">BookstoreMoreReadedActivity</string>
+    
+    <string name="login_btn_text">登录京东账号</string>
+    
+    
+    <!-- 百度MTJ统计 -->
+    <string name="mtj_start_app">and_启动页面</string>
+    <string name="mtj_bookstore_home">and_书城->首页</string>
+    <string name="mtj_bookstore_type">and_书城->分类</string>
+	<string name="mtj_bookstore_discount">and_书城-></string>
+	<string name="mtj_bookstore_bookinfo">and_书城->图书详情</string>
+	<string name="mtj_bookstore_booklist">and_图书列表_</string>
+	<string name="mtj_bookstore_search">and_书城->搜索</string>
+	<string name="mtj_bookstore_search_scan">and_书城->条形码扫描</string>
+	<string name="mtj_bookstore_search_regist">and_书城->缺书登记</string>
+	<string name="mtj_bookstore_webview">and_网页_</string>
+	<string name="mtj_bookstore_bookcart">and_购物车</string>
+	<string name="mtj_bookstore_userborrow">and_书城->用户借阅</string>
+	
+	<string name="mtj_community_find">and_社区->发现</string>
+	<string name="mtj_community_friendcircle">and_社区->朋友圈</string>
+	<string name="mtj_community_square">and_社区->广场</string>
+	<string name="mtj_community_shuping">and_写书评</string>
+	<string name="mtj_community_shuoshuo">and_随便说说</string>
+	<string name="mtj_community_dongtaixiangqing">and_动态详情</string>
+	<string name="mtj_community_dongtaipinglun">and_动态评论</string>
+	<string name="mtj_community_dongtaiyulan">and_动态图片预览</string>
+	
+	
+	<string name="mtj_bookshelf">and_书架</string>
+	<string name="mtj_bookshelf_buy">and_已购</string>
+	<string name="mtj_bookshelf_changdu">and_畅读</string>
+	<string name="mtj_bookshelf_jieyue">and_借阅</string>
+	<string name="mtj_bookshelf_yunpan">and_云盘</string>
+	<string name="mtj_bookshelf_import">and_导入本地图书</string>
+	<string name="mtj_bookshelf_near_read">and_大家最近在读</string>
+	<string name="mtj_bookshelf_zhengli">and_书架整理</string>
+	<string name="mtj_bookshelf_sousuo">and_书架搜索</string>
+	<string name="mtj_bookshelf_yuedu_pdf">and_阅读PDF</string>
+	<string name="mtj_bookshelf_yuedu_epub">and_阅读EPUB</string>
+	<string name="mtj_bookshelf_yuedu_search">and_阅读图书搜索</string>
+	<string name="mtj_bookshelf_yuedu_setting">and_阅读设置</string>
+	<string name="mtj_bookshelf_yuedu_font_setting">and_阅读字体更多设置</string>
+	
+    <string name="mtj_my">and_我</string>
+	<string name="mtj_my_login">and_登录</string>
+	<string name="mtj_my_regist">and_注册</string>
+	<string name="mtj_my_regist_verification">and_注册验证码验证界面</string>
+	<string name="mtj_my_regist_PasswordSet">and_注册密码设置界面</string>
+	<string name="mtj_my_verification_code">and_验证码登录</string>
+	<string name="mtj_my_integral_manage">and_积分管理</string>
+    <string name="mtj_my_modify_userinfo">and_修改用户信息</string>
+	<string name="mtj_my_modify_setting">and_用户设置</string>
+	<string name="mtj_my_message_center">and_消息中心</string>
+	<string name="mtj_my_message_center_comment">and_消息中心_评论</string>
+	<string name="mtj_my_message_center_tongzhi">and_通知</string>
+	<string name="mtj_my_fans">and_粉丝</string>
+	<string name="mtj_my_guanzhu">and_关注</string>
+	<string name="mtj_my_feedback">and_意见反馈</string>
+	<string name="mtj_my_gerenzhuye">and_个人主页</string>
+	<string name="mtj_my_dingdan">and_订单</string>
+	<string name="mtj_my_dingdan_month">and_近一个月订单</string>
+	<string name="mtj_my_dingdan_month_ago">and_一个月以前订单</string>
+	<string name="mtj_my_dingdan_detail">and_订单详情</string>
+	<string name="mtj_my_yueli">and_阅历</string>
+	<string name="mtj_my_draffs">and_草稿箱</string>
+	<string name="mtj_my_regist_xieyi">and_用户注册协议</string>
+	<string name="mtj_my_readingcard">and_我->畅读卡</string>
+	<string name="mtj_my_bindreadingcard">and_我->绑定畅读卡</string>
+	<string name="mtj_my_overtime_readingcard">and_我->已失效畅读卡</string>
+	
+	<!-- 书城中的strings -->
+	<!-- 详情页的strings -->
+	<string name="bookinfo_buypaperbook_text">购买纸质书</string>
+	<!-- 购买送书 -->
+	<string name="sendbook_order_title">送书订单</string>
+	<string name="sendbook_order_present_ready">您的图书礼包已打包成功</string>
+	<string name="sendbook_order_present_sendtip">支付后可通过社交平台送出</string>
+	<string name="sendbook_order_present_rule">查看礼包规则</string>
+	<string name="receiver_pin">领取账号:</string>
+    <string name="receive_time">领取时间:</string>
+    <string name="sendbook_again_tip">没人领吗？您还可以再送给别人哦~</string>
+    
+    <string name="save_image_success_tip">图片已保存到相册</string>
+    <string name="save_image_fail_tip">图片保存失败</string>
+    
+</resources>

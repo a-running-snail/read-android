@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/wSize20"
+        android:layout_marginLeft="@dimen/wSize16"
+        android:layout_marginRight="@dimen/wSize16"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize50"
+            android:orientation="horizontal" 
+            >
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_bt_white_bg"
+                android:hint="@string/input_phone_num"
+                android:inputType="number"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wSize15"
+                android:paddingRight="@dimen/wSize15"
+                android:textColorHint="@color/hariline"
+                android:textSize="@dimen/text_size" >
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_marginTop="@dimen/wSize20"
+	        android:id="@+id/mImageVerificationLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/wSize50"
+	        android:background="@color/bg_sub"
+	        android:visibility="gone">
+
+	        <EditText
+	            android:id="@+id/mVerificationInput"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/rectangle_bt_white_bg"
+	            android:hint="请输入图片验证码"
+	            android:inputType="text"
+	            android:textColorHint="@color/hariline"
+	           	android:gravity="center_vertical"
+                android:paddingLeft="@dimen/wSize15"
+               	android:paddingRight="80dp"
+               	android:singleLine="true"
+	            android:textSize="@dimen/text_size" />
+	
+	        <ImageView
+	            android:layout_margin="10dp"
+	            android:id="@+id/mVerificationImage"
+	        	android:layout_width="70dp"
+	         	android:layout_height="match_parent" 
+	         	android:layout_alignParentRight="true"
+	        	android:scaleType="fitXY" />
+	        
+	        <View
+	            android:layout_toLeftOf="@+id/mVerificationImage"
+	            android:layout_width="1dp"
+	         	android:layout_height="match_parent" 
+	         	android:layout_marginTop="10dp"
+	         	android:layout_marginBottom="10dp"
+	         	android:layout_marginRight="4dp"
+	         	android:background="@color/gray"
+	            >
+	            
+	        </View>
+        
+    	</RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_left" 
+            android:layout_marginTop="@dimen/wSize20">
+
+            <CheckBox android:id="@+id/agree_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:background="@drawable/register_checkbox_selector"
+                android:button="@null"
+                />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_left"
+                android:paddingLeft="10dp"
+                android:text="@string/accept"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/wSize14" />
+            
+            <TextView android:id="@+id/goto_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/click_agreement"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/wSize14" />
+        </LinearLayout>
+	<Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/wSize20"
+        android:background="@drawable/login_button_unable_xbg"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/hariline"
+        android:textSize="@dimen/text_size" />
+	
+		<LinearLayout 
+		    android:layout_marginLeft="3dp"
+			android:layout_marginTop="@dimen/wSize20"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"    
+		    >
+            
+		    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="遇到问题?您可以"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/wSize14" />
+		    
+		    <TextView
+		        android:id="@+id/mServiceTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/wSize14" />
+		    
+		</LinearLayout>
+	
+    </LinearLayout>
+</ScrollView>

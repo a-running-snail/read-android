@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"
+        >
+
+        <!-- 背景图 -->
+        <ImageView
+            android:id="@+id/imageViewbg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY"
+            android:src="@drawable/bookshelf_folder"
+            android:visibility="invisible" />
+        
+        <RelativeLayout 
+            android:id="@+id/mFolderLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+            <!-- 图书封面1 -->
+            <ImageView
+            android:id="@+id/mFolderImage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:visibility="gone"
+            android:src="@drawable/bg_default_cover" />
+            
+            <!-- 图书封面2 -->
+            <ImageView
+            android:id="@+id/mFolderImage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:visibility="gone"
+            android:src="@drawable/bg_default_cover" />
+            
+            <!-- 图书封面3 -->
+            <ImageView
+            android:id="@+id/mFolderImage3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:visibility="gone"
+            android:src="@drawable/bg_default_cover" />
+            
+            <!-- 图书封面4 -->
+            <ImageView
+            android:id="@+id/mFolderImage4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:visibility="gone"
+            android:src="@drawable/bg_default_cover" />
+            
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/imageViewFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+             
+            <!-- 图书封面 -->
+	        <ImageView
+	            android:id="@+id/imageViewIcon"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:contentDescription="@string/empty_string"
+	            android:scaleType="fitXY" />
+	        
+	        <!-- 角标图片 -->
+	        <ImageView
+	            android:id="@+id/imageViewLabel"
+	            android:layout_width="48dp"
+	            android:layout_height="48dp"
+	            android:contentDescription="@string/empty_string"
+	            android:scaleType="fitXY"
+	            />
+	    </FrameLayout>
+	    
+        <!-- 下载状态 -->
+        <FrameLayout
+            android:id="@+id/download_state"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bookshelf_download_bg" >
+
+            <!-- 下载中 -->
+            <RelativeLayout
+                android:id="@+id/downloading_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/download_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/bg_main"
+                    android:textSize="12dp" />
+                
+                <RelativeLayout 
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true" >
+                    
+                    <ImageView android:id="@+id/download_status_btn"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="18dp"
+			        android:layout_height="16dp"
+			        android:layout_centerVertical="true"
+			        android:background="@drawable/icon_h"/>
+                    
+                    <TextView
+                    android:id="@+id/download_progress"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/bg_main"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12dp" />
+                    
+                    <!-- 进度条 -->
+                    <ProgressBar 
+                        android:id="@+id/progress_horizontal"
+                        android:layout_toRightOf="@+id/download_status_btn"
+                        android:layout_toLeftOf="@+id/download_progress"
+				        style="?android:attr/progressBarStyleHorizontal"
+				        android:layout_width="match_parent"
+				        android:layout_height="7.6dp"
+				        android:layout_centerVertical="true"
+				        android:progressDrawable="@drawable/progressdrawable"
+				        android:max="100"
+				        android:progress="0"/>
+                    
+                </RelativeLayout>
+                
+            </RelativeLayout>
+            
+            <!-- 下载完成 -->
+            <LinearLayout 
+                android:id="@+id/download_finish_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                
+                <ImageView android:id="@+id/download_status_icon"
+                    android:layout_width="30.66dp"
+					android:layout_height="31.66dp"
+			        android:background="@drawable/icon_d"/>
+                
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/download_finish_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="下载完成"
+                    android:textColor="@color/bg_main"
+                    android:textSize="12dp" />
+                
+            </LinearLayout>
+            
+        </FrameLayout>
+        <!-- 待更新 -->
+        <ImageView 
+            android:id="@+id/update_download_btn"
+        	android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:background="@drawable/icon_e"
+			android:focusable="false"
+			android:scaleType="fitXY"
+			android:layout_marginRight="3dp"
+			android:layout_marginBottom="3dp"
+			android:layout_alignRight="@+id/imageViewbg"
+			android:layout_alignBottom="@+id/imageViewbg"/>
+        
+        <LinearLayout 
+            android:id="@+id/mBuyedLayout"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical"
+ 			android:layout_alignLeft="@+id/imageViewbg"
+			android:layout_alignRight="@+id/imageViewbg"
+			android:layout_alignTop="@+id/imageViewbg"
+			android:layout_alignBottom="@+id/imageViewbg"
+        	android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/bookshelf_download_bg"
+            >
+            
+            <!-- 待下载 -->
+            <ImageView 
+            android:id="@+id/update_download_btn"
+        	android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:background="@drawable/icon_buyed"
+			android:focusable="false"
+			android:scaleType="fitXY"
+			android:layout_centerInParent="true"/>
+            
+            <TextView
+                android:layout_marginTop="4dp"
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="未下载"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+            
+        </LinearLayout>
+        
+       <ImageView
+            android:id="@+id/touming"
+            android:gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:orientation="vertical"
+ 			android:layout_alignLeft="@+id/imageViewbg"
+			android:layout_alignRight="@+id/imageViewbg"
+			android:layout_alignTop="@+id/imageViewbg"
+			android:layout_alignBottom="@+id/imageViewbg"
+        	android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/bookshelf_item_selected_bg" />
+        
+        <!-- 选中 -->
+        <RelativeLayout 
+            android:id="@+id/mSelectedLayout"
+            android:paddingRight="10dp"
+ 			android:layout_alignLeft="@+id/imageViewbg"
+			android:layout_alignRight="@+id/imageViewbg"
+			android:layout_alignTop="@+id/imageViewbg"
+			android:layout_alignBottom="@+id/imageViewbg"
+        	android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#4cffffff">
+        
+            <!-- 单本书的选中效果 -->
+        	<ImageView
+                android:id="@+id/book_selected_cover"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/bookshelf_selected" />
+        	
+        	<!-- 文件夹的选中效果 -->
+        	<TextView
+                android:id="@+id/book_selected"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center"
+                android:background="@drawable/bookshelf_numcircle"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/bg_main"
+                android:textSize="12dp" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="8dp" >
+
+            <!-- 书名 -->
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="2"
+                android:textColor="@color/text_main"
+                android:textSize="12dp" />
+
+            <!-- 阅读进度 -->
+            <TextView
+                android:id="@+id/read_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_sub"
+                android:drawablePadding="4dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gifts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textColor="@color/bookshelf_gifts"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

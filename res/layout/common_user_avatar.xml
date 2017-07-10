@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/avatar_stroke_size"
+    android:layout_height="@dimen/avatar_stroke_size"
+    android:id="@+id/relativeLayout" >
+
+    <!-- 因为程序处理圆形有锯齿超出，看起来很毛，所以缩小头像的尺寸，使之比头像描边要小2dp，这样看上去就没有毛了 -->
+
+
+
+    <com.jingdong.app.reader.view.RoundNetworkImageView
+        android:id="@+id/thumb_nail"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/me" 
+        android:src="@drawable/defaultavatar_small"/>
+
+    <View
+        android:layout_width="@dimen/avatar_stroke_size"
+        android:layout_height="@dimen/avatar_stroke_size"
+        android:layout_alignBottom="@id/thumb_nail"
+        android:layout_alignRight="@id/thumb_nail"
+        android:background="@drawable/avatar_round_stroke" />
+
+    <ImageView
+        android:id="@+id/avatar_label"
+        android:layout_width="@dimen/avatar_vip_size"
+        android:layout_height="@dimen/avatar_vip_size"
+        android:layout_alignBottom="@id/thumb_nail"
+        android:layout_alignRight="@id/thumb_nail"
+        android:contentDescription="@string/me"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_sub" >
+
+    
+    <LinearLayout android:id="@+id/percentLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tSize14"
+            android:text="读过的书超过了"/>
+        <TextView android:id="@+id/percent"
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_sub"
+            android:textSize="@dimen/tSize14"
+            android:text=""/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tSize14"
+            android:text="的用户"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/viewpaperTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/percentLinearLayout"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        
+    </LinearLayout>
+    
+      <View
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hariline"
+            android:layout_below="@id/viewpaperTitle" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topView">
+    </android.support.v4.view.ViewPager>
+    
+</RelativeLayout>

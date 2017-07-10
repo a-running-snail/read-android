@@ -1,0 +1,3 @@
+set solib-search-path ./obj/local/armeabi
+source /Users/clerkma/dev_env/android-ndk-r10e/prebuilt/common/gdb/common.setup
+directory /Users/clerkma/dev_env/android-ndk-r10e/platforms/android-8/arch-arm/usr/include ../../libjdrebr/JNI_Client ../../libjdrebr/DRM_API ../../libjdrebr/miracl /Users/clerkma/dev_env/android-ndk-r10e/sources/cxx-stl/stlport/stlport /Users/clerkma/dev_env/android-ndk-r10e/sources/cxx-stl//gabi++/include jni ../draw ../fitz ../pdf ../thirdparty/jbig2dec ../thirdparty/openjpeg/libopenjpeg ../thirdparty/jpeg ../thirdparty/zlib ../thirdparty/freetype/include ../xps ../cbz ../scripts

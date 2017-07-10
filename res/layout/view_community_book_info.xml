@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/book_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wSize14"
+        android:padding="@dimen/wSize4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/book_cover"
+            android:layout_width="@dimen/wSize60"
+            android:layout_height="@dimen/wSize80"
+            android:scaleType="fitXY" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize80"
+            android:layout_marginLeft="@dimen/wSize12">
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:lineSpacingExtra="@dimen/timeline_text_extra_space"
+                android:layout_alignParentTop="true"
+                android:maxLines="2"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/stSize14"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/wSize3"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/stSize12"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/publisher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/wSize3"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/stSize12"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/addToBookShelf"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/button_icon_add"
+                        android:background="@drawable/rectangle_bt_redbg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="6dp"
+                        android:textSize="@dimen/stSize14"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:text="@string/add_bookshelf" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>

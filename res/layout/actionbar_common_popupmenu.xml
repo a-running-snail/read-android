@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_black"
+    android:orientation="vertical"
+    android:paddingTop="2dp" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</LinearLayout>

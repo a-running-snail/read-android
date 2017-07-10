@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/layout_contenttop"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="top"
+		android:orientation="horizontal" >
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/network_retry"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/hSize40"
+		android:clickable="true"
+		android:gravity="center"
+		android:orientation="vertical" >
+
+		<ImageView
+			android:id="@+id/icon_notice"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/icon_warning" />
+
+		<TextView
+			android:id="@+id/error_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/wSize15"
+			android:gravity="center"
+			android:text="返回重试"
+			android:textColor="@color/font_error_notice"
+			android:textSize="@dimen/tSize16" />
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/button_refresh"
+		style="@style/button_bindcard"
+		android:layout_marginTop="@dimen/hSize20"
+		android:background="@drawable/button_white_bg"
+		android:text="@string/refresh"
+		android:textColor="@color/text_color_221b11_turn_green" />
+
+</LinearLayout>

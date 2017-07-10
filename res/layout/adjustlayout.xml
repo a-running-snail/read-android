@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adjust_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/wSize8"
+    android:background="?attr/r_bg_main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wSize44"
+        android:layout_marginLeft="@dimen/wSize16"
+        android:layout_marginRight="@dimen/wSize16"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lineSpaceDown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_standard"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/lineSpaceDownImg"
+                android:layout_width="@dimen/wSize36"
+                android:layout_height="@dimen/wSize36"
+                android:background="@drawable/reader_btn_lineheight_down_standard" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/adjust_divider1"
+            android:layout_width="1px"
+            android:layout_height="@dimen/wSize44"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:id="@+id/lineSpaceUp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_standard"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/lineSpaceUpImg"
+                android:layout_width="@dimen/wSize36"
+                android:layout_height="@dimen/wSize36"
+                android:background="@drawable/reader_btn_lineheight_up_standard" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/adjust_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/wSize16"
+        android:layout_marginRight="@dimen/wSize16"
+        android:background="@color/hariline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wSize44"
+        android:layout_marginLeft="@dimen/wSize16"
+        android:layout_marginRight="@dimen/wSize16"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/blockSpaceDown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_standard"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/blockSpaceDownImg"
+                android:layout_width="@dimen/wSize36"
+                android:layout_height="@dimen/wSize36"
+                android:background="@drawable/reader_btn_paramagin_down_standard" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/adjust_divider3"
+            android:layout_width="1px"
+            android:layout_height="@dimen/wSize44"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:id="@+id/blockSpaceUp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_standard"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/blockSpaceUpImg"
+                android:layout_width="@dimen/wSize36"
+                android:layout_height="@dimen/wSize36"
+                android:background="@drawable/reader_btn_paramagin_up_standard" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/adjust_divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+    <View
+        android:id="@+id/adjust_space1"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/r_bg_sub"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <View
+        android:id="@+id/adjust_divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wSize16"
+        android:layout_marginRight="@dimen/wSize16"
+        android:layout_marginTop="@dimen/wSize8"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/smallWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_standard"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/smallImage"
+                android:layout_width="@dimen/wSize36"
+                android:layout_height="@dimen/wSize36"
+                android:background="@drawable/reader_btn_textblock_small_standard" />
+
+            <TextView
+                android:id="@+id/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize4"
+                android:text="窄"
+                android:textColor="@color/r_text_main"
+                android:textSize="@dimen/tSize10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mediumWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_standard"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mediumImage"
+                android:layout_width="@dimen/wSize36"
+                android:layout_height="@dimen/wSize36"
+                android:background="@drawable/reader_btn_textblock_medium_standard" />
+
+            <TextView
+                android:id="@+id/mediumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize4"
+                android:text="适中"
+                android:textColor="@color/r_text_main"
+                android:textSize="@dimen/tSize10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/largeWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_standard"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/largeImage"
+                android:layout_width="@dimen/wSize36"
+                android:layout_height="@dimen/wSize36"
+                android:background="@drawable/reader_btn_textblock_large_standard" />
+
+            <TextView
+                android:id="@+id/largeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize4"
+                android:text="宽"
+                android:textColor="@color/r_text_main"
+                android:textSize="@dimen/tSize10" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

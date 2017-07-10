@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bottom"
+        android:background="@color/r_bg_main"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:textColor="@color/text_sub"
+        android:textSize="@dimen/book_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hariline" />
+
+    <ListView
+        android:id="@+id/listitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:divider="@color/hariline"
+        android:dividerHeight="1px"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

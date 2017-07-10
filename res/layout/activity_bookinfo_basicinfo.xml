@@ -1,0 +1,535 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/bg_sub" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main"
+                android:orientation="vertical" >
+				<RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="44dp"
+			        android:layout_gravity="center_vertical"
+			        android:paddingLeft="16dp"
+			        android:paddingRight="16dp" >
+			
+			        <TextView
+			            android:id="@+id/title"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_centerVertical="true"
+			            android:ellipsize="end"
+			            android:singleLine="true"
+			            android:text="@string/bookinfo_newui_basicinfo_title"
+			            android:textColor="@color/text_main"
+			            android:textSize="16sp" />
+			
+			        <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/title"
+			            android:orientation="horizontal" >
+			
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="1" />
+			
+			            <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginLeft="10dp"
+			                android:gravity="center_vertical"
+			                android:orientation="horizontal" >
+			
+			                <TextView
+			                    android:layout_weight="1"
+			                    android:layout_width="0dp"
+                            	android:id="@+id/title_content"
+			                    android:layout_height="match_parent"
+			                    android:ellipsize="end"
+			                    android:gravity="center_vertical"
+			                    android:singleLine="true"
+			                    android:textColor="@color/text_main"
+			                    android:textSize="12sp" />
+			
+			                <ImageView
+			                    android:id="@+id/arrow"
+			                    android:layout_width="8dp"
+			                    android:layout_height="16dp"
+			                    android:layout_marginLeft="8dp"
+			                    android:src="@drawable/icon_arrow_right" 
+			                    android:visibility="gone"/>
+			            </LinearLayout>
+			        </LinearLayout>
+			    </RelativeLayout>
+                <!-- <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/bookinfo_newui_basicinfo_title"
+                        android:textColor="@color/text_main"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/title_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_main"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/icon_arrow_right"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout> -->
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main"
+                android:orientation="vertical" >
+
+                <!-- <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/bookinfo_newui_basicinfo_author"
+                        android:textColor="@color/text_main"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/author_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_main"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/icon_arrow_right"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout> -->
+                <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="44dp"
+			        android:layout_gravity="center_vertical"
+			        android:paddingLeft="16dp"
+			        android:paddingRight="16dp" >
+			
+			        <TextView
+			            android:id="@+id/title"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_centerVertical="true"
+			            android:ellipsize="end"
+			            android:singleLine="true"
+			            android:text="@string/bookinfo_newui_basicinfo_author"
+			            android:textColor="@color/text_main"
+			            android:textSize="16sp" />
+			
+			        <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/title"
+			            android:orientation="horizontal" >
+			
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="1" />
+			
+			            <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginLeft="10dp"
+			                android:gravity="center_vertical"
+			                android:orientation="horizontal" >
+			
+			                <TextView
+			                    android:layout_width="0dp"
+			                    android:layout_weight="1"
+                            	android:id="@+id/author_content"
+			                    android:layout_height="match_parent"
+			                    android:ellipsize="end"
+			                    android:gravity="center_vertical"
+			                    android:singleLine="true"
+			                    android:textColor="@color/text_main"
+			                    android:textSize="12sp" />
+			
+			                <ImageView
+			                    android:id="@+id/arrow"
+			                    android:layout_width="8dp"
+			                    android:layout_height="16dp"
+			                    android:layout_marginLeft="8dp"
+			                    android:src="@drawable/icon_arrow_right"
+			                    android:visibility="gone" />
+			            </LinearLayout>
+			        </LinearLayout>
+			    </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/bg_sub" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/bookinfo_newui_basicinfo_publisher"
+                        android:textColor="@color/text_main"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/publisher_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_main"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/icon_arrow_right"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/bookinfo_newui_basicinfo_publish_time"
+                        android:textColor="@color/text_main"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/publish_time_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_main"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/icon_arrow_right"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/bookinfo_newui_basicinfo_publish_isbn"
+                        android:textColor="@color/text_main"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/publish_isbn_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_main"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/icon_arrow_right"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_main"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/bookinfo_newui_basicinfo_publish_file_size"
+                            android:textColor="@color/text_main"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/publish_file_size_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/text_main"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:src="@drawable/icon_arrow_right"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/hariline" />
+                </LinearLayout>
+                
+                <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp" 
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <TextView
+          
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+             android:text="@string/bookinfo_newui_basicinfo_edition"
+            android:textColor="@color/text_main"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+             >
+
+            <TextView
+              android:id="@+id/publish_edition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_main"
+                android:textSize="12dp" />
+
+            <ImageView
+
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/icon_arrow_right" 
+                 android:visibility="gone" 
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+</LinearLayout>
+                
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

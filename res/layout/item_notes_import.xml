@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp" >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_book_note" />
+        
+
+
+        <TextView
+            android:id="@+id/chapter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:singleLine="true"
+            android:textColor="#575551"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#575551" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:singleLine="true"
+        android:textColor="#575551"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:background="#c2c2c2" />
+
+        <TextView
+            android:id="@+id/digest_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="#767474"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:maxLines="4"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#363430"
+        android:textSize="16dp" />
+    
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:visibility="gone"
+        />
+    <View
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:visibility="gone"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/catalog_dash_line"
+        android:layerType="software" />
+    
+    
+
+</LinearLayout>

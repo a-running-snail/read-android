@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/vessel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/custom_bottom_bar_menu_image_padding_top" >
+
+        <LinearLayout
+            android:id="@+id/vessel"
+            android:gravity="center"
+            android:layout_width="@dimen/custom_bottom_bar_menu_image_vessel_width"
+            android:layout_height="@dimen/custom_bottom_bar_menu_image_vessel_height"
+            android:orientation="vertical" >
+
+            <!-- 图标 -->
+            <ImageView
+                android:id="@+id/navigation_menu_icon"
+                android:layout_width="@dimen/custom_bottom_bar_menu_image_width"
+                android:layout_height="@dimen/custom_bottom_bar_menu_image_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_bottom_bar_menu_text_height"
+            android:gravity="center"
+            android:orientation="vertical" >
+			<!-- 标签文字 -->
+            <TextView
+                android:id="@+id/navigation_menu_title"
+                style="@style/navigation_menu_view_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/navigation_msg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/navigation_menu_msg"
+            style="@style/navigation_msg_view_text"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mFunctionTopBar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#ffffff" >
+    
+   <TextView 
+   		android:id="@+id/mCancleBtn"
+   		android:text="完成"
+   		android:textSize="14sp"
+   		android:textColor="#e4393c"
+   		android:gravity="center"
+   		android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:layout_alignParentRight="true"
+    	android:background="#00000000"
+    	android:paddingLeft="30dp"
+    	android:paddingRight="30dp" 
+    	/>
+   		
+   		<TextView 
+   		android:id="@+id/mEditTipTitle"
+   		android:text="请选择图书"
+   		android:textSize="15sp"
+   		android:textColor="#333333"
+   		android:gravity="center"
+   		android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:layout_centerInParent="true"
+    	android:background="#00000000"/>
+    	
+   		<TextView 
+   		android:id="@+id/mSelectAllBtn"
+   		android:text="全选"
+   		android:textSize="14sp"
+   		android:textColor="#333333"
+   		android:gravity="center"
+   		android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:background="#00000000"
+    	android:paddingLeft="30dp"
+    	android:paddingRight="30dp" />
+   		
+   		<View 
+   		android:layout_alignParentBottom="true"
+   		android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="#bfbfbf" />
+
+</RelativeLayout>

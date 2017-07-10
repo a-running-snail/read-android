@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_margin="@dimen/wSize12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="推荐关注"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/stSize16" />
+
+        <TextView
+            android:id="@+id/recommendAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/red_sub"
+            android:padding="@dimen/wSize6"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:text="一键关注"/>
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:paddingLeft="@dimen/wSize12"
+   	 	android:paddingRight="@dimen/wSize12"
+        android:background="@color/timeline_divider_color"/>
+    
+    <HorizontalScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/wSize12"
+        android:scrollbars="none">
+        <LinearLayout android:id="@+id/recommendContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+</LinearLayout>

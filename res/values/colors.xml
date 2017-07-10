@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <!-- 自定义的顶部栏配置 开始 -->
+    <color name="custom_top_bar_background_color">#FCFCFC</color>
+    <color name="custom_top_bar_bottom_divider_color">#BFBFBF</color>
+    <color name="custom_top_bar_menu_red_dot_font_color">#ffffff</color>
+    <!--<color name="custom_top_bar_menu_single_item_font_color">#333333</color>-->
+    <color name="custom_top_bar_menu_item_font_color">#D9414E</color>
+    <!--<color name="custom_top_bar_menu_item_font_color_unselected">#A5A5A5</color>-->
+    <!-- 自定义的顶部栏配置 结束 -->
+
+    <!--<color name="light_green">#6A9329</color>-->
+    <color name="dark_grey">#4A4A4A</color>
+    <color name="dark_grey_hl">#444444</color>
+    <!-- <color name="font_white">#929292</color> -->
+    <color name="font_white_hl">#f8f8f8</color>
+    <color name="bg_white">#F8F8F8</color>
+    <!--<color name="button_bg_white">#FDFDFD</color>-->
+    <color name="font_light_grey">#D8D8D8</color>
+    <!--<color name="link_color">#99B1CE</color>-->
+    <!--<color name="bar_white">#F2F2F2</color>-->
+    <color name="category_title_gay">#f4f4f4</color>
+    <color name="app_bg_grey">#F8F8F8</color>
+    <color name="selected_grey">#e6e6e6</color>
+    <!--<color name="tab_bg_hl">#929292</color>-->
+    <color name="tab_textcolor_hl">#FFFFFF</color>
+    <!--<color name="tab_bg">#F8F8F8</color>-->
+    <color name="tab_textcolor">#777777</color>
+    <color name="link_overlay">#99777777</color>
+    <color name="timeline_bg">#f8f8f8</color>
+    <color name="timeline_book_title">#0D72CA</color>
+    <!--<color name="timeline_body_font_color">#353535</color>-->
+    <!--<color name="timeline_quote_font_color">#6D6A6A</color>-->
+    <color name="timeline_bottom_font_color">#989898</color>
+    <color name="timeline_divider_color">#bfbfbf</color>
+    <color name="user_more">#b8b8b8</color>
+    <color name="transparent">#00000000</color>
+    <color name="border_bubble_me">#b1d081</color>
+    <color name="border_bubble_friends">#ededed</color>
+    <!--<color name="share_longlist_bottom_color">#a7d867</color>-->
+
+    <!-- action bar -->
+    <color name="actionbar_highlight">#E66045</color>
+    <color name="actionbar_default_bg">#191919</color>
+    <!--<color name="textview_clickable">#ED7057</color>-->
+    <color name="bookshelf_gifts">#ED7057</color>
+    <!--<color name="actionbar_default">#585858</color>-->
+
+    <!-- rectangle style -->
+    <color name="border_light_grey">#D8D8D8</color>
+    <color name="divider">#c6c6c6</color>
+    <color name="book_store_bg">#ffffff</color>
+    <!-- <color name="white">#ffffff</color> -->
+    <color name="font_dark1">#404040</color>
+    <!--<color name="font_grey1">#bfbfbf</color>-->
+    <!--<color name="catalog_bg01">#fafafa</color>-->
+    <!--<color name="catalog_bg02">#f7f7f7</color>-->
+    <!--<color name="catalog_font_color_highlight">#ed7057</color>-->
+    <color name="catalog_font_color">#575551</color>
+
+    <!-- 京东阅读 -->
+
+    <color name="text_main">#333333</color>
+    <color name="text_grey">#888888</color>
+    <color name="hariline">#BFBFBF</color>
+    <color name="bg_main">#FCFCFC</color>
+    <color name="index_bg">#ECECEC</color>
+    <color name="bg_sub">#F2F2F2</color>
+    <color name="bg_sub_deep">#F3F3F3</color>
+    <color name="subtitle_color">#A5A5A5</color>
+    <color name="highlight_color">#D9414E</color>
+    <!--<color name="bookself_bg">#ffffff</color>-->
+    <color name="text_sub">#A5A5A5</color>
+    <color name="bg_menu_shadow">#80000000</color>
+    <color name="bookshelf_download_bg">#bf000000</color>
+    <color name="red_main">#d9414e</color>
+    <color name="red_sub">#f24957</color>
+    <color name="green_main">#77B224</color>
+    <color name="green_sub">#95CC47</color>
+    <color name="indicator_light_bg">#ccffffff</color>
+    <color name="indicator_dark_bg">#cc000000</color>
+    <color name="pie_chart_red">#f24957</color>
+    <color name="pie_chart_orange">#ff7f00</color>
+    <color name="pie_chart_yellow">#ffd400</color>
+    <color name="pie_chart_green">#6de52e</color>
+    <color name="pie_chart_cyan">#00e5e5</color>
+    <color name="pie_chart_blue">#4072ff</color>
+    <color name="pie_chart_violet">#924dff</color>
+    <color name="pie_chart_magenta">#f23dc7</color>
+    <color name="pie_chart_dark_gray">#808080</color>
+    <color name="pie_chart_light_gray">#cccccc</color>
+    <color name ="title_blue">#0d0d5b</color>
+    <!-- 京东阅读配色 -->
+    <!-- reader standard -->
+    <color name="r_theme">#be3945</color>
+    <color name="r_bg_main">#f2f2f2</color>
+    <color name="r_bg_sub">#e5e5e5</color>
+    <color name="r_hariline">#bfbfbf</color>
+    <color name="r_text_main">#333333</color>
+    <color name="r_text_sub">#a5a5a5</color>
+    <color name="r_text_disable">#bfbfbf</color>
+    <color name="r_bg_click">#19bfbfbf</color>
+    <!-- reader soft -->
+    <color name="s_theme">#bf8330</color>
+    <color name="s_bg_main">#faf5ed</color>
+    <color name="s_bg_sub">#f0e9df</color>
+    <color name="s_hariline">#ccc3b8</color>
+    <color name="s_text_main">#4d4841</color>
+    <color name="s_text_sub">#a69f95</color>
+    <color name="s_text_disable">#bfb7ac</color>
+    <color name="s_bg_click">#19ccc3b8</color>
+    <!-- reader mint -->
+    <color name="m_theme">#77b224</color>
+    <color name="m_bg_main">#ceebce</color>
+    <color name="m_bg_sub">#e6ebdf</color>
+    <color name="m_hariline">#c3ccb8</color>
+    <color name="m_text_main">#484d41</color>
+    <color name="m_text_sub">#abb2a1</color>
+    <color name="m_text_disable">#c3ccb8</color>
+    <color name="m_bg_click">#19c3ccb8</color>
+    <!-- reader night -->
+    <color name="n_theme">#be3945</color>
+    <color name="n_bg_main">#000000</color>
+    <color name="n_bg_sub">#1a1a1a</color>
+    <color name="n_hariline">#333333</color>
+    <color name="n_text_main">#8c8c8c</color>
+    <color name="n_text_sub">#595959</color>
+    <color name="n_text_disable">#404040</color>
+    <color name="n_bg_click">#19333333</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="shoppingcart_empty_text_color">#CDCDCD</color>
+	<color name="main_gray">#9A9A9A</color>
+	
+	
+	<!-- ================================================================================================ -->
+	<color name="gray">#FFCCCCCC</color>
+    <!--<color name="product_odd_row">#FFFFFFFF</color>-->
+    <!--<color name="product_even_row">#FFF5F5F5</color>-->
+    <!--<color name="bar">#C0202020</color>-->
+    <!-- 商品分类奇偶行背景色 -->
+    <!--<drawable name="category_odd_row_normal">#FFF5F5F5</drawable>-->
+    <!--<drawable name="category_even_row_normal">#FFE6E6E6</drawable>-->
+
+    <!-- 商品列表页奇偶行背景色 -->
+    <!--<drawable name="product_odd_row_normal">#FFFFFFFF</drawable>-->
+    <!--<drawable name="product_even_row_normal">#FFF5F5F5</drawable>-->
+
+    <!-- 列表行背景色-Normal -->
+    <!--<drawable name="list_row_mormal">#FFFFFFFF</drawable>-->
+
+    <!-- 满赠/音像列表行背景色-Normal -->
+    <!--<drawable name="list_row_zeng">#FFFDDD</drawable>-->
+
+    <!-- 列表项被点击时高亮效果 -->
+    <!--<drawable name="list_row_active">#FFffdd66</drawable>-->
+    <!--<drawable name="list_row_pressed">#FFffdd66</drawable>-->
+
+    <!-- 所有红色文字请使用此定义，以后如果需要深色一点或者浅色一点，在此统一修改 -->
+    <!--<color name="font_gray">#888888</color>-->
+
+    <!-- 产品详情中颜色或尺寸等选项 -->
+    <!--<color name="product_options_active">#FF9900</color>-->
+    <!--<color name="product_options_passive">#999999</color>-->
+
+    <!-- 图书详情页 -->
+    <!--<color name="level_1_font_black">#232323</color>-->
+    <!--<color name="level_2_font_grey">#6e6e6e</color>-->
+    <!--<color name="highlight_font_powder">#F11759</color>-->
+    <!--<color name="button_font_grey">#544f42</color>-->
+
+    <!-- 所有蓝色文字请使用此定义，在此统一修改 -->
+    <!--<color name="font_blue">#4682B4</color>-->
+    <!--<color name="font_blue_hints">#5E7E9A</color>-->
+    <!--<color name="font_red_hints">#FC1818</color>-->
+    <!--<color name="font_red_pink">#F94077</color>-->
+
+    <!-- 系统默认有的按钮或者背景颜色或图片可以使用这个来去掉 -->
+    <drawable name="none">#00FFFFFF</drawable>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- 详细订单中headerview的背景颜色 -->
+    <!--<color name="bg_color_order">#AFF3EEE2</color>-->
+    <!--<color name="bg_color_prud">#7FCDC3B4</color>-->
+    <color name="bg_color_car_pinkred">#7FCDC3B4</color>
+    <!--<color name="usercomment_title">#161616</color>-->
+    <!--<color name="usercomment_nockname">#998267</color>-->
+    <!--<color name="usercomment_comment">#5a5a5a</color>-->
+    <!--<color name="selected_green">#9ACD32</color>-->
+    <color name="gray_light">#eeeee6</color>
+    <!--<color name="bg_color_local_category_pressed">#d2c1ad</color>-->
+    <!--<color name="bg_color_local_listmode_pressed">#ffe9e2d9</color>-->
+    <!--<color name="bg_color_local_grid_pressed">#33bad7</color>-->
+    <!-- 评论界面 -->
+    <!--<color name="usercomment_bg">#dee1e4</color>-->
+    <!--<color name="usercomment_title_new">#b4a3a9</color>-->
+    <!--<color name="usercomment_comment_new">#999999</color>-->
+
+    <!-- 红色字体 -->
+    <!--<color name="font_red">#FF8080</color>-->
+    <color name="font_dark_red">#f05747</color>
+    <!--<color name="font_red_price">#f12967</color>-->
+    <!--<color name="font_red_categroy">#f12967</color>-->
+    <!--<color name="font_theme_color">#FF333333</color>-->
+    <!--<color name="font_title_color">#FF666666</color>-->
+    <!-- 白色色字体 -->
+    <color name="font_white"> #FFFFFFFF</color>
+    <!--<color name="font_black">#ff000000</color>-->
+    <!--<color name="font_yellow">#FFD700</color>-->
+    <!--<color name="font_orangered">#FF7256</color>-->
+    <!--<color name="font_blue_night">#ADD8E6</color>-->
+    <!--<color name="font_red_search">#f21559</color>-->
+    <!--<color name="font_dg">#008800</color>-->
+    <!--<color name="font_gr">#ff00ff00</color>-->
+    <!--<color name="font_ly">#FEF284</color>-->
+    <!--<color name="font_cy">#ff00ffff</color> &lt;!&ndash; 蓝绿 &ndash;&gt;-->
+    <!--<color name="font_pi">#ffc8ff</color> &lt;!&ndash; 粉红 &ndash;&gt;-->
+    <!--<color name="font_ma">#ffff00ff</color> &lt;!&ndash; 品红 &ndash;&gt;-->
+    
+    <!--<color name="font_3">#333333</color>-->
+
+    <!--<drawable name="color_category_pressed">#EEEDE6</drawable>-->
+    <!--<drawable name="color_category_default">#FFFFFF</drawable>-->
+    <!-- gray_lunch_bg 启动的背景色， -->
+    <color name="gray_lunch_bg">#494949</color>
+    <!--<color name="light_gray">#7b616b</color>-->
+    <!--<color name="font_white_eaeaea">#504c46</color>-->
+    <!--<color name="font_gray_999999">#999999</color>-->
+     <!--<color name="font_gray_666666">#66000000</color>-->
+     <!--<color name="font_gray_b2b2b2">#b2b2b2</color>-->
+     <!--<color name="font_gray_a5a5a5">#A5A5A5</color>-->
+     
+     <!-- 本地书架 -->
+     <!--<color name="font_color_local_category">#221b11</color>-->
+     <color name="font_color_onlineshop">#504c46</color>
+     <!--<color name="bg_color_local_category">#e5d6c4</color>-->
+     <color name="item_tab2_selected">#33bad7</color>
+     
+     <!--<color name="list_item_default">@color/main_bg</color>-->
+     <!--<color name="list_item_selected">#e9e2d9</color>-->
+     
+     <!-- 在线书城 -->
+     <!--<color name="main_bg">#f3efea</color>-->
+     <color name="font_online_title">#221b11</color>
+     <!--<color name="font_activity_bookinfo">@color/font_color_onlineshop</color>-->
+     <color name="font_book_author">#a6a29c</color>
+     
+     <!-- 我的京东 -->
+     <!--<color name="font_myjd_username">#b1a393</color>-->
+     <!--<color name="font_myjd_81a523">#81a523</color>-->
+     
+     <!-- 试读目录被锁定的字体颜色 -->
+     <!--<color name="font_lock">#999999</color>-->
+     
+     <!-- 网路异常时字体颜色 -->
+     <color name="font_error_notice">#867e76</color>
+     
+     <!--<color name="font_E9E2D9">#E9E2D9</color>-->
+     <!--<color name="font_33bad7">#33bad7</color>-->
+     
+     <!--<color name="splash_one">#6fd4ce</color>-->
+     <!--<color name="splash_three">#72abe1</color>-->
+     <!--<color name="splash_two">#f2c369</color>-->
+     <!--<color name="splash_four">#fe7474</color>-->
+     <color name="unionlogin_click_bg">#D6D6D6</color>
+     <!--<color name="sign_float_win_bg">#D54452</color>-->
+     
+     <color name="refresh_header_text_color">#535252</color>
+     
+     <!--<color name="primary">#3f51b5</color>-->
+    <!--<color name="primary_dark">#303f9f</color>-->
+    <!--<color name="ripple">#F06292</color>-->
+    <!--<color name="accent">#E91E63</color>-->
+    <!--<color name="accent_pressed">#C2185B</color>-->
+    
+    
+    <!-- 礼包color -->
+    <color name="gifitbagcolor">#FFC50F</color>
+    <color name="gifitactivitybg">#9000</color>
+    
+    <color name="category_driver">#eeeeee</color>
+    <color name="loadmore_text_color">#909090</color>
+    
+    <!-- 畅读卡color -->
+    <color name="line_grey">#D4D4D4</color>
+    <!--<color name="textcolor">#666666</color>-->
+    <!--<color name="enabled">#E3E3E3</color>-->
+    
+   	<!-- 社区color -->
+    <color name="community_color_topbar">#333333</color>
+    <color name="community_color_title">#666666</color>
+    <color name="community_color_content">#999999</color>
+    
+    <color name="dialog_bg">#00000000</color>
+    <color name="back_color_sel">#7fcccccc</color>
+    
+    <color name="bookshelf_item_selected_bg">#66000000</color>
+    <color name="dictionary_baike_divider">#459DF5</color>
+</resources>

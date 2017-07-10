@@ -1,0 +1,22 @@
+all:
+	rm  -f *.a *.o
+	gcc -fPIC -c -Wall -I./miracl \
+	miracl/mraes.c \
+	miracl/mrshs256.c \
+	miracl/mrstrong.c \
+	miracl/p1363.c \
+	miracl/rijndael-alg-fst.c
+	gcc -fPIC -c -Wall -I./miracl -I./DRM_API -D_ENCTOOL -D_SERVER -D_CLIENT \
+	DRM_API/DRMLib.cpp \
+	DRM_API/drmalgorithm.cpp \
+	DRM_API/Utility.cpp \
+	DRM_API/md5.c
+		
+	ar crv libebdrm.a mraes.o mrshs256.o p1363.o rijndael-alg-fst.o DRMLib.o drmalgorithm.o Utility.o md5.o
+	ranlib libebdrm.a
+	mkdir -p ./lib/linux
+	cp libebdrm.a ./lib/linux
+
+clean: 
+	rm  -f *.a *.o
+

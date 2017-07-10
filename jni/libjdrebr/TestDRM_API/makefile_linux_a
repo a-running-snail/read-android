@@ -1,0 +1,4 @@
+all:
+	g++ -g -I../DRM_API -D_ENCTOOL -D_SERVER -D_CLIENT -o testlinuxlib TestDRM_API.cpp ../lib/linux/libebdrm.a
+clean:
+	rm -f testlinuxlib testfileencrypt.jdb testfileencrypt.txt *.o

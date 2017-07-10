@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:divider="@color/hariline"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/ptr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/timeline_list"
+                style="@style/list_view_style_no_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!--
+             <include
+            android:id="@+id/screen_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/view_loading"
+            android:background="@color/timeline_bg" />
+        -->
+
+        <com.jingdong.app.reader.view.EmptyLayout
+            android:id="@+id/error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/icon_margin_top" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_notifiction" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/stSize14" />
+
+            <Button
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/btn_margin_bottom"
+                android:layout_marginLeft="@dimen/padding_top"
+                android:layout_marginRight="@dimen/padding_top"
+                android:background="@drawable/border_btn_red"
+                android:gravity="center"
+                android:text="@string/str_go_timeline"
+                android:textColor="@color/red_main"
+                android:textSize="@dimen/stSize16"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

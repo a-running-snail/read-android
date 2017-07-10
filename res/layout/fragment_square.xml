@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+    <RelativeLayout 
+		    android:id="@+id/mTypeLayout"    
+		    android:layout_width="match_parent"
+		    android:layout_height="44dp">
+		        <LinearLayout 
+		          	android:gravity="center"
+		          	android:layout_centerInParent="true"
+		            android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content">
+		            <TextView 
+			            android:id="@+id/mTypeName"
+			            android:text="按时间"
+			            android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			            android:textSize="15sp"
+			            android:textColor="#666666"
+			            />
+		            <ImageView 
+		                android:layout_width="11dp"
+		    			android:layout_height="11dp"
+		    			android:layout_marginLeft="6dp"
+		    			android:background="@drawable/icon_sort_time"
+		                />
+		            
+		        </LinearLayout>
+		        
+		        <View 
+		        	android:layout_width="match_parent"
+		    		android:layout_height="1px"
+		    		android:background="#999999" 
+		    		android:layout_alignParentBottom="true"/>
+		    </RelativeLayout>
+    
+    <android.support.v4.widget.SwipeRefreshLayout  
+        android:id="@+id/mSwipeRefreshLayout"  
+        android:layout_below="@+id/mTypeLayout"
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" >  
+        <com.jingdong.app.reader.view.xlistview.XListView 
+		        android:id="@+id/mListView"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:cacheColorHint="#00000000"
+		        android:listSelector="#00000000"
+		        android:divider="#00000000"
+		        android:dividerHeight="0px"
+		        ></com.jingdong.app.reader.view.xlistview.XListView>
+    </android.support.v4.widget.SwipeRefreshLayout>  
+    
+    <com.jingdong.app.reader.view.EmptyLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

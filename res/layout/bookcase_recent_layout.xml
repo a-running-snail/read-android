@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/viewpager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:visibility="gone" >
+
+        <!-- 最近阅读 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_gravity="center" >
+        </android.support.v4.view.ViewPager>
+
+        <!-- 导航红点 -->
+        <LinearLayout
+            android:id="@+id/dotsArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/viewpager"
+            android:layout_alignRight="@id/viewpager"
+            android:layout_marginBottom="@dimen/wSize8"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 最近阅读为空的视图 -->
+    <LinearLayout
+        android:id="@+id/recent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/bg_sub"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:visibility="visible" >
+
+        <!-- 空视图显示文本 -->
+        <TextView
+            android:id="@+id/no_recent_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/no_recently_reading"
+            android:textSize="15dp"
+            android:textColor="@color/loadmore_text_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

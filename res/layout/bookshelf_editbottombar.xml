@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mFunctionBottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp" 
+    android:background="#ffffff">
+    
+    <TextView 
+   		android:id="@+id/mDeleteBtn"
+   		android:text="删除"
+   		android:textSize="14sp"
+   		android:textColor="#333333"
+   		android:gravity="center"
+   		android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:background="#00000000"
+    	android:paddingLeft="30dp"
+    	android:paddingRight="30dp" />
+   		
+   		<TextView 
+   		android:id="@+id/mMoveBtn"
+   		android:text="移动到"
+   		android:textSize="14sp"
+   		android:textColor="#333333"
+   		android:gravity="center"
+   		android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:background="#00000000"
+    	android:layout_alignParentRight="true"
+    	android:paddingLeft="30dp"
+    	android:paddingRight="30dp" />
+   		
+   		<!-- <View 
+   		android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="#bfbfbf" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hariline"
+        android:paddingLeft="@dimen/custom_top_bar_pupopwindow_item_divider_margin"
+        android:paddingRight="@dimen/custom_top_bar_pupopwindow_item_divider_margin" />
+
+</LinearLayout>

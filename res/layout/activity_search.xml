@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ButtonStyle" >
+
+    <com.jingdong.app.reader.view.SearchTopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_4_tab_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                style="@style/wrap_height_match_width" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hariline" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+         <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="222dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFDFDFD"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/item_selected_bg" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/fileListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_main"
+        android:divider="@null"
+        android:listSelector="@drawable/item_selected_bg" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/selectall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/allcheckbox"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_list_unselected" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@color/transparent"
+                android:text="@string/selectAll"
+                android:textColor="@color/red_main"
+                android:textSize="@dimen/user_follow_number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/imports"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingRight="16dp"
+            android:text="@string/importBookToBookcase"
+            android:textColor="@color/red_main"
+            android:textSize="@dimen/user_follow_number" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/sendbook_firstpage_bg" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/wSize16"
+        android:orientation="horizontal">
+        
+        <TextView android:id="@+id/send_nickname"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingBottom="20dp"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/tSize15" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/wSize120"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/wish3"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/wSize15"
+                android:textColor="@color/text_main"
+                android:lineSpacingExtra="@dimen/wSize8"
+                android:maxLines="10"
+                android:textSize="@dimen/tSize25" />
+
+            <TextView
+                android:id="@+id/wish2"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/wSize10"
+                android:textColor="@color/text_main"
+                android:lineSpacingExtra="@dimen/wSize8"
+                android:text="至乐无如读书"
+                android:maxLines="10"
+                android:textSize="@dimen/tSize25" />
+
+            <TextView
+                android:id="@+id/wish"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/wSize10"
+                android:lineSpacingExtra="@dimen/wSize8"
+                android:text="养心莫若寡欲莫若寡欲"
+                android:maxLines="10"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/tSize25" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    
+</RelativeLayout>

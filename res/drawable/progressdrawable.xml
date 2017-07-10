@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/probardown">  
+    <!--  设置背景色图像资源  -->  
+     <item android:id="@android:id/background" android:drawable="@drawable/pro_nor" />  
+   <!--  设置第一级进度条颜色图像资源  -->  
+   <item android:id="@android:id/progress">  
+        <clip>  
+            <nine-patch android:src="@drawable/pro_sel" />  
+        </clip>  
+    </item>  
+</layer-list> 

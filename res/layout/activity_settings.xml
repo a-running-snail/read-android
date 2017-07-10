@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg_grey" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:gravity="left|bottom"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/settings_read_section"
+                android:textColor="@color/font_dark1"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/timeline_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/hardware_render_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg" >
+
+                <CheckBox
+                    android:id="@+id/hardwareRenderSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_padding_right"
+                    android:button="@drawable/setting_checkbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:text="@string/soft_render"
+                    android:textColor="@color/font_dark1"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:background="@color/timeline_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/volume_page_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg" >
+
+                <CheckBox
+                    android:id="@+id/volume_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_padding_right"
+                    android:button="@drawable/setting_checkbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:text="@string/userVolumeChangePage"
+                    android:textColor="@color/font_dark1"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:background="@color/timeline_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/notification_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg" >
+
+                <CheckBox
+                    android:id="@+id/notification_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_padding_right"
+                    android:button="@drawable/setting_checkbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:text="@string/notification_switch"
+                    android:textColor="@color/font_dark1"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:gravity="left|bottom"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/settings_account_section"
+                android:textColor="@color/font_dark1"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:id="@+id/userModify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/user_modify"
+                android:textColor="@color/font_dark1"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:id="@+id/thirdBind"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/thirdBind"
+                android:textColor="@color/font_dark1"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/supplement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_selected_bg"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:background="@color/timeline_divider_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/setting_padding_left"
+                    android:text="@string/supplementEmail"
+                    android:textColor="@color/font_dark1"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:gravity="left|bottom"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/settings_other_section"
+                android:textColor="@color/font_dark1"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:id="@+id/find_friends"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/find_friends"
+                android:textColor="@color/font_dark1"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:id="@+id/user_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/user_feedback"
+                android:textColor="@color/font_dark1"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:id="@+id/clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/clear_cache"
+                android:textColor="@color/font_dark1"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:background="@color/timeline_divider_color" />
+
+            <TextView
+                android:id="@+id/recommendApp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/setting_padding_left"
+                android:text="@string/recommendApp"
+                android:textColor="@color/font_dark1"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/setting_padding_left"
+                android:background="@color/timeline_divider_color" />
+
+            <LinearLayout
+                android:id="@+id/upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/setting_item_selected_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/setting_padding_left"
+                    android:text="@string/upgrade"
+                    android:textColor="@color/font_dark1"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/upgrade_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/setting_padding_right"
+                    android:src="@drawable/icon_new" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/about_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/setting_padding_left"
+                    android:background="@color/timeline_divider_color" />
+
+                <TextView
+                    android:id="@+id/aboutPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/setting_item_selected_bg"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/setting_padding_left"
+                    android:text="@string/settings_about_phone"
+                    android:textColor="@color/font_dark1"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+          
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/timeline_divider_color" />
+
+            <Button
+                android:id="@+id/settingsLogout"
+                android:layout_width="296dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/setting_item_height"
+                android:background="@drawable/button_error"
+                android:text="@string/logout"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="19dp"
+                android:text="@string/app_name"
+                android:textColor="@color/font_dark1"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/version_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="19dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/font_dark1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/viewpager_overlay_shadow" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

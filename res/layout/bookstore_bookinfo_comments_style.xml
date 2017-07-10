@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/comment_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/avatar_stroke_size" >
+            
+            <include android:id="@+id/userLogo"
+                layout="@layout/common_user_avatar" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/userLogo"
+                android:gravity="center_vertical"
+                android:textColor="@color/title_blue"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/comment_arrow"
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="gone"
+                android:src="@drawable/icon_arrow_right" />
+            
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/custom_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentRight="true"
+                android:numStars="5" />
+            
+			<TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rating"
+                android:textColor="@color/text_grey"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingTop="5dp"
+            android:paddingLeft="50dp"
+            android:textColor="@color/text_main"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+</LinearLayout>

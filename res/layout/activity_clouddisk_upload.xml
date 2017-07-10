@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+            android:id="@+id/upload_msg_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:background="@color/bg_white"
+            android:gravity="center_vertical"
+            android:text="@string/upload_book_msg"
+            android:textSize="16dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <ListView
+            android:id="@+id/upload_local_book_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+        <ProgressBar 
+           android:id="@+id/refresh_progress"
+	      android:layout_width="wrap_content" 
+	      android:layout_height="wrap_content" 
+	      style="?android:attr/progressBarStyleLarge"   
+	      android:layout_gravity="center">
+		</ProgressBar>
+            
+            
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+    <LinearLayout
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/custom_top_bar_pupopwindow_item_divider_margin"
+        android:layout_marginRight="@dimen/custom_top_bar_pupopwindow_item_divider_margin"
+        android:orientation="vertical" >
+
+       
+    </LinearLayout>
+
+</LinearLayout>

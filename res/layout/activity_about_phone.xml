@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_phone_RELEASE"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/setting_padding_left"
+        android:background="@color/timeline_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_phone_SDK"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/sdk"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/setting_padding_left"
+        android:background="@color/timeline_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_resolution_ratio"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/resolution_ratio"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/setting_padding_left"
+        android:background="@color/timeline_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_dpi"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/dpi"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/setting_padding_left"
+        android:background="@color/timeline_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_belong_folder"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/res_folder"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/setting_padding_left"
+        android:background="@color/timeline_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_ram"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/ram"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/setting_padding_left"
+        android:background="@color/timeline_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_sdcard"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/sdcard"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:singleLine="true"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/setting_padding_left"
+        android:background="@color/timeline_divider_color" />
+    
+    <LinearLayout
+         android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/setting_item_selected_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/setting_padding_left"
+            android:text="@string/settings_activity"
+            android:textColor="@color/font_dark1"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

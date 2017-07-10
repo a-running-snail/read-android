@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/radio_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="39dp"
+            android:paddingRight="60dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/radio_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#575551"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/radio_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="#868581"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/indictor"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginRight="36dp"
+            android:background="#ed7057" />
+
+        <ImageView
+            android:id="@+id/radio_download"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/radio_download"
+            
+             />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d0d0d0" />
+
+</LinearLayout>

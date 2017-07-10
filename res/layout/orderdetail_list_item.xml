@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!--  
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wSize14"
+        android:layout_marginTop="@dimen/wSize14" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/wSize60"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/tSize14" />
+
+            <TextView
+                android:id="@+id/good_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize2"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/tSize12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/tSize14" />
+
+            <TextView
+                android:id="@+id/beibi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize2"
+                android:text="@string/beibi"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/tSize14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:background="@color/hariline"/>
+ -->   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="@dimen/wSize16"
+    	android:paddingRight="@dimen/wSize16"
+        android:paddingTop="16dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/book_cover"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="fitXY"
+                android:src="@drawable/book_cover_default" />
+
+            <ImageView
+                android:id="@+id/imageViewLabel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/book_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/text_main"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/book_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_main"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red_main"
+                        android:textSize="@dimen/tSize14" />
+
+                    <TextView
+                        android:id="@+id/beibi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/wSize2"
+                        android:text="@string/beibi"
+                        android:textColor="@color/text_sub"
+                        android:textSize="@dimen/tSize14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/hariline"
+        />
+</LinearLayout>

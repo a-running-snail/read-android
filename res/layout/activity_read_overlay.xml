@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/readOverlayBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="?attr/r_bg_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/navBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp" >
+
+            <ImageView
+                android:id="@+id/navBackImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="@string/app_name"
+                android:src="?attr/read_back_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navPurchase"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/read_round_corner_bg"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:text="@string/purchase"
+                android:textColor="?attr/r_theme"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/gotoPlaylist"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/gotoPlaylistImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="center"
+                android:src="?attr/read_button_playlist_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchBook"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/searchBookImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="center"
+                android:src="?attr/read_search_img" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/speechBook"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="center"
+                android:src="@drawable/speech" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/markBook"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/markBookImage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="center"
+                android:src="?attr/read_bookmark_unmark_img" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/top_container"
+        android:background="@drawable/viewpager_overlay_shadow" />
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/r_bg_main"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <RelativeLayout
+            android:id="@+id/readSeekIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/pageProgress"
+                style="@android:style/Widget.Holo.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp" />
+
+            <SeekBar
+                android:id="@+id/readSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="30dp"
+                android:progressDrawable="?attr/read_slider_progress_img"
+                android:thumb="?attr/read_slider_tune_zero_img" />
+
+            <LinearLayout
+                android:id="@+id/progress_back_forward"
+                android:layout_width="48dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/progress_back_forward_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty_string"
+                    android:src="?attr/read_progress_back_img" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/navToc"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="?attr/read_pressed_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/navTocImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/empty_string"
+                    android:src="?attr/read_toc_img" />
+
+                <TextView
+                    android:id="@+id/navTocText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/read_catalogue"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/navReadSetting"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="?attr/read_pressed_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/navReadSettingImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/empty_string"
+                    android:src="?attr/read_setting_img" />
+
+                <TextView
+                    android:id="@+id/navReadSettingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/read_setting"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/navReadNote"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="?attr/read_pressed_bg"
+                android:orientation="vertical" >
+                
+                <ImageView
+                    android:id="@+id/navReadNoteImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/empty_string"
+                    android:src="?attr/read_note_img" />
+
+                <TextView
+                    android:id="@+id/navReadNoteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/read_note"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_above="@+id/bottom_container"
+        android:background="@drawable/viewpager_upwards_shadow" />
+
+    <RelativeLayout
+        android:id="@+id/nightMode"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bottom_container"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="12dp"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/nightModeImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/icon_read_night" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/readSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="?attr/r_bg_main"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/lightseek_background"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/empty_string"
+                android:src="?attr/read_brightness_down_img" />
+
+            <SeekBar
+                android:id="@+id/lightSeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:progressDrawable="?attr/read_slider_progress_img"
+                android:thumb="?attr/read_slider_tune_zero_img" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/empty_string"
+                android:src="?attr/read_brightness_up_img" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?attr/r_hariline" />
+
+        <LinearLayout
+            android:id="@+id/modifySystemLight"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="?attr/read_pressed_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/modifyText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/read_light_sync_to_system"
+                android:textColor="?attr/r_text_main"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="38dp"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/switch_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?attr/read_switch_off_line_img" />
+
+                <ImageView
+                    android:id="@+id/switchOn_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="?attr/read_switch_on_dot_img" />
+
+                <ImageView
+                    android:id="@+id/switchOff_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="?attr/read_switch_off_dot_img" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/r_hariline"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <View
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="?attr/r_bg_sub"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/r_hariline"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            android:id="@+id/readSettingFont"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <LinearLayout
+                android:id="@+id/fontSize1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/read_pressed_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/fontSizeImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?attr/read_fontsize_down_img" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="?attr/r_hariline" />
+
+            <LinearLayout
+                android:id="@+id/fontSize2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/read_pressed_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/fontSizeImage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?attr/read_fontsize_up_img" />
+            </LinearLayout>
+            
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="?attr/r_hariline" />
+
+            <LinearLayout
+                android:id="@+id/fontTraditional"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/read_pressed_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/fontTraditionalImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reader_btn_font_simplified" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?attr/r_hariline" />
+
+        <LinearLayout
+            android:id="@+id/readSettingColor"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/readSettingWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/whiteTheme"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/read_white_theme" />
+
+                <TextView
+                    android:id="@+id/readSettingWhiteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/read_white"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/readSettingSoft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/softTheme"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/read_soft_theme" />
+
+                <TextView
+                    android:id="@+id/readSettingSoftText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/read_yellow"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/readSettingMint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/mintTheme"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/read_mint_theme" />
+
+                <TextView
+                    android:id="@+id/readSettingMintText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/read_mint"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/readSettingMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/moreView"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/reader_btn_morecolor_standard" />
+
+                <TextView
+                    android:id="@+id/readSettingMoreText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/more"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?attr/r_hariline" />
+
+        <LinearLayout
+            android:id="@+id/adjust_layout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="?attr/read_pressed_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/adjust_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adjust_layout"
+                android:textColor="?attr/r_text_main"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/r_hariline"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <View
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="?attr/r_bg_sub"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/r_hariline"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            android:id="@+id/settingMore"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="?attr/read_pressed_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/settingMoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_more"
+                android:textColor="?attr/r_text_main"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/settingBottomBorder"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_above="@+id/readSetting"
+        android:background="@drawable/viewpager_upwards_shadow"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/pageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_above="@+id/bottom_container"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/read_page_indicator_bg"
+        android:padding="4dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/chapterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="?attr/r_bg_main"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/pageNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chapterName"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="?attr/r_bg_main"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/color_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/viewpager_upwards_shadow" />
+
+        <FrameLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="230dp">
+            <android.support.v4.view.ViewPager
+        		android:id="@+id/vPager"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent">
+    		</android.support.v4.view.ViewPager>
+            
+            <LinearLayout android:id="@+id/dot_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/read_pressed_bg"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+              	<ImageView android:id="@+id/dot1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/viewpager_dot_selected" />
+              	
+            	<ImageView android:id="@+id/dot2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:src="@drawable/viewpager_dot_no_select" />
+                
+            </LinearLayout>
+            
+        </FrameLayout>
+    	
+    	<View
+            android:id="@+id/color_divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/r_hariline"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            android:id="@+id/custom_colors"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="?attr/read_pressed_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/custom_colors_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/custom"
+                android:textColor="?attr/r_text_main"
+                android:textSize="16dp" />
+        </LinearLayout>
+        
+        <!--  <include layout="@layout/reading_color_select"/>  -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/color_pick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/viewpager_upwards_shadow" />
+
+        <include layout="@layout/color_pickerlayout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adjust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/viewpager_upwards_shadow" />
+
+        <include layout="@layout/adjustlayout" />
+    </LinearLayout>
+
+</RelativeLayout>

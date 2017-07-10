@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toc_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/tocList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="32dp"
+        android:listSelector="@drawable/item_selected_bg" >
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/tocBack"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:contentDescription="@string/empty_string"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@drawable/browser_back_selector" />
+
+    <View
+        android:id="@+id/back_border"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/tocBack"
+        android:layout_alignParentTop="true"
+        android:background="#E0E0E0" />
+
+</RelativeLayout>

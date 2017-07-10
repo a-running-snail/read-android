@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main" >
+
+    <com.jingdong.app.reader.view.bookstore.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollvessel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        ptr:ptrAnimationStyle="flip" >
+
+        <LinearLayout
+            android:id="@+id/holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_sub"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </com.jingdong.app.reader.view.bookstore.PullToRefreshScrollView>
+
+    <com.jingdong.app.reader.view.EmptyLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+         <ProgressBar
+        android:id="@+id/loading"
+        style="@style/loading"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:visibility="visible"
+        android:layout_centerInParent="true" />
+    -->
+
+</RelativeLayout>

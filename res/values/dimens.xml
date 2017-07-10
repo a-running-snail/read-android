@@ -1,0 +1,386 @@
+<resources>
+
+    <!-- 自定义的顶部栏配置 开始 -->
+    <dimen name="custom_top_bar_height">44dp</dimen>
+    <dimen name="custom_top_bar_menu_padding">16dp</dimen>
+    <!--<dimen name="custom_top_bar_menu_item_padding">5dp</dimen>-->
+    <dimen name="custom_top_bar_menu_item_text_dot_margin">5dp</dimen>
+    <dimen name="custom_top_bar_menu_item_font_size">14dp</dimen>
+    <dimen name="custom_top_bar_menu_font_size">12dp</dimen>
+    <dimen name="custom_top_bar_menu_max_width">80dp</dimen>
+
+    <!-- 左右菜单图片尺寸 开始 -->
+    <dimen name="custom_top_bar_menu_image_width">24dp</dimen>
+    <dimen name="custom_top_bar_menu_image_height">24dp</dimen>
+    <!-- 红点的配置 左右菜单图片尺寸 结束 -->
+
+    <dimen name="custom_top_bar_bottom_divider_height">1px</dimen>
+    <!-- 红点的配置 开始 -->
+    <!--<dimen name="custom_top_bar_red_dot_padding">3dp</dimen>-->
+    <dimen name="custom_top_bar_red_dot_font_size">12dp</dimen>
+    <!-- 红点的配置 结束 -->
+    <!-- 弹出窗口item高度 -->
+    <dimen name="custom_top_bar_pupopwindow_item_height">44dp</dimen>
+    <dimen name="custom_top_bar_pupopwindow_item_divider_margin">32dp</dimen>
+    <!-- 自定义的顶部栏配置 开始 -->
+
+
+    <!-- 底部菜单图片尺寸 开始 -->
+    <dimen name="custom_bottom_bar_menu_image_width">25dp</dimen>
+    <dimen name="custom_bottom_bar_menu_image_height">25dp</dimen>
+    <dimen name="custom_bottom_bar_menu_image_vessel_width">28dp</dimen>
+    <dimen name="custom_bottom_bar_menu_image_vessel_height">28dp</dimen>
+    <dimen name="custom_bottom_bar_menu_text_height">18dp</dimen>
+    <dimen name="custom_bottom_bar_menu_image_padding_top">6dp</dimen>
+
+    <!-- 底部菜单图片尺寸 结束 -->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+    <dimen name="timeline_padding">16dp</dimen>
+    <dimen name="timeline_padding_left">16dp</dimen>
+    <!--<dimen name="timeline_padding_top">14dp</dimen>-->
+    <dimen name="timeline_padding_right">12dp</dimen>
+    <dimen name="timeline_padding_bottom">6dp</dimen>
+    <dimen name="timeline_content_margin">6dp</dimen>
+    <dimen name="timeline_bottom_margin">13dp</dimen>
+    <!--<dimen name="timeline_bottom_draw_padding">8dp</dimen>-->
+    <dimen name="timeline_author_bottom_gap">8dp</dimen>
+    <dimen name="timeline_bookname_rating_gap">3dp</dimen>
+    <dimen name="timeline_bottom_font_size">12dp</dimen>
+    <dimen name="timeline_body_font_size">16dp</dimen>
+    <!--<dimen name="timeline_quotation_font_size">15dp</dimen>-->
+    <dimen name="chat_padding_left">12dp</dimen>
+    <dimen name="chat_padding_right">14dp</dimen>
+    <!--<dimen name="chat_padding_top">12dp</dimen>-->
+    <!--<dimen name="chat_padding_bottom">12dp</dimen>-->
+    <dimen name="username_vipimage_gap">4dp</dimen>
+    <!--<dimen name="tweet_top_height">75dp</dimen>-->
+    <dimen name="quote_padding">12dp</dimen>
+    <!--<dimen name="quote_padding_top">21dp</dimen>-->
+    <dimen name="avatar_size">40dp</dimen>
+    <dimen name="avatar_stroke_size">40dp</dimen>
+    <!--<dimen name="avatar_ring">1dp</dimen>-->
+    <dimen name="avatar_vip_size">15dp</dimen>
+    <dimen name="avatar_homepage_vip_size">16dp</dimen>
+    <dimen name="picture_size">30dp</dimen>
+    <!--<dimen name="big_picture_size">50dp</dimen>-->
+    <dimen name="thumbnail_margin">10dp</dimen>
+    <dimen name="user_thumbnail">70dp</dimen>
+    <dimen name="user_name">18dp</dimen>
+    <dimen name="user_follow_number">16dp</dimen>
+    <dimen name="user_follow">11dp</dimen>
+    <dimen name="user_more">13dp</dimen>
+    <dimen name="user_info">55dp</dimen>
+    <dimen name="user_detail">12dp</dimen>
+    <dimen name="user_item_height">72dp</dimen>
+    <dimen name="book_cover_width">50dp</dimen>
+    <dimen name="book_cover_height">75dp</dimen>
+    <!--<dimen name="share_cloud_bottom">12dp</dimen>-->
+    <dimen name="share_cloud_user_name">16dp</dimen>
+    <!--<dimen name="booksbar_book_cover_width">75dp</dimen>-->
+    <!--<dimen name="booksbar_book_cover_height">115dp</dimen>-->
+    <!--<dimen name="booksbar_photo_width">50dp</dimen>-->
+    <!--<dimen name="booksbar_photo_height">50dp</dimen>-->
+    <!--<dimen name="smaller_booksbar_photo_width">50dp</dimen>-->
+    <!--<dimen name="smaller_booksbar_photo_height">50dp</dimen>-->
+    <!--<dimen name="book_bottom_top_padding">13dp</dimen>-->
+    <dimen name="book_right_margin">10dp</dimen>
+    <dimen name="book_arrow_width">17dp</dimen>
+    <dimen name="post_tweet_edit_text_below">12dp</dimen>
+    <dimen name="post_tweet_padding_top">17dp</dimen>
+    <dimen name="post_tweet_padding_left">16dp</dimen>
+    <!--<dimen name="pic_response">5dp</dimen>-->
+    <dimen name="button_height">28dp</dimen>
+    <dimen name="first_line_indent">-6dp</dimen>
+    <!--<dimen name="text_size_medium">18dp</dimen>-->
+    <dimen name="left_pic_padding">15dp</dimen>
+    <dimen name="text_space">15dp</dimen>
+    <dimen name="text_space_email">8.5dp</dimen>
+    <dimen name="modify_info_padding">12.5dp</dimen>
+    <dimen name="modify_name_width">130dp</dimen>
+    <dimen name="modify_name_height">30dp</dimen>
+    <dimen name="modify_user_thumbnail">100dp</dimen>
+    <dimen name="small_user_thumbnail">28dp</dimen>
+    <dimen name="setting_item_height">46dp</dimen>
+    <dimen name="setting_padding_left">21dp</dimen>
+    <dimen name="setting_padding_right">32dp</dimen>
+
+    <integer name="timeline_max_4line">4</integer>
+    <integer name="timeline_single_line">1</integer>
+    <integer name="timeline_comment_minline">5</integer>
+    <!--<integer name="message_max_alert_line">2</integer>-->
+    <!-- top title height -->
+    <!--<dimen name="custom_title_height">50dp</dimen>-->
+    <!--<dimen name="default_booksbar_width">70dp</dimen>-->
+    <!--<dimen name="default_booksbar_height">70dp</dimen>-->
+    <!--<dimen name="default_row_height">48dp</dimen>-->
+
+    <!-- 平台自适应分辨率 开始 -->
+
+    <integer name="default_books_case_column">3</integer>
+
+    <!--<dimen name="default_books_cover_width">90dp</dimen>-->
+    <dimen name="default_books_cover_height">135dp</dimen>
+    <!--<dimen name="default_books_cover_bg_width">90dp</dimen>-->
+    <!--<dimen name="default_books_cover_bg_height">145dp</dimen>-->
+    <dimen name="default_cover_width">85dp</dimen>
+    <!--<dimen name="default_cover_height">131dp</dimen>-->
+    <!--<dimen name="default_bookstore_free_grid_width">90dp</dimen>-->
+    <!--<dimen name="default_bookstore_recommend_item_width">90dp</dimen>-->
+    <!--<dimen name="default_bookcase_local_item_width">90dp</dimen>-->
+    <!--<dimen name="default_bookinfo_bookname_text_size">18dp</dimen>-->
+    <!--<dimen name="default_bookinfo_book_info_size">13dp</dimen>-->
+
+    <integer name="default_bookpageview_margin_left">25</integer>
+    <integer name="default_bookpageview_margin_right">25</integer>
+    <integer name="default_textsize_level">3</integer>
+    <integer name="default_linespace_level">2</integer>
+    <integer name="default_blockspace_level">2</integer>
+    <integer name="default_pageedgespace_level">1</integer>
+    <!--<integer name="default_bookshelf_recent_show_books">4</integer>-->
+
+    <!--<dimen name="bookcase_books_sub_grid_height">55dp</dimen>-->
+    <!--<dimen name="default_timeline_leftpadding">40dp</dimen>-->
+    <!--<dimen name="default_timeline_rightpadding">0dp</dimen>-->
+    <!--<dimen name="default_timeline_indent_rightmargin">0dp</dimen>-->
+    <dimen name="timeline_text_extra_space">3dp</dimen>
+    <!--<dimen name="timeline_booklist_title_text">12dp</dimen>-->
+    <!--<dimen name="timeline_item_contentview_margin_right">0dp</dimen>-->
+    <!--<dimen name="bookinfo_summary_text_size">15dp</dimen>-->
+    <dimen name="books_selected_imageview_height">180dp</dimen>
+    <dimen name="book_list_title_text_size">15dp</dimen>
+    <!--<dimen name="bookstore_title_name_fontsize">16dp</dimen>-->
+    <!--<dimen name="bookstore_title_more_fontsize">12dp</dimen>-->
+    <!--<dimen name="bookstore_title_button_width">40dp</dimen>-->
+    <!--<dimen name="bookstore_title_height">24dp</dimen>-->
+    <!--<dimen name="bookstore_book_info_height">70dp</dimen>-->
+    <!--<dimen name="bookstore_book_name_fontsize">14dp</dimen>-->
+    <!--<dimen name="bookstore_book_author_fontsize">12dp</dimen>-->
+    <!--<dimen name="bookstore_book_type_fontsize">14dp</dimen>-->
+    <!--<dimen name="bookstore_book_price_fontsize">12dp</dimen>-->
+    <!--<dimen name="bookstore_book_info_paddingleft">6dp</dimen>-->
+    <!--<dimen name="bookstore_book_info_paddingright">6dp</dimen>-->
+    <!--<dimen name="bookstore_book_info_paddingtop">12dp</dimen>-->
+    <!--<dimen name="bookstore_book_info_paddingbottom">6dp</dimen>-->
+    <!--<dimen name="bookstore_theme_type_fontsize">14dp</dimen>-->
+    <!--<dimen name="bookstore_theme_price_fontsize">12dp</dimen>-->
+    <!--<dimen name="bookstore_theme_info_paddingleft">6dp</dimen>-->
+    <!--<dimen name="bookstore_theme_info_paddingright">6dp</dimen>-->
+    <!--<dimen name="bookstore_theme_info_paddingtop">12dp</dimen>-->
+    <!--<dimen name="bookstore_theme_info_paddingbottom">6dp</dimen>-->
+    <!--<dimen name="bookstore_special_title_fontsize">14dp</dimen>-->
+    <!--<dimen name="bookstore_special_info_fontsize">12dp</dimen>-->
+    <!--<dimen name="bookstore_special_image_width">80dp</dimen>-->
+
+    <!--<integer name="default_special_column">1</integer>-->
+
+    <dimen name="bookstore_category_title_fontsize">14dp</dimen>
+    <!--<dimen name="bookstore_category_count_fontsize">13dp</dimen>-->
+    <!--<dimen name="default_bookshelf_book_margin">12dp</dimen>-->
+    <!-- 适配平板分辨率机型需要按比例分配尺寸 -->
+    <!-- 竖向尺寸 -->
+    <!-- 负数为_开头 -->
+    <!--<dimen name="hSize_5">-5dip</dimen>-->
+    <!--<dimen name="hSize_2">-2dip</dimen>-->
+    <dimen name="hSize1">1dip</dimen>
+    <!--<dimen name="hSize1.5">1.5dip</dimen>-->
+    <dimen name="hSize2">2dip</dimen>
+    <dimen name="hSize3">3dip</dimen>
+    <!--<dimen name="hSize4">4dip</dimen>-->
+    <!--<dimen name="hSize5">5dip</dimen>-->
+    <!--<dimen name="hSize6">6dip</dimen>-->
+    <dimen name="hSize7">7dip</dimen>
+    <dimen name="hSize8">8dip</dimen>
+    <dimen name="hSize10">10.0dip</dimen>
+    <!--<dimen name="hSize12">12dip</dimen>-->
+    <!--<dimen name="hSize14">14dip</dimen>-->
+    <!--<dimen name="hSize_12">-12dip</dimen>-->
+    <!--<dimen name="hSize13">13dip</dimen>-->
+    <dimen name="hSize15">15.0dip</dimen>
+    <!--<dimen name="hSize17">17dip</dimen>-->
+    <!--<dimen name="hSize18">18dip</dimen>-->
+    <dimen name="hSize20">20.0dip</dimen>
+    <dimen name="hSize22">22.0dip</dimen>
+    <!--<dimen name="hSize25">25.0dip</dimen>-->
+    <!--<dimen name="hSize28">28dip</dimen>-->
+    <!--<dimen name="hSize29">29dip</dimen>-->
+    <dimen name="hSize30">30.0dip</dimen>
+    <!--<dimen name="hSize33">33dip</dimen>-->
+    <!--<dimen name="hSize32">32dip</dimen>-->
+    <dimen name="hSize35">35.0dip</dimen>
+    <!--<dimen name="hSize37">37.0dip</dimen>-->
+    <dimen name="hSize40">40.0dip</dimen>
+    <!--<dimen name="hSize41">41.0dip</dimen>-->
+    <!--<dimen name="hSize43">43dip</dimen>-->
+    <dimen name="hSize44">44dip</dimen>
+    <dimen name="hSize45">45.0dip</dimen>
+    <!--<dimen name="hSize46">46.0dip</dimen>-->
+    <dimen name="hSize48">48.0dip</dimen>
+    <dimen name="hSize50">50dip</dimen>
+    <!--<dimen name="hSize53">53dip</dimen>-->
+    <!--<dimen name="hSize56">56dip</dimen>-->
+    <!--<dimen name="hSize58">58dip</dimen>-->
+    <!--<dimen name="hSize60">60.0dip</dimen>-->
+    <!--<dimen name="hSize61">61.0dip</dimen>-->
+    <!--<dimen name="hSize65">65.0dip</dimen>-->
+    <!--<dimen name="hSize66">66.0dip</dimen>-->
+    <!--<dimen name="hSize70">70.0dip</dimen>-->
+    <!--<dimen name="hSize75">75.0dip</dimen>-->
+    <!--<dimen name="hSize77">77dip</dimen>-->
+    <!--<dimen name="hSize78">78dip</dimen>-->
+    <!--<dimen name="hSize80">80.0dip</dimen>-->
+    <!--<dimen name="hSize85">85.0dip</dimen>-->
+    <!--<dimen name="hSize90">90.0dip</dimen>-->
+    <!--<dimen name="hSize100">100dip</dimen>-->
+    <!--<dimen name="hSize109">109dip</dimen>-->
+    <!--<dimen name="hSize111">111dip</dimen>-->
+    <!--<dimen name="hSize120">120dip</dimen>-->
+    <!--<dimen name="hSize128">128dip</dimen>-->
+    <!--<dimen name="hSize136">136dip</dimen>-->
+    <!--<dimen name="hSize140">140dip</dimen>-->
+    <!--<dimen name="hSize150">150dip</dimen>-->
+    <!--<dimen name="hSize151">151dip</dimen>-->
+    <!--<dimen name="hSize162">162dip</dimen>-->
+    <!--<dimen name="hSize170">170dip</dimen>-->
+    <!--<dimen name="hSize153">153dip</dimen>-->
+    <!--<dimen name="hSize193">193dip</dimen>-->
+    <!--<dimen name="hSize210">210dip</dimen>-->
+    <!--<dimen name="hSize_g78">78dip</dimen>-->
+
+    <!-- 横向尺寸 -->
+    <!--<dimen name="wSize1">1dip</dimen>-->
+    <!--<dimen name="wSize1.5">1.5dip</dimen>-->
+    <dimen name="wSize2">2.0dip</dimen>
+    <dimen name="wSize3">3.0dip</dimen>
+    <dimen name="wSize4">4.0dip</dimen>
+    <dimen name="wSize5">5.0dip</dimen>
+    <dimen name="wSize6">6.0dip</dimen>
+    <dimen name="wSize7">7.0dip</dimen>
+    <dimen name="wSize8">8.0dip</dimen>
+    <!--<dimen name="wSize9">9dip</dimen>-->
+    <dimen name="wSize10">10dip</dimen>
+    <!--<dimen name="wSize11">11.0dip</dimen>-->
+    <dimen name="wSize12">12.0dip</dimen>
+    <dimen name="wSize14">14.0dip</dimen>
+    <dimen name="wSize15">15.0dip</dimen>
+    <dimen name="wSize16">16.0dip</dimen>
+    <dimen name="wSize18">18.0dip</dimen>
+    <dimen name="wSize20">20.0dip</dimen>
+    <dimen name="wSize25">25dip</dimen>
+    <dimen name="wSize28">28dip</dimen>
+    <!--<dimen name="wSize29">29dip</dimen>-->
+    <dimen name="wSize30">30.0dip</dimen>
+    <dimen name="wSize32">32.0dip</dimen>
+    <dimen name="wSize35">35.0dip</dimen>
+    <dimen name="wSize36">36.0dip</dimen>
+    <dimen name="wSize40">40dip</dimen>
+    <!--<dimen name="wSize43">43dip</dimen>-->
+    <dimen name="wSize44">44dip</dimen>
+    <!--<dimen name="wSize45">45dip</dimen>-->
+    <!--<dimen name="wSize47">47dip</dimen>-->
+    <dimen name="wSize48">48dip</dimen>
+    <dimen name="wSize50">50dip</dimen>
+    <!--<dimen name="wSize55">55dip</dimen>-->
+    <!--<dimen name="wSize56">56dip</dimen>-->
+    <!--<dimen name="wSize58">58dip</dimen>-->
+    <dimen name="wSize60">60dip</dimen>
+    <!--<dimen name="wSize61">61dip</dimen>-->
+    <dimen name="wSize64">64dip</dimen>
+    <dimen name="wSize65">65dip</dimen>
+    <dimen name="wSize68">68dip</dimen>
+    <!--<dimen name="wSize70">70dip</dimen>-->
+    <dimen name="wSize72">72dip</dimen>
+    <dimen name="wSize80">80.0dip</dimen>
+    <!--<dimen name="wSize85">85.0dip</dimen>-->
+    <dimen name="wSize90">90dip</dimen>
+    <dimen name="wSize95">95.0dip</dimen>
+    <!--<dimen name="wSize100">100dip</dimen>-->
+    <dimen name="wSize108">108dip</dimen>
+    <dimen name="wSize110">110dip</dimen>
+    <!--<dimen name="wSize102">102dip</dimen>-->
+    <!--<dimen name="wSize106">106dip</dimen>-->
+    <!--<dimen name="wSize111">111dip</dimen>-->
+    <dimen name="wSize120">120dip</dimen>
+    <!--<dimen name="wSize126">126dip</dimen>-->
+    <!--<dimen name="wSize130">130dip</dimen>-->
+    <dimen name="wSize150">150dip</dimen>
+    <dimen name="wSize166">166dip</dimen>
+    <!--<dimen name="wSize193">193dip</dimen>-->
+    <dimen name="wSize24">24dip</dimen>
+    <dimen name="wSize240">240dip</dimen>
+    <!--<dimen name="wSize256">256dip</dimen>-->
+    <!--<dimen name="wSize300">300dip</dimen>-->
+    <!-- 特殊定制高度 -->
+    <!--<dimen name="h_buybutton_Size3">5dip</dimen>-->
+    <!-- 字体尺寸 -->
+    <dimen name="tSize10">10.0dp</dimen>
+    <!--<dimen name="tSize11">11.0dp</dimen>-->
+    <dimen name="tSize12">12.0dp</dimen>
+    <dimen name="tSize13">13.0dp</dimen>
+    <dimen name="tSize14">14.0dp</dimen>
+    <dimen name="tSize15">15.0dp</dimen>
+    <dimen name="tSize16">16.0dp</dimen>
+    <!--<dimen name="tSize17">17.0dp</dimen>-->
+    <dimen name="tSize18">18.0dp</dimen>
+    <!--<dimen name="tSize19">19dp</dimen>-->
+    <dimen name="tSize20">20dp</dimen>
+    <!--<dimen name="tSize22">22dp</dimen>-->
+    <dimen name="tSize25">25dp</dimen>
+    <!--<dimen name="tSize26">26dp</dimen>-->
+    <dimen name="tSize30">30dp</dimen>
+    <!-- 字体尺寸 -->
+    <dimen name="stSize10">10.0sp</dimen>
+    <!--<dimen name="stSize11">11.0sp</dimen>-->
+    <dimen name="stSize12">12.0sp</dimen>
+    <dimen name="stSize13">13.0sp</dimen>
+    <dimen name="stSize14">14.0sp</dimen>
+    <!--<dimen name="stSize15">15.0sp</dimen>-->
+    <dimen name="stSize16">16.0sp</dimen>
+    <!--<dimen name="stSize17">17.0sp</dimen>-->
+    <!--<dimen name="stSize18">18.0sp</dimen>-->
+    <!--<dimen name="stSize19">19sp</dimen>-->
+    <!--<dimen name="stSize20">20sp</dimen>-->
+    <!--<dimen name="stSize22">22sp</dimen>-->
+    <!--<dimen name="stSize25">25sp</dimen>-->
+    <!--<dimen name="stSize26">26sp</dimen>-->
+    <!--<dimen name="stSize30">30sp</dimen>-->
+    <!-- 平台自适应分辨率 结束 -->
+
+
+    <!-- 京东阅读 -->
+
+    <!--<dimen name="title_height">40dp</dimen>-->
+    <dimen name="text_size">16dp</dimen>
+    <dimen name="padding_left">16dp</dimen>
+    <dimen name="padding_top">32dp</dimen>
+    <dimen name="between_top">40dp</dimen>
+    <dimen name="padding_bottom">8dp</dimen>
+    <dimen name="subtitle">12dp</dimen>
+    <dimen name="text_long">96dp</dimen>
+    <dimen name="text_long_changdu">80dp</dimen>
+    <dimen name="margin_bottom">24dp</dimen>
+    <dimen name="book_title">14dp</dimen>
+    <dimen name="book_content">12dp</dimen>
+    <dimen name="icon_margin_top">64dp</dimen>
+    <dimen name="icon_width">240dp</dimen>
+    <dimen name="icon_height">128dp</dimen>
+    <dimen name="btn_margin_bottom">40dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <!--<dimen name="header_footer_left_right_padding">24dp</dimen>-->
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!--<dimen name="sign_float_window_size">60.0dp</dimen>-->
+    <dimen name="common_dialog_width">280.0dp</dimen>
+    <!--<dimen name="common_dialog_height">150.0dp</dimen>-->
+    <!--<dimen name="custom_toast_height">60dp</dimen>-->
+    <!--<dimen name="floating_action_text_size">6.5sp</dimen>-->
+    <dimen name="book_detail_cell_margin">35dp</dimen>
+    
+    
+
+</resources>

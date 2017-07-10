@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆形头像 可以支持网络图片显示 -->
+    <declare-styleable name="RoundNetworkImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TextArea">
+        <attr name="truncation" format="boolean" />
+        <attr name="titleMaxLines" format="integer" />
+        <attr name="contentMaxLines" format="integer" />
+    </declare-styleable>
+
+    <!-- dragview start -->
+    <declare-styleable name="SpanVariableGridView">
+        <attr name="numColumns" format="integer" />
+        <attr name="itemMargin" format="dimension" />
+    </declare-styleable>
+    <!-- dragview end -->
+
+
+    <!-- 自定义扇形进度条 开始 -->
+    <declare-styleable name="CustomPieProgress">
+        <attr name="foregroundColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="drawable" format="integer" />
+        <attr name="android:color" />
+        <attr name="shadowRadius" format="float" />
+        <attr name="shadowDx" format="float" />
+        <attr name="shadowDy" format="float" />
+        <attr name="shadowColor" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <!-- 自定义扇形进度条 结束 -->
+
+
+    <!-- 主题切换时用到的颜色值 开始 -->
+    <attr name="r_theme" format="color" />
+    <attr name="r_bg_main" format="color" />
+    <attr name="r_bg_sub" format="color" />
+    <attr name="r_hariline" format="color" />
+    <attr name="r_text_main" format="color" />
+    <attr name="r_text_sub" format="color" />
+    <attr name="r_text_disable" format="color" />
+    <attr name="r_bg_click" format="color" />
+    <attr name="read_back_img" format="reference" />
+    <attr name="read_search_img" format="reference" />
+    <attr name="read_bookmark_marked_img" format="reference" />
+    <attr name="read_bookmark_unmark_img" format="reference" />
+    <attr name="bookmark_list_img" format="reference" />
+    <attr name="read_toc_img" format="reference" />
+    <attr name="read_note_img" format="reference" />
+    <attr name="read_setting_img" format="reference" />
+    <attr name="read_brightness_up_img" format="reference" />
+    <attr name="read_brightness_down_img" format="reference" />
+    <attr name="read_fontsize_up_img" format="reference" />
+    <attr name="read_fontsize_down_img" format="reference" />
+    <attr name="read_daylight_mode_img" format="reference" />
+    <attr name="read_night_mode_img" format="reference" />
+    <attr name="read_switch_off_line_img" format="reference" />
+    <attr name="read_switch_off_dot_img" format="reference" />
+    <attr name="read_switch_on_line_img" format="reference" />
+    <attr name="read_switch_on_dot_img" format="reference" />
+    <attr name="read_slider_tune_zero_img" format="reference" />
+    <attr name="read_slider_tune_img" format="reference" />
+    <attr name="read_slider_progress_img" format="reference" />
+    <attr name="read_progress_forward_img" format="reference" />
+    <attr name="read_progress_back_img" format="reference" />
+    <attr name="read_page_indicator_bg" format="reference" />
+    <attr name="read_list_item_selected_img" format="reference" />
+    <attr name="read_list_item_unselected_img" format="reference" />
+    <attr name="read_item_enabled_img" format="reference" />
+    <attr name="read_round_corner_disable_bg" format="reference" />
+    <attr name="read_round_corner_enable_bg" format="reference" />
+    <attr name="read_round_corner_bg" format="reference" />
+    <attr name="read_pressed_bg" format="reference" />
+    <attr name="read_bookmark_null_img" format="reference" />
+    <attr name="read_note_null_img" format="reference" />
+    <attr name="read_button_bg_img" format="reference" />
+    <attr name="read_back_cover_note_img" format="reference" />
+    <attr name="read_back_cover_time_img" format="reference" />
+    <attr name="read_back_cover_share_img" format="reference" />
+    <attr name="read_button_playlist_img" format="reference" />
+    <attr name="read_button_more_img" format="reference" />
+    <attr name="read_icon_arrow_right_img" format="reference" />
+    <!-- 主题切换时用到的颜色值 结束 -->
+
+    <declare-styleable name="EditTextWithDeleteButton">
+        <attr name="hintText" format="string" />
+        <attr name="rightLabel" format="string" />
+        <attr name="deleteButtonRes" format="reference" />
+        <attr name="rightLabelStyle" format="reference" />
+        <attr name="inputType">
+            <enum name="texet" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+    </declare-styleable>
+    
+
+</resources>

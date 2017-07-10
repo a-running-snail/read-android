@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/book_store_bg"
+    android:orientation="vertical" >
+
+    <com.jingdong.app.reader.view.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:background="@color/r_bg_main"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edittext_serach"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bar_xbg"
+            android:drawableLeft="@drawable/search_icon"
+            android:hint="@string/please_input_search_word"
+            android:imeOptions="actionSearch"
+            android:longClickable="false"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/tSize14" />
+    </LinearLayout>
+
+    <!--
+    <FrameLayout
+        android:id="@+id/total_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dip" >
+
+        <TextView
+            android:id="@+id/total_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="#404040"
+            android:text="@string/cloud_book_count"
+            android:textSize="16dp" />
+        
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:id="@+id/upload_book"
+             android:layout_marginRight="10dp"
+             android:layout_gravity="right|center_vertical"
+             android:background="@drawable/bookinfo_purchase_selector"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:background="@drawable/bookinfo_purchase_selector"
+                android:text="@string/upload_book"
+                android:textColor="#ffffff" 
+                android:padding="6dp"
+                />
+            
+        </LinearLayout>
+
+    </FrameLayout>
+    -->
+
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bfbfbf" />  -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/cloud_disk_book_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@drawable/list_item_color"
+        		android:background="#00000000"
+       			android:divider="#00000000"
+        		android:dividerHeight="0dp"
+                android:layout_marginTop="4dip"/>
+
+            <RelativeLayout
+                android:id="@+id/search_result_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/icon_margin_top"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bookstore_icon_search_null" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon"
+                    android:layout_marginLeft="@dimen/padding_top"
+                    android:layout_marginRight="@dimen/padding_top"
+                    android:gravity="center_horizontal"
+                    android:text="@string/book_sign_option"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/tSize14" />
+
+                <Button
+                    android:id="@+id/lackbook_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/btn_margin_bottom"
+                    android:layout_marginLeft="@dimen/padding_top"
+                    android:layout_marginRight="@dimen/padding_top"
+                    android:background="@drawable/border_btn_red"
+                    android:gravity="center"
+                    android:text="@string/book_sign"
+                    android:textColor="@color/red_main"
+                    android:textSize="@dimen/tSize16" />
+
+                <Button
+                    android:id="@+id/chandu_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_above="@id/lackbook_button"
+                    android:layout_marginBottom="@dimen/wSize20"
+                    android:layout_marginLeft="@dimen/padding_top"
+                    android:layout_marginRight="@dimen/padding_top"
+                    android:background="@drawable/border_btn_green_s12"
+                    android:gravity="center"
+                    android:text="@string/changdu_button"
+                    android:textColor="@color/green_main"
+                    android:textSize="@dimen/tSize16"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/refresh_progress"
+            style="@style/loading"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center" >
+        </ProgressBar>
+    </FrameLayout>
+
+</LinearLayout>

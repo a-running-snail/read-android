@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/show_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/wSize16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:paddingTop="@dimen/wSize16"
+        android:textColor="@color/subtitle_color"
+        android:text="请设置登录密码"
+        android:textSize="@dimen/wSize14" />
+
+    <RelativeLayout
+        android:id="@+id/phone_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wSize50"
+        android:background="@drawable/rectangle_bt_white_bg"
+        android:padding="@dimen/wSize8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/input_password"
+            android:inputType="text"
+            android:textColorHint="@color/hariline"
+            android:paddingLeft="@dimen/wSize10"
+            android:paddingRight="@dimen/wSize40"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size" />
+        
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/wSize25"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_password_invisible"
+                android:layout_centerVertical="true" />
+        
+    </RelativeLayout>
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/wSize10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:paddingTop="@dimen/wSize10"
+        android:textColor="@color/subtitle_color"
+        android:text="密码由6-20位字符组成，包含至少两种以上字母、数字，或者半角字符，区分大小写。"
+        android:textSize="@dimen/wSize10" />
+    
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_unable_xbg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/finish"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bookcart_promote_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/bg_sub"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/bookcart_promote_info_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:textColor="@color/red_main"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bookcart_item_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+    <LinearLayout
+        android:id="@+id/bookcart_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_left" >
+
+            <CheckBox
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:button="@drawable/edit_bookcart_selector"
+                android:enabled="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/user_book_cover"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/book_cover_default"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/top"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="32dp" >
+
+                        <TextView
+                            android:id="@+id/user_book_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_main"
+                            android:textSize="@dimen/book_title" />
+
+                        <TextView
+                            android:id="@+id/book_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:ellipsize="end"
+                            android:gravity="bottom"
+                            android:singleLine="true"
+                            android:textColor="@color/red_main"
+                            android:textSize="@dimen/book_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bookcart_item_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+    </LinearLayout>
+
+</LinearLayout>

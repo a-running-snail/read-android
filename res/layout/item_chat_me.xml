@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/wSize12"
+    android:paddingLeft="@dimen/wSize16"
+    android:paddingRight="@dimen/wSize16"
+    android:paddingTop="@dimen/wSize12" >
+
+    <!--
+   <LinearLayout
+       android:id="@+id/me_avatar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_gravity="top"
+       android:orientation="vertical" >
+
+       <include layout="@layout/common_user_avatar" />
+   </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wSize48"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_green"
+            android:orientation="vertical" >
+
+            <include layout="@layout/include_chat_bubble" />
+
+           <View
+               android:id="@+id/boundary"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"
+               android:layout_marginBottom="@dimen/timeline_bottom_margin"
+               android:background="@color/border_bubble_me" />            
+
+            <TextView
+                android:id="@+id/confirm"
+                style="@style/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/timeline_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/wSize6"
+            android:layout_marginTop="@dimen/wSize8"
+            android:singleLine="true"
+            android:text="@string/time_placehold" />
+    </LinearLayout>
+
+</RelativeLayout>

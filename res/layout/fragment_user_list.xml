@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:divider="@color/hariline"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/timeline_follow_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/timeline_padding" >
+
+            <Button
+                android:id="@+id/follow_button"
+                style="@style/user_follow_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/follow_all" />
+
+            <TextView
+                android:id="@+id/friends_number"
+                style="@style/user_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/follow_button"
+                android:text="@string/recommand_user" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/timeline_following"
+                style="@style/list_view_style_no_divider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/timeline_bg" />
+
+            <!--
+                 <include
+                android:id="@+id/screen_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/view_loading"
+                android:background="@color/timeline_bg" />
+            -->
+
+            <com.jingdong.app.reader.view.EmptyLayout
+                android:id="@+id/error_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/icon_margin_top" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bookstore_icon_search_null" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:gravity="center_horizontal"
+                android:text="@string/user_search"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/tSize14" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/book_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wSize32"
+        android:layout_marginLeft="@dimen/wSize16"
+        android:layout_marginRight="@dimen/wSize16"
+        android:layout_marginTop="@dimen/wSize32" >
+
+        <ImageView
+            android:id="@+id/bookCover"
+            android:layout_width="@dimen/wSize80"
+            android:layout_height="@dimen/wSize108"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shadow_black"
+            android:contentDescription="@string/empty_string"
+            android:maxHeight="100dp"
+            android:maxWidth="150dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_default_cover" />
+
+        <RelativeLayout
+            android:id="@+id/container_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/wSize108"
+            android:layout_marginLeft="@dimen/wSize16"
+            android:layout_marginRight="@dimen/wSize16"
+            android:layout_toRightOf="@+id/bookCover" >
+
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/tSize16"
+                android:singleLine="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookName"
+                android:layout_marginTop="@dimen/wSize4"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/tSize12" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/bookNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/rating"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/tSize12" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/wSize16"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/rating_star"
+                    android:stepSize="1" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--
+             <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/container_middle"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/container_middle"
+            android:layout_toRightOf="@id/bookCover" >
+
+            <Button
+                android:id="@+id/borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/button_hl_seled"
+                android:text="@string/borrow"
+                android:textColor="@color/tab_textcolor_hl"
+                android:textSize="@dimen/user_more" />
+        </FrameLayout>
+        -->
+
+        <ImageView
+            android:layout_width="@dimen/book_arrow_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/book_home"
+            android:scaleType="center"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/timeline_padding" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/read_data_bg_rect"
+            android:paddingBottom="12dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/read_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/read_time"
+                android:textColor="#FF777777"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/read_time_title"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty_string"
+                    android:src="@drawable/profile_icon_time" />
+
+                <TextView
+                    android:id="@+id/readTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/time_placehold"
+                    android:textColor="#444444"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/timeFactor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hour"
+                    android:textColor="#777777"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/read_data_bg_rect"
+            android:paddingBottom="12dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/note_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/note_number"
+                android:textColor="#FF777777"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note_number_title"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty_string"
+                    android:src="@drawable/profile_icon_note" />
+
+                <TextView
+                    android:id="@+id/noteNbumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/time_placehold"
+                    android:textColor="#444444"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slice"
+                    android:textColor="#777777"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:longClickable="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageViewbg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY"
+            android:src="@drawable/bookshelf_folder"
+            android:visibility="invisible" />
+
+        <GridView
+            android:id="@+id/cover_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:numColumns="2"
+            android:paddingTop="16dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:verticalSpacing="8dp"
+            android:horizontalSpacing="8dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY" />
+        
+        <ImageView
+            android:id="@+id/imageViewLabel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/empty_string"
+            android:scaleType="fitXY"
+            />
+        <FrameLayout
+            android:id="@+id/download_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bookshelf_download_bg" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/download_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/bg_main"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/download_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/bg_main"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp" >
+
+            <TextView
+                android:id="@+id/book_selected"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center"
+                android:background="@drawable/bookshelf_numcircle"
+                android:gravity="center"
+                android:textColor="@color/bg_main"
+                android:textSize="12dp" />
+        </FrameLayout>
+        <RelativeLayout 
+            android:id="@+id/mSelectedLayout"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+        	android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#4cffffff">
+        
+        	<ImageView
+                android:id="@+id/book_selected_cover"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/bookshelf_selected" />
+        	
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="2"
+                android:textColor="@color/text_main"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/read_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_sub"
+                android:drawablePadding="4dp"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gifts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textColor="@color/bookshelf_gifts"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

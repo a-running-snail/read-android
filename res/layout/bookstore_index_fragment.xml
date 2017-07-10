@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dragAndDrop="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.jingdong.app.reader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 刷新数据控件 -->
+        <com.jingdong.app.reader.view.refreshview.XRefreshView 
+		    xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+		    android:id="@+id/mXRefreshView"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/bg_sub"
+		    xrefreshview:autoRefresh="false" >
+	
+            <!-- 上下滚动控件 -->
+		    <com.jingdong.app.reader.view.refreshview.XScrollView
+		        android:id="@+id/mXScrollView"
+		        android:layout_width="match_parent"
+		    	android:layout_height="match_parent"
+		    	android:background="@color/bg_sub"
+		    	android:scrollbars="none"
+		        >
+		        <!-- 内容展示控件 -->
+		        <LinearLayout
+		           	android:id="@+id/mainLayout"
+		           	android:orientation="vertical"
+		            android:layout_width="match_parent"
+		    		android:layout_height="match_parent"
+		            >
+		        </LinearLayout>
+		        
+		    </com.jingdong.app.reader.view.refreshview.XScrollView>
+	
+		</com.jingdong.app.reader.view.refreshview.XRefreshView>
+        
+        <!-- 回到顶部按钮 -->
+	    <com.jingdong.app.reader.extension.integration.FloatingActionButton
+            android:id="@+id/slide_to_top_btn"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="0dp"
+            android:visibility="gone"
+            app1:drawable="@drawable/book_store_index_slide_to_top"/> 
+    </FrameLayout>
+    
+	<!-- 错误信息 -->
+     <com.jingdong.app.reader.view.EmptyLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> 
+
+</RelativeLayout>

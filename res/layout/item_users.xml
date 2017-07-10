@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:paddingLeft="@dimen/timeline_padding_left"
+        android:paddingRight="@dimen/timeline_padding_right" >
+
+        <LinearLayout
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical" >
+
+            <include layout="@layout/common_user_avatar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/left_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+			<ImageView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/icon_arrow_right"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="56dp"
+            android:layout_toLeftOf="@id/left_container"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="11dp" >
+
+            <TextView
+                android:id="@+id/timeline_user_name"
+                style="@style/user_book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:lineSpacingExtra="5dp"
+                android:singleLine="true"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/timeline_user_summary"
+                style="@style/user_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/user_item_height"
+        android:background="@color/timeline_divider_color" />
+
+</LinearLayout>

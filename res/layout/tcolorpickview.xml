@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:colorpicker="http://schemas.android.com/apk/res/com.jingdong.app.reader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/wSize8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.jingdong.app.reader.view.ColorPickView
+        android:id="@+id/tcolor_picker_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        colorpicker:center_radius="12dp"
+        colorpicker:circle_radius="120dp" />
+
+</LinearLayout>

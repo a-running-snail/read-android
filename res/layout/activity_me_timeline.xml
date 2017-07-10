@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#45cccccc" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfcfc"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="6dp"
+        android:paddingTop="4dp" >
+
+        <EditText
+            android:id="@+id/search_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/searchbox_b95"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dip"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/searchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/reader_btn_search_night" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="@string/search"
+                android:textColor="@color/text_sub" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+
+
+            <com.jingdong.app.reader.view.xlistview.XListView
+                android:id="@+id/search_result"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_main"
+                android:visibility="gone" />
+
+            <com.jingdong.app.reader.view.xlistview.XListView
+                android:id="@+id/follow_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_main" />
+  
+
+</LinearLayout>

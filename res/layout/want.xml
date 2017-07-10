@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/like_pb"
+        style="@style/loading"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/mlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:divider="@null"
+        android:scrollbars="none"/>
+
+    <RelativeLayout
+        android:id="@+id/like_empty_promot_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/icon_margin_top" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_collection" />
+
+            <TextView
+                android:id="@+id/like_empty_promot_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:gravity="center"
+                android:text="您还没有喜欢的图书哦(^__^) "
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/stSize13" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/like_goto_bookstore_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_margin_bottom"
+            android:layout_marginLeft="@dimen/padding_top"
+            android:layout_marginRight="@dimen/padding_top"
+            android:background="@drawable/border_btn_red"
+            android:gravity="center"
+            android:text="@string/str_go_bookshop"
+            android:textColor="@color/red_main"
+            android:textSize="@dimen/stSize16" />
+    </RelativeLayout>
+
+</RelativeLayout>

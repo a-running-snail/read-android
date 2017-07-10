@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <RelativeLayout
+    android:id="@+id/titleLayout"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#f6f6f6" >
+        
+    	<ImageView 
+   	    android:id="@+id/backBtn"
+    	android:layout_width="24dp"
+        android:layout_height="24dp" 
+        android:background="@drawable/tabbar_back"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"/>
+    	
+    	<TextView 
+   	    android:text="添加照片"
+		android:textColor="#000000"
+		android:textSize="16sp"
+		android:gravity="center"
+    	android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="#00000000" />
+    	
+    	<Button 
+    	android:id="@+id/finishBtn"
+   	    android:text="完成"
+		android:textColor="#999999"
+		android:textSize="15sp"
+		android:gravity="center"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="#00000000" 
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+		        
+    </RelativeLayout>
+    
+    <GridView
+ 	    android:id="@+id/mGridView"
+ 	    android:layout_below="@+id/titleLayout"
+ 	    android:layout_marginTop="6dp"
+ 	    android:layout_marginLeft="6dp"
+ 	    android:layout_marginRight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:verticalSpacing="3dp" 
+        android:listSelector="#00000000"/>
+
+</RelativeLayout>

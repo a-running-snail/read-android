@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <com.jingdong.app.reader.view.SearchTopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/rcChat_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            layout="@layout/voice_rcd_hint_window" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:divider="@color/hariline"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <com.jingdong.app.reader.view.xlistview.XListView
+        android:id="@+id/booklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:id="@+id/book_store_search_loading_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/book_store_search_pb"
+                style="@style/loading"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/book_store_search_result_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/icon_margin_top"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bookstore_icon_search_null" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:gravity="center_horizontal"
+                android:text="@string/book_sign_option"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/tSize14" />
+
+            <Button
+                android:id="@+id/lackbook_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/btn_margin_bottom"
+                android:layout_marginLeft="@dimen/padding_top"
+                android:layout_marginRight="@dimen/padding_top"
+                android:background="@drawable/border_btn_red"
+                android:gravity="center"
+                android:text="@string/book_sign"
+                android:textColor="@color/red_main"
+                android:textSize="@dimen/tSize16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/book_title_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/hariline"
+        android:dividerHeight="1px"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_left"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

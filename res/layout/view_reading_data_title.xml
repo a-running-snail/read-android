@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/wSize16"
+    android:paddingLeft="@dimen/wSize16"
+    android:paddingRight="@dimen/wSize16" >
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/timeline_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/time_placehold" />
+
+    <TextView
+        android:id="@+id/is_private"
+        style="@style/timeline_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/is_private"
+        android:textColor="@color/timeline_book_title" />
+
+</RelativeLayout>

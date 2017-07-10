@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/r_bg_sub"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="32dp"
+                    android:text="@string/font"
+                    android:textColor="?attr/r_text_sub"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_fontface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="32dp"
+                    android:text="@string/fontSwitch"
+                    android:textColor="?attr/r_text_sub"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?attr/r_hariline" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?attr/r_hariline" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?attr/r_hariline" />
+
+            <LinearLayout
+                android:id="@+id/setting_find_fontface"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="?attr/read_pressed_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/importLocalFont"
+                    android:textColor="?attr/r_theme"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?attr/r_hariline" />
+
+            <LinearLayout
+                android:id="@+id/setting_page_slip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="32dp"
+                    android:text="@string/PageSetting"
+                    android:textColor="?attr/r_text_sub"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?attr/r_hariline" />
+
+            <LinearLayout
+                android:id="@+id/volumeChangePageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="?attr/read_pressed_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/userVolumeChangePage"
+                    android:textColor="?attr/r_text_main"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="38dp"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/switch_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="?attr/read_switch_off_line_img" />
+
+                    <ImageView
+                        android:id="@+id/switchOn_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="?attr/read_switch_on_dot_img" />
+
+                    <ImageView
+                        android:id="@+id/switchOff_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:src="?attr/read_switch_off_dot_img" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?attr/r_hariline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="32dp"
+                android:text="@string/PageAnimation"
+                android:textColor="?attr/r_text_sub"
+                android:textSize="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?attr/r_hariline" />
+
+            <LinearLayout
+                android:id="@+id/setting_pageAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?attr/r_hariline" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

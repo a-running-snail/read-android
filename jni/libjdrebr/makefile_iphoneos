@@ -1,0 +1,89 @@
+#######################################################################
+##                 1. Define C/C++ Compiler and Linker               ##
+#######################################################################
+
+SDKVER=5.0
+PLATFORM=iphoneos
+
+ifeq ($(PLATFORM), iphonesimulator)
+SDK=/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator$(SDKVER).sdk
+BINI=/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin
+
+#CC=$(BIN)/gcc-4.0
+#CXX=$(BIN)/g++-4.0
+#CC=gcc-4.0
+#CXX=g++-4.0
+#CC=$(BINI)/gcc-4.2 -arch i386
+#CXX=$(BINI)/g++-4.2 -arch i386
+#CC=$(BINI)/i686-apple-darwin10-gcc-4.2.1 -arch i386
+#CXX=$(BINI)/i686-apple-darwin10-g++-4.2.1 -arch i386
+
+CC=$(BINI)/llvm-gcc-4.2 -arch i386
+CXX=$(BINI)/llvm-g++-4.2 -arch i386
+AR=$(BINI)/ar -r
+RANLIB=$(BINI)/ranlib
+endif
+
+ifeq ($(PLATFORM), iphoneos)
+SDK=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS$(SDKVER).sdk
+BIN=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin
+#for sdk 3+
+#CC=$(BIN)/arm-apple-darwin10-gcc-4.2.1
+#CXX=$(BIN)/arm-apple-darwin10-g++-4.2.1
+#for sdk 2
+#CC=$(BIN)/arm-apple-darwin-gcc-4.0.1
+#CXX=$(BIN)/arm-apple-darwin9-g++-4.0.1
+
+CC=$(BIN)/arm-apple-darwin10-llvm-gcc-4.2
+CXX=$(BIN)/arm-apple-darwin10-llvm-g++-4.2
+AR=$(BIN)/ar -r
+RANLIB=$(BIN)/ranlib
+endif
+
+#######################################################################
+##                   2. Define Compiling Flag                        ##
+#######################################################################
+##-------------------2.1 Standard Compiling Flag---------------------##
+CFLAGS = -c -Wall 
+
+##-----------------------2.2 Including Path--------------------------##
+CFLAGS += -I. -I.. -I../platform 
+
+ifeq ($(PLATFORM), iphoneos)
+#CFLAGS += -march=armv5
+#CFLAGS += -I"/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/gcc/arm-apple-darwin9/4.0.1/include/"
+CFLAGS += -I"/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/"
+endif
+
+ifeq ($(PLATFORM), iphonesimulator)
+#CFLAGS += -I"$(SDK)/usr/lib/gcc/i686-apple-darwin9/4.0.1/include"
+CFLAGS += -I"$(SDK)/usr/lib/gcc/i686-apple-darwin10/4.2.1/include"
+endif
+
+CFLAGS += -I"$(SDK)/usr/include"
+LDFLAGS += -L"$(SDK)/usr/lib"
+
+##--------------------from generalpc.rules-----------------------------
+#CFLAGS += -fvisibility=hidden
+CFLAGS += -D_CLIENT
+CXXFLAGS = $(CFLAGS)
+
+all:
+	rm  -f *.a *.o
+	$(CC) $(CFLAGS) $(LDFLAGS) -I./miracl -I./DRM_API \
+	miracl/mraes.c \
+  	miracl/mrshs256.c \
+  	miracl/p1363.c \
+	miracl/rijndael-alg-fst.c  \
+	DRM_API/DRMLib.cpp \
+	DRM_API/drmalgorithm.cpp \
+	DRM_API/Utility.cpp  	  
+
+	$(AR) libebr.a mraes.o mrshs256.o p1363.o rijndael-alg-fst.o DRMLib.o drmalgorithm.o Utility.o
+	$(RANLIB) libebr.a
+	mkdir -p ./lib/iponeos
+	cp libebr.a ./lib/iponeos
+
+clean: 
+	rm  -f *.a *.o
+

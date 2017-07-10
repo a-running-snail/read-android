@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/transparent"
+    android:padding="2dp" >
+
+    <LinearLayout
+        android:id="@+id/font_download_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/read_font_dialog_bg"
+        android:gravity="center"
+        android:paddingRight="40dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/font_download_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text=""
+            android:textColor="@color/r_bg_main"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/font_download_close_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="top|right"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/gift_close" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+<!--     <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bg_main" />
+ -->    
+    <include layout="@layout/bookstore_style_header_item" />
+
+    <com.jingdong.app.reader.bookstore.view.MyGridView
+        android:id="@+id/my_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline"/>
+   <!--  <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bg_main" /> -->
+
+</LinearLayout>

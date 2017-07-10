@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/user_book_cover"
+        android:layout_width="@dimen/book_cover_width"
+        android:layout_height="@dimen/book_cover_height"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/shadow_black"
+        android:contentDescription="@string/cover"
+        android:paddingBottom="4dp"
+        android:paddingTop="0dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/user_book_arrow"
+        android:layout_width="@dimen/book_arrow_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/book_home"
+        android:scaleType="center"
+        android:src="@drawable/icon_arrow" />
+
+    <Button
+        android:id="@+id/borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/book_right_margin"
+        android:layout_marginRight="@dimen/book_right_margin"
+        android:layout_toLeftOf="@id/user_book_arrow"
+        android:background="@drawable/button_nl"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/borrow"
+        android:textColor="@color/tab_textcolor"
+        android:textSize="@dimen/user_more" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/book_right_margin"
+        android:layout_marginRight="@dimen/book_right_margin"
+        android:layout_toLeftOf="@id/borrow"
+        android:layout_toRightOf="@id/user_book_cover"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/user_book_name"
+            style="@style/user_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/user_book_author"
+            style="@style/user_book_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/user_book_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_star"
+            android:stepSize="1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/in_bookstore"
+            style="@style/user_book_author"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|left"
+            android:textColor="@color/timeline_book_title"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</merge>

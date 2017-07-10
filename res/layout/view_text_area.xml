@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.jingdong.app.reader.view.CommunityBookInfoView
+        android:id="@+id/bookForBookComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </com.jingdong.app.reader.view.CommunityBookInfoView>
+    
+	<LinearLayout android:id="@+id/ratingLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:padding="6dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+            
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打分："
+            android:textColor="@color/community_color_title"
+            android:textSize="@dimen/stSize14"/>
+            <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginBottom="@dimen/timeline_text_extra_space"
+            android:layout_marginTop="@dimen/timeline_bookname_rating_gap"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_star"
+            android:stepSize="1"
+            android:visibility="gone" />
+        </LinearLayout>
+        <com.jingdong.app.reader.view.PartClickableTextView
+            android:id="@+id/bookComment"
+            style="@style/timeline_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize6"
+            android:layout_marginTop="@dimen/wSize6"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/timeline_text_extra_space" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/noteLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/community_color_title"
+            android:textSize="@dimen/stSize14" />
+        
+         <com.jingdong.app.reader.view.PartClickableTextView
+            android:id="@+id/main"
+            style="@style/timeline_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize7"
+            android:lineSpacingExtra="@dimen/timeline_text_extra_space" />
+
+        <com.jingdong.app.reader.view.PartClickableTextView
+            android:id="@+id/quotation"
+            style="@style/timeline_quote_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize6"
+            android:layout_marginTop="@dimen/wSize6"
+            android:background="@drawable/quote_bar"
+            android:lineSpacingExtra="@dimen/timeline_text_extra_space" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/bookForNoteLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:padding="6dp"
+        android:orientation="vertical" 
+        android:visibility="gone">
+        <com.jingdong.app.reader.view.CommunityBookInfoView
+        android:id="@+id/bookForNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:clickable="true"
+        android:paddingBottom="6dp"
+        android:visibility="gone">
+        <ImageView android:id="@+id/image1"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:layout_marginRight="6dp"
+        	android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/image2"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_marginRight="6dp"
+        	android:layout_weight="1"
+        	android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/image3"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+</LinearLayout>

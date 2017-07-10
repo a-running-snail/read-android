@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题栏 -->
+    <com.jingdong.app.reader.view.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:background="@color/r_bg_main"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <!-- 搜索框 -->
+        <EditText
+            android:id="@+id/edittext_serach"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bar_xbg"
+            android:drawableLeft="@drawable/search_icon"
+            android:hint="@string/please_input_search_word"
+            android:imeOptions="actionSearch"
+            android:longClickable="false"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/tSize14" />
+    </LinearLayout>
+
+    <!-- 已购列表 -->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_item_color"
+        android:background="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:visibility="visible" />
+
+     <RelativeLayout
+        android:id="@+id/search_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/icon_margin_top"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bookstore_icon_search_null" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:layout_marginLeft="@dimen/padding_top"
+            android:layout_marginRight="@dimen/padding_top"
+            android:gravity="center_horizontal"
+            android:text="@string/book_sign_option"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/tSize14" />
+
+        <Button
+            android:id="@+id/lackbook_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_margin_bottom"
+            android:layout_marginLeft="@dimen/padding_top"
+            android:layout_marginRight="@dimen/padding_top"
+            android:background="@drawable/border_btn_red"
+            android:gravity="center"
+            android:text="@string/book_sign"
+            android:textColor="@color/red_main"
+            android:textSize="@dimen/tSize16" />
+
+        <Button
+            android:id="@+id/chandu_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_above="@id/lackbook_button"
+            android:layout_marginBottom="@dimen/wSize20"
+            android:layout_marginLeft="@dimen/padding_top"
+            android:layout_marginRight="@dimen/padding_top"
+            android:background="@drawable/border_btn_green_s12"
+            android:gravity="center"
+            android:text="@string/changdu_button"
+            android:textColor="@color/green_main"
+            android:textSize="@dimen/tSize16"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wSize14"
+        android:layout_marginLeft="@dimen/wSize20"
+        android:layout_marginRight="@dimen/wSize16"
+        android:layout_marginTop="@dimen/wSize24"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_id"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/tSize14" 
+                    android:textStyle="bold"/>         	
+
+                <TextView
+                    android:id="@+id/order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/wSize12"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/tSize14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_money"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/tSize14" />
+
+                <TextView
+                    android:id="@+id/order_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/wSize12"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/tSize14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize6"
+                android:orientation="horizontal" >
+
+                <TextView                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_time"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/tSize14" />
+
+                <TextView
+                    android:id="@+id/order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/wSize12"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/tSize14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/statueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/wSize32"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/border_btn_red"
+            android:gravity="center"
+            android:paddingLeft="@dimen/wSize12"
+            android:paddingRight="@dimen/wSize12"
+            android:textColor="@color/red_main"
+            android:textSize="@dimen/tSize14" />
+    </RelativeLayout>
+        
+    <ImageView android:id="@+id/sendbook_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/sendbook_tip_icon"
+        android:visibility="gone"/>    
+    </FrameLayout>
+    
+    
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/wSize20"
+        android:background="@color/hariline" />
+
+</LinearLayout>

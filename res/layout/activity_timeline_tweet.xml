@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    style="@style/wrap_height_match_width"
+    android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/timeline_tweet_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/timeline_tweet_list"
+                    style="@style/list_view_style_no_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/transparent" />
+
+                <LinearLayout
+                    android:id="@+id/bottom_menu_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_sub"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+<!-- 
+                    <LinearLayout android:id="@+id/tipLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp" 
+                         >
+
+                        <LinearLayout
+                            android:id="@+id/recommend_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/recommendImageview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/recommend_bt_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/commentLinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/readingcard_rectangle_bg"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="我来说两句"
+                                android:textColor="@color/text_sub"
+                                android:textSize="@dimen/wSize14" />
+                        </LinearLayout>
+                    </LinearLayout>
+ --> 
+
+					<LinearLayout
+                        android:id="@+id/forward_button"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/actionbar_dropdown_selector"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/community_list_forward_icon" />
+
+                        <TextView
+                            style="@style/timeline_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="center_vertical"
+                            android:text="转发"
+                            android:textColor="@color/text_sub"
+                            android:textSize="@dimen/stSize12" />
+
+                    </LinearLayout>
+                    
+					<View
+            			android:layout_width="1px"
+            			android:layout_height="30dp"
+            			android:layout_gravity="center"
+            			android:background="@color/timeline_divider_color" />
+                    
+                    <LinearLayout
+                        android:id="@+id/comment_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/actionbar_dropdown_selector"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/comment"
+                            android:src="@drawable/community_list_comment_icon" />
+
+                        <TextView
+                            style="@style/timeline_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="center_vertical"
+                            android:text="评论"
+                            android:textColor="@color/text_sub"
+                            android:textSize="@dimen/stSize12" />
+
+                    </LinearLayout>
+
+                    <View
+            			android:layout_width="1px"
+            			android:layout_height="30dp"
+            			android:background="@color/timeline_divider_color" 
+            			android:layout_gravity="center"/>
+                    
+<!--                   <LinearLayout
+                        android:id="@+id/recommend_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/actionbar_dropdown_selector"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/recommend_image"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/recommend"
+                            android:src="@drawable/btn_toolbar_unlike" />
+                    </LinearLayout>
+ 
+                    <LinearLayout
+                        android:id="@+id/delete_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/actionbar_dropdown_selector"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/delete"
+                            android:src="@drawable/btn_toolbar_delete" />
+                    </LinearLayout>
+-->
+                    <LinearLayout
+                        android:id="@+id/favorite_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/actionbar_dropdown_selector"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/favorite_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/favourite"
+                            android:src="@drawable/community_detail_uncollect_icon" />
+                    </LinearLayout>
+
+<!--                     <LinearLayout
+                        android:id="@+id/share_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/actionbar_dropdown_selector"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/share"
+                            android:src="@drawable/btn_toolbar_share" />
+                    </LinearLayout> 
+ -->                   
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_result_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/icon_margin_top"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icon_network_failure" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon"
+                    android:layout_marginLeft="@dimen/padding_top"
+                    android:layout_marginRight="@dimen/padding_top"
+                    android:gravity="center_horizontal"
+                    android:text="@string/network_fail"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/tSize14" />
+
+                <Button
+                    android:id="@+id/loading_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/btn_margin_bottom"
+                    android:layout_marginLeft="@dimen/padding_top"
+                    android:layout_marginRight="@dimen/padding_top"
+                    android:background="@drawable/border_btn_grey_s12"
+                    android:gravity="center"
+                    android:text="@string/onLoadiing"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/tSize16" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeline_tweet_load_error"
+        style="@style/wrap_height_match_width"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:text="@string/delete_timeline"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/screen_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/view_loading"
+        android:background="@color/timeline_bg" 
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/custom_top_bar_height" >
+
+    <!-- 左侧菜单,高度为44dp -->
+    <RelativeLayout
+        android:id="@+id/left_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back_btn_bg_color"
+        android:paddingLeft="@dimen/custom_top_bar_menu_padding"
+        android:paddingRight="@dimen/custom_top_bar_menu_padding" >
+
+        <!-- 文本 -->
+        <TextView
+            android:id="@+id/sub_menu_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/tSize16"
+            android:visibility="visible" />
+
+        <!-- 子菜单 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            
+            <!-- 标题栏左侧按钮图片 -->
+            <ImageView
+		    	android:id="@+id/sub_menu_left_image"
+		        android:layout_width="@dimen/custom_top_bar_menu_image_width"
+		        android:layout_height="@dimen/custom_top_bar_menu_image_height"
+		        android:layout_centerVertical="true" 
+		        android:visibility="visible" />
+            <ImageView
+                android:id="@+id/sub_menu_left_image_dot"
+                android:layout_marginLeft="@dimen/custom_top_bar_menu_padding"
+	        	android:layout_marginRight="@dimen/custom_top_bar_menu_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/sub_menu_left_image"
+                android:layout_alignTop="@id/sub_menu_left_image"
+                android:gravity="center"
+                android:background="@drawable/red_dot"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+	<!-- 右侧菜单 -->
+    <RelativeLayout
+        android:id="@+id/right_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sub_menu_one_right_text"
+                android:paddingLeft="@dimen/custom_top_bar_menu_padding"
+        		android:paddingRight="@dimen/custom_top_bar_menu_padding"
+                android:background="@drawable/back_btn_bg_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/sub_menu_two_right_text"
+                android:background="@drawable/back_btn_bg_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/custom_top_bar_menu_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/right_menu_one_img"
+                android:paddingLeft="@dimen/custom_top_bar_menu_padding"
+        		android:paddingRight="@dimen/custom_top_bar_menu_padding"
+                android:background="@drawable/back_btn_bg_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <!-- 标题栏右侧菜单按钮 -->
+                <ImageView
+                    android:id="@+id/sub_menu_one_right_image"
+                    android:layout_width="@dimen/custom_top_bar_menu_image_width"
+                    android:layout_height="@dimen/custom_top_bar_menu_image_height"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/sub_menu_one_right_image_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/sub_menu_one_right_image"
+                    android:layout_alignTop="@id/sub_menu_one_right_image"
+                    android:background="@drawable/number_dot"
+                    android:gravity="center"
+                    android:textColor="@color/custom_top_bar_menu_red_dot_font_color"
+                    android:textSize="@dimen/custom_top_bar_red_dot_font_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/right_menu_two_img"
+                android:paddingLeft="6dp"
+        		android:paddingRight="6dp"
+                android:background="@drawable/back_btn_bg_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/sub_menu_two_right_image"
+                    android:layout_width="@dimen/custom_top_bar_menu_image_width"
+                    android:layout_height="@dimen/custom_top_bar_menu_image_height"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/sub_menu_two_right_image_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/sub_menu_two_right_image"
+                    android:layout_alignTop="@id/sub_menu_two_right_image"
+                    android:background="@drawable/number_dot"
+                    android:gravity="center"
+                    android:textColor="@color/custom_top_bar_menu_red_dot_font_color"
+                    android:textSize="@dimen/custom_top_bar_red_dot_font_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_top_bar_bottom_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/custom_top_bar_bottom_divider_color" />
+
+</RelativeLayout>

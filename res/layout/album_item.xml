@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+    android:id="@+id/image"
+    android:scaleType="centerCrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" />
+    
+    <ImageView 
+    android:id="@+id/choiceIcon"
+    android:layout_width="28dp"
+    android:layout_height="28dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="8dp" 
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+    
+</RelativeLayout>

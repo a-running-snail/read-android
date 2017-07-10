@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:texarea="http://schemas.android.com/apk/res/com.jingdong.app.reader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/timeline_padding_left"
+    android:paddingRight="@dimen/timeline_padding_left" >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wSize12"
+        android:orientation="vertical" >
+        	<include layout="@layout/common_user_avatar" />
+    	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/timeline_padding_left"
+        android:layout_marginTop="@dimen/wSize12"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.jingdong.app.reader.view.RightDrawableTextView
+                    android:id="@+id/timeline_user_name"
+                    style="@style/timeline_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/username_vipimage_gap"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/stSize14" />
+
+                <TextView
+                    android:id="@+id/timeline_update_time"
+                    style="@style/timeline_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-2dp"
+                    android:textColor="@color/text_sub"
+                    android:text="bbb"
+                    android:textSize="@dimen/stSize12" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+        
+        <com.jingdong.app.reader.view.TextArea
+            android:id="@+id/mainTextArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/timeline_body_font_size"
+            texarea:contentMaxLines="@integer/timeline_max_4line"
+            texarea:titleMaxLines="@integer/timeline_single_line"
+            texarea:truncation="true" />
+
+        <LinearLayout
+            android:id="@+id/quotationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:paddingLeft="@dimen/wSize4"
+            android:paddingRight="@dimen/wSize4"
+            android:background="@color/bg_sub"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeline_quotation_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/picture_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/wSize7"
+                android:drawablePadding="@dimen/username_vipimage_gap"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/stSize14"
+                android:singleLine="true" />
+
+            <com.jingdong.app.reader.view.TextArea
+                android:id="@+id/quotationTextArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/stSize14"
+                android:layout_marginTop="@dimen/wSize7"
+                texarea:contentMaxLines="@integer/timeline_max_4line"
+                texarea:titleMaxLines="@integer/timeline_single_line"
+                texarea:truncation="true" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/square_type_line_heng" />
+     
+    <LinearLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:clickable="true"
+            android:orientation="horizontal" >
+            
+            <LinearLayout android:id="@+id/shareLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/actionbar_dropdown_selector"
+                android:paddingTop="@dimen/wSize10"
+           		android:paddingBottom="@dimen/wSize10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/community_list_share_icon" /> 
+                <TextView
+                    style="@style/timeline_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/text_sub"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/stSize12"
+                    android:text="分享" />
+            </LinearLayout>
+            
+            <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/square_type_line_shu" />
+            
+             <LinearLayout android:id="@+id/forwardLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/actionbar_dropdown_selector"
+                android:paddingTop="@dimen/wSize10"
+           		android:paddingBottom="@dimen/wSize10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/community_list_forward_icon" />
+                <TextView
+                    style="@style/timeline_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/text_sub"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/stSize12"
+                    android:text="转发" />
+            </LinearLayout>
+            
+            <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/square_type_line_shu" />
+            
+            <LinearLayout android:id="@+id/commentLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/actionbar_dropdown_selector"
+                android:paddingTop="@dimen/wSize10"
+           		android:paddingBottom="@dimen/wSize10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/community_list_comment_icon" />
+                
+                <TextView
+                    android:id="@+id/timeline_comment"
+                    style="@style/timeline_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/text_sub"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/stSize12" />
+            </LinearLayout>
+            
+            <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/square_type_line_shu" />
+
+            <LinearLayout android:id="@+id/recommendLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/actionbar_dropdown_selector"
+                android:paddingTop="@dimen/wSize10"
+           		android:paddingBottom="@dimen/wSize10"
+                android:orientation="horizontal" >
+                
+                <ImageView android:id="@+id/recommend_imagevie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/community_list_unrecommand_icon" />
+
+                <TextView
+                    android:id="@+id/timeline_recommend"
+                    style="@style/timeline_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/stSize12" />
+            </LinearLayout>
+        </LinearLayout>
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/timeline_divider_color" /> 
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <com.jingdong.app.reader.view.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <ImageView 
+        android:id="@+id/mTipIcon"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_userr_borrow_finish"
+        />
+    
+    <TextView 
+        android:id="@+id/mTipText"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/mTipIcon"
+        android:textColor="#aaaaaa"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <LinearLayout 
+        android:gravity="center_horizontal"
+  		android:layout_marginTop="20dp"
+        android:layout_below="@+id/mTipText"  
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:orientation="vertical"
+        >
+            
+        	<RelativeLayout 
+	        android:layout_marginTop="20dp"
+	        android:layout_below="@+id/mTipText"  
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+	        >
+		        <Button 
+					android:id="@+id/mBorrowBtn"
+					android:text="我要借阅"
+					android:textSize="16sp"
+					android:gravity="center"
+					android:textColor="#ffffff"
+					android:background="@color/red_main"
+			        android:layout_width="180dp"
+			        android:layout_height="36dp"
+			        android:layout_centerHorizontal="true"
+			        />
+		        
+		        <com.jingdong.app.reader.bookstore.buyborrow.ButtonAddProgressBar 
+		            android:id="@+id/mBorrowProgressBtn"
+		        	android:layout_width="180dp"
+			        android:layout_height="36dp"
+			        android:visibility="gone"    
+			        android:layout_centerHorizontal="true"
+			        android:background="@drawable/button_tryread_bg"
+		            />
+	    	</RelativeLayout>
+	    	
+        	<Button 
+				android:id="@+id/mShareBtn"
+				android:visibility="gone"
+				android:layout_below="@+id/trytext"
+				android:layout_marginTop="12dp"
+				android:text="分享获得积分"
+				android:textSize="16sp"
+				android:gravity="center"
+				android:textColor="@color/red_main"
+				android:background="@drawable/button_tryread_bg"
+		        android:layout_width="180dp"
+		        android:layout_height="36dp"
+		        android:layout_centerHorizontal="true"
+		        android:layout_gravity="center_horizontal"
+		        />
+        	
+        	<TextView
+        	    android:id="@+id/buyborrow_rule"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_centerHorizontal="true"
+        	    android:layout_marginTop="15dp"
+        	    android:gravity="center"
+        	    android:text="借阅规则"
+        	    android:textColor="#aaaaaa"
+        	    android:textSize="14sp" />
+            
+    	</LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+       	android:layout_alignParentBottom="true"
+        >
+        <TextView 
+            android:id="@+id/trytext"
+	        android:textColor="#999999"
+	        android:textSize="14sp"
+	        android:gravity="center"
+	        android:text="您还可以试读哦"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        />
+        
+        <Button 
+			android:id="@+id/mTryReadBtn"
+			android:layout_below="@+id/trytext"
+			android:layout_marginTop="12dp"
+			android:text="我要试读"
+			android:textSize="16sp"
+			android:gravity="center"
+			android:textColor="@color/red_main"
+			android:background="@drawable/button_tryread_bg"
+	        android:layout_width="180dp"
+	        android:layout_height="36dp"
+	        android:layout_centerHorizontal="true"
+	        />
+        
+        <com.jingdong.app.reader.bookstore.buyborrow.ButtonAddProgressBar 
+            android:id="@+id/mTryReadProgressBtn"
+        	android:layout_width="180dp"
+	        android:layout_height="36dp"
+	        android:visibility="gone"    
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/button_tryread_bg"
+            />
+        	
+    </RelativeLayout>
+    
+</RelativeLayout>

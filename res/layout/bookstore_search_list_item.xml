@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wSize16" >
+
+            <ImageView
+                android:id="@+id/bookstore_search_user_book_cover"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/imageViewLabel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bookstore_search_user_book_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="ABS的把书都结婚把大家都不不仅是对巴萨的"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/book_title" />
+
+                <TextView
+                    android:id="@+id/bookstore_search_user_book_author"
+                    android:layout_width="@dimen/wSize166"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bookstore_search_user_book_name"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="大家收到货"
+                    android:textColor="@color/hariline"
+                    android:textSize="@dimen/book_content" />
+
+                <TextView
+                    android:id="@+id/bookstore_search_book_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="不好方便和法国表弟粪便比较大发布的方法适度腐败SD卡分别是地方被考试大部分是代表大部分还上班地方"
+                    android:textColor="@color/hariline"
+                    android:textSize="@dimen/book_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/arrow_iv"
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/padding_left"
+        android:background="@color/hariline" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/icon_read_pop_box"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp" >
+
+        <TextView
+            android:id="@+id/noteContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:gravity="center_vertical"
+            android:maxLines="5"
+            android:minHeight="44dp"
+            android:scrollbars="vertical"
+            android:text="TestTest"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d1d1d1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/shareTimeline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/post_tweet_checkbox"
+                android:paddingLeft="6dp"
+                android:text="@string/share_to_timeline"
+                android:textColor="@color/dark_grey_hl"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/noteEdit"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/actionbar_dropdown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/selectbooksfirst"
+                    android:src="@drawable/icon_read_note_edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/noteDelete"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/actionbar_dropdown_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/timeline_at"
+                    android:src="@drawable/icon_read_note_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/topArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mainLayout"
+        android:src="@drawable/icon_read_pop_box_top_arrow" />
+
+    <ImageView
+        android:id="@+id/bottomArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mainLayout"
+        android:src="@drawable/icon_read_pop_box_bottom_arrow" />
+
+</RelativeLayout>

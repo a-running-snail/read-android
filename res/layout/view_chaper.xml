@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/wSize32"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/time_placehold"
+        android:textColor="@color/text_sub"
+        android:textSize="@dimen/tSize16" />
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_top"
+            android:background="@color/bg_sub"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <RelativeLayout
+            android:id="@+id/feedback_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/padding_left"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:layout_marginTop="@dimen/padding_left"
+                android:text="@string/feedback_types"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left"
+                android:paddingTop="@dimen/padding_left"
+                android:textColor="@color/red_main"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_top"
+            android:background="@color/bg_sub"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize110"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginLeft="@dimen/wSize16"
+            android:layout_marginRight="@dimen/wSize16"
+            android:layout_marginTop="@dimen/wSize14"
+            android:background="@null"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:hint="@string/lockbook_content_hint"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_sub"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/feedback_chat"
+            android:textColor="@color/subtitle_color"
+            android:textSize="@dimen/subtitle" />
+
+        <LinearLayout
+            android:id="@+id/feedback_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/hariline" />
+
+            <EditText
+                android:id="@+id/chat_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wSize16"
+                android:background="@null"
+                android:hint="手机号码"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingBottom="@dimen/padding_left"
+                android:paddingTop="@dimen/padding_left"
+                android:textColorHint="@color/hariline"
+                android:textSize="@dimen/text_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/hariline" />
+
+            <EditText
+                android:id="@+id/chat_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wSize16"
+                android:background="@null"
+                android:hint="@string/qq"
+                 android:inputType="number"
+                android:maxLength="18"
+                android:paddingBottom="@dimen/padding_left"
+                android:paddingTop="@dimen/padding_left"
+                android:textColorHint="@color/hariline"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_sub"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_above="@+id/booklayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rating_mean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="14dp"
+            android:text="@string/rating_please"
+            android:textColor="@color/text_sub"
+            android:textSize="12dp" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="27dp"
+            android:numStars="5"
+            android:progressDrawable="@drawable/custom_ratingbar_progress_big"
+            android:stepSize="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="@dimen/post_tweet_padding_left"
+        	android:layout_marginRight="@dimen/post_tweet_padding_left"
+            android:background="@color/hariline" />
+    </LinearLayout>
+    
+    	<EditText
+	        android:id="@+id/timeline_comments_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="@dimen/post_tweet_padding_top"
+	        android:layout_marginLeft="@dimen/post_tweet_padding_left"
+	        android:layout_marginRight="@dimen/post_tweet_padding_left"
+	        android:layout_marginTop="@dimen/post_tweet_padding_top"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:gravity="top"
+	        android:textColor="#333333"
+	        android:hint="@string/write_comment"
+	        android:inputType="textMultiLine"
+	        android:minLines="@integer/timeline_comment_minline"
+	        android:scrollbars="vertical"
+	        android:singleLine="false" />
+
+    </LinearLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/booklayout"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_marginLeft="@dimen/post_tweet_padding_left"
+        android:layout_marginRight="@dimen/post_tweet_padding_left"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e8e8e8"
+        android:padding="6dp">
+     	
+        <ImageView 
+        android:id="@+id/image"
+        android:layout_width="34dp"
+        android:layout_height="45.33dp"
+        android:background="@drawable/comment_default_book"/>
+        
+        <LinearLayout 
+        android:layout_marginLeft="10dp"
+    	android:layout_toRightOf="@+id/image"
+    	android:layout_alignTop="@+id/image"
+    	android:layout_alignBottom="@+id/image"
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/mBookName"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/rating_please"
+            android:textColor="#666666"
+            android:textSize="16dp" />
+            
+            <TextView
+            android:id="@+id/mBookAuthor"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/rating_please"
+            android:textColor="#999999"
+            android:textSize="12dp" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/forward_or_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/post_tweet_padding_left"
+            android:button="@drawable/post_tweet_checkbox"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/thumbnail_margin"
+            android:textColor="@color/dark_grey_hl" />
+
+        <LinearLayout
+            android:id="@+id/mention_book"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/post_tweet_padding_left"
+            android:background="@drawable/actionbar_dropdown_selector"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/selectbooksfirst"
+                android:src="@drawable/btn_mentionbook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeline_tweet_at"
+            android:layout_toRightOf="@+id/mention_book"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/actionbar_dropdown_selector"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/timeline_at"
+                android:src="@drawable/btn_mentionuser" />
+        </LinearLayout>
+        
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/timeline_divider_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

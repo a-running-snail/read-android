@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/userLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/wSize12"
+            android:text="相关用户"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/stSize16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/timeline_divider_color"
+            android:layout_marginLeft="@dimen/wSize12"
+            android:layout_marginRight="@dimen/wSize12" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/wSize12"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/userContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    
+    
+        
+    <LinearLayout android:id="@+id/timelineLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/wSize12"
+            android:text="相关动态"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/stSize16" />
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/wSize12"
+   	 	android:layout_marginRight="@dimen/wSize12"
+        android:background="@color/timeline_divider_color"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/readSettingFont"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/icon_read_pop_box"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/fontSize1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/fontSizeImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reader_btn_fontsize_down_standard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fontSize2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/fontSizeImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reader_btn_fontsize_up_standard" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/readSettingFont"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_read_pop_box_bottom_arrow" />
+
+</RelativeLayout>

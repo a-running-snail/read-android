@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.jingdong.app.reader.view.TopBarView
+        android:id="@+id/exchange_statement_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <com.jingdong.app.reader.view.EmptyLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:visibility="gone"/>
+    
+    <WebView
+        android:id="@+id/exchange_statement_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+
+</LinearLayout>

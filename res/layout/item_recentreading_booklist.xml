@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+   
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_left" >
+
+            <ImageView
+                android:id="@+id/user_book_cover"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_left"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/top"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/user_book_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/text_main"
+                            android:text="ABS的把书都ABS的把书都结婚把大家都不不便比较大发布的方法适仅是对巴萨的结婚把大家都不不仅是对巴萨的"
+                            android:textSize="@dimen/book_title" />
+
+                        <TextView
+                            android:id="@+id/user_book_author"
+                            android:layout_width="@dimen/wSize166"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_book_name"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+							android:text="大家收到货"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/book_content" />
+
+                        <TextView
+                            android:id="@+id/book_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:ellipsize="end"
+                            android:lines="2"
+                            android:text="不好方便和法国表弟粪便比较大发布的方法适度腐败SD卡分别是地方被考试大部分是代表大部分还上班地方"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/book_content" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/top" >
+
+                        <TextView
+                            android:id="@+id/readtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_sub"
+                            android:textSize="@dimen/book_content"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/read"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/time"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_sub"
+                            android:textSize="@dimen/book_content"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+             
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:background="@color/hariline" />
+    </LinearLayout>
+
+    <!--
+         <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_cover"
+        android:scaleType="fitXY" />
+    -->
+
+</FrameLayout>

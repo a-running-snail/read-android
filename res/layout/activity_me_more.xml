@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/timeline_padding" >
+
+        <LinearLayout
+            android:id="@+id/user_nick_name_widget"
+            style="@style/user_detail_row"
+            android:background="@drawable/grey_rect_3_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/user_detail_text"
+                android:text="@string/nickname" />
+
+            <TextView
+                android:id="@+id/user_nick_name"
+                style="@style/user_more_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_sex_widget"
+            style="@style/user_detail_row"
+            android:background="@drawable/grey_rect_3_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/user_detail_text"
+                android:text="@string/sex" />
+
+            <TextView
+                android:id="@+id/user_sex"
+                style="@style/user_more_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_email_widget"
+            style="@style/user_detail_row"
+            android:background="@drawable/grey_rect_3_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/user_detail_text"
+                android:text="@string/email_english" />
+
+            <TextView
+                android:id="@+id/user_email"
+                style="@style/user_more_value"
+                android:layout_marginLeft="@dimen/text_space_email" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_blog_widget"
+            style="@style/user_detail_row"
+            android:background="@drawable/grey_rect_3_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_blog_key"
+                style="@style/user_detail_text"
+                android:text="@string/blog" />
+
+            <TextView
+                android:id="@+id/user_blog_value"
+                style="@style/user_detail_arrow"
+                android:drawablePadding="@dimen/thumbnail_margin" />
+
+            <TextView
+                android:id="@+id/user_blog"
+                style="@style/user_more_value"
+                android:layout_alignParentRight="false"
+                android:layout_toLeftOf="@id/user_blog_value"
+                android:layout_toRightOf="@id/user_blog_key" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/user_introduction_widget"
+            style="@style/user_detail_row"
+            android:background="@drawable/grey_rect_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/user_detail_text"
+                android:text="@string/introduction" />
+
+            <TextView
+                android:id="@+id/user_introduction"
+                style="@style/user_more_value" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sina_weibo"
+            style="@style/user_detail_row"
+            android:layout_marginTop="@dimen/timeline_padding"
+            android:background="@drawable/grey_rect_background" >
+
+            <TextView
+                style="@style/user_detail_text"
+                android:drawableLeft="@drawable/connection_sina"
+                android:drawablePadding="@dimen/left_pic_padding"
+                android:text="@string/sina_weibo" />
+
+            <TextView style="@style/user_more_value" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

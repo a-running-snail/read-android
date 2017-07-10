@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hSize35"
+    android:background="@color/bg_main"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/search_history_item_header_icon"/>
+    
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/wSize10"
+            android:layout_marginLeft="@dimen/wSize10"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_main"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/stSize14" />
+
+        <LinearLayout
+            android:id="@+id/delete_linearLayout"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/wSize10"
+            android:paddingRight="@dimen/wSize10"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/delete_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/community_search_delete_icon" />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_sub"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/jd_login_text"
+            android:textColor="@color/subtitle_color"
+            android:textSize="@dimen/subtitle" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/text_long"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/padding_left"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingTop="@dimen/padding_left"
+                android:text="@string/account"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/account_text"
+                android:inputType="text"
+                android:textColorHint="@color/hariline"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:background="@color/hariline" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/password_text"
+                android:layout_width="@dimen/text_long"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_left"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingTop="@dimen/padding_left"
+                android:text="@string/password"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/password_text"
+                android:background="@null"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hariline"
+                android:textSize="@dimen/text_size" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_left" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/login_button_unable_xbg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/login_title"
+            android:textColor="@color/hariline"
+            android:textSize="@dimen/text_size" />
+
+        <!--
+             <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_sub"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/padding_left"
+                android:text="@string/forget_pwd"
+                android:textColor="@color/highlight_color"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/unionlogin_wx_login_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/unionlogin_click_bg_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jdr_unionlogin_wx_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="微信登录"
+                android:textColor="#9A9A9A" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#E9E9E9" />
+
+        <LinearLayout
+            android:id="@+id/unionlogin_qq_login_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/unionlogin_click_bg_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jdr_unionlogin_qq_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="QQ登录"
+                android:textColor="#9A9A9A" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#E9E9E9" />
+
+        <TextView
+            android:id="@+id/unionlogin_other_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/unionlogin_click_bg_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="其他方式登录"
+            android:textColor="#9A9A9A" />
+    </LinearLayout>
+
+</FrameLayout>

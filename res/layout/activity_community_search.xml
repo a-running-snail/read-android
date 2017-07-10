@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ButtonStyle" >
+
+    <com.jingdong.app.reader.view.SearchTopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout android:id="@+id/search_result_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:visibility="gone">
+        
+        <ListView android:id="@+id/search_result_listview"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFDFDFD"
+        	android:listSelector="@drawable/item_selected_bg" />
+    </LinearLayout>
+    
+    <FrameLayout android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </FrameLayout>
+    
+
+    <LinearLayout android:id="@+id/hotwords_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wSize10"
+        	android:layout_marginTop="@dimen/wSize5"
+        	android:layout_marginBottom="@dimen/wSize5"
+        	android:textColor="@color/community_color_title"
+        	android:textSize="@dimen/stSize14"
+            android:text="大家正在搜"/>
+        <LinearLayout android:id="@+id/hotword_group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            
+            <TextView style="@style/community_hotword_style"
+            	android:layout_gravity="left"/>
+            <TextView style="@style/community_hotword_style"
+            	android:layout_gravity="center"/>
+            <TextView style="@style/community_hotword_style"
+            	android:layout_gravity="right"/>
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/hotword_group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+            
+            <TextView style="@style/community_hotword_style"
+            	android:layout_gravity="left"/>
+            <TextView style="@style/community_hotword_style"
+            	android:layout_gravity="center"/>
+            <TextView style="@style/community_hotword_style"
+            	android:layout_gravity="right"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/search_history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wSize10"
+            android:layout_marginTop="@dimen/wSize5"
+            android:layout_marginBottom="@dimen/wSize5"
+            android:textColor="@color/community_color_title"
+            android:textSize="@dimen/stSize14"
+            android:text="最近搜索"/>
+        
+        <ListView android:id="@+id/history_listview"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFDFDFD"
+        	android:listSelector="@drawable/item_selected_bg" />
+    </LinearLayout>
+    
+
+
+
+
+</LinearLayout>

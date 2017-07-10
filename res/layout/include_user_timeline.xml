@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/timeline_padding"
+    android:paddingRight="@dimen/timeline_padding" >
+
+    <TextView
+        style="@style/user_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/user_detail"
+        android:layout_marginTop="@dimen/user_detail"
+        android:drawableLeft="@drawable/navibar_icon_timeline"
+        android:text="@string/timeline" />
+
+    <RelativeLayout
+        android:id="@+id/user_alltimeline"
+        style="@style/user_detail_row"
+        android:background="@drawable/grey_rect_3_background" >
+
+        <TextView
+            style="@style/user_detail_text"
+            android:text="@string/user_all_timeline" />
+
+        <TextView
+            android:id="@+id/user_alltimeline_number"
+            style="@style/user_detail_arrow"
+            android:contentDescription="@string/user_more"
+            android:drawablePadding="@dimen/thumbnail_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_book_comment"
+        style="@style/user_detail_row"
+        android:background="@drawable/grey_rect_3_background" >
+
+        <TextView
+            style="@style/user_detail_text"
+            android:text="@string/user_book_comment" />
+
+        <TextView
+            android:id="@+id/user_book_comment_number"
+            style="@style/user_detail_arrow"
+            android:contentDescription="@string/user_more"
+            android:drawablePadding="@dimen/thumbnail_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_note"
+        style="@style/user_detail_row"
+        android:background="@drawable/grey_rect_3_background" >
+
+        <TextView
+            style="@style/user_detail_text"
+            android:text="@string/user_note" />
+
+        <TextView
+            android:id="@+id/user_note_number"
+            style="@style/user_detail_arrow"
+            android:contentDescription="@string/user_note"
+            android:drawablePadding="@dimen/thumbnail_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_favourite"
+        style="@style/user_detail_row"
+        android:background="@drawable/grey_rect_background" >
+
+        <TextView
+            style="@style/user_detail_text"
+            android:text="@string/favourite" />
+
+        <TextView
+            android:id="@+id/user_favourite_number"
+            style="@style/user_detail_arrow"
+            android:contentDescription="@string/user_note"
+            android:drawablePadding="@dimen/thumbnail_margin" />
+    </RelativeLayout>
+
+</LinearLayout>

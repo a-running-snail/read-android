@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.app.reader.util.ui.view.ShoppingCartView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_cart_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/image_view_carNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/icon_myjd_cart"
+        android:contentDescription="@string/jingong_lebook"
+        android:duplicateParentState="true" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/hSize22"
+        android:paddingLeft="@dimen/wSize18" >
+
+        <TextView
+            android:id="@+id/textview_carNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dip"
+            android:paddingBottom="1dip"
+            android:background="@drawable/cart_num_bg"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#f9f6f3"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</com.jingdong.app.reader.util.ui.view.ShoppingCartView>

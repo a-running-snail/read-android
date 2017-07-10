@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/readSearchBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/searchLastButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/searchLastIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/reader_btn_search_lastone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/searchButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/reader_btn_search_results" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/searchNextButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/searchNextIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/reader_btn_search_nextone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

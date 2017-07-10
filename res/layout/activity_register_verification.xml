@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/show_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/wSize16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:paddingTop="@dimen/wSize16"
+        android:textColor="@color/subtitle_color"
+        android:textSize="@dimen/wSize14" />
+
+    <RelativeLayout
+        android:id="@+id/phone_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_toLeftOf="@+id/vlayout"
+            android:id="@+id/phone_verify_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize50"
+            android:background="@drawable/rectangle_bt_white_bg"
+            android:hint="@string/verification_text_tip"
+            android:inputType="text"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/hariline"
+            android:paddingLeft="@dimen/wSize14"
+            android:paddingRight="@dimen/wSize14"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:id="@+id/vlayout"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/wSize120"
+            android:layout_height="@dimen/wSize50"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button android:id="@+id/get_verification_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/red_main"
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/rectangle_bt_transparent_bg"
+                android:text="获取验证码" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_button_unable_xbg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/hariline"
+        android:textSize="@dimen/text_size" />
+    
+</LinearLayout>

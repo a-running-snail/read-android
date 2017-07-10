@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/icon_read_pop_box"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/translateHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/translateWords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingTop="@dimen/wSize10"
+                    android:textColor="#333333"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/dictionarySetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/wSize10"
+                    android:paddingBottom="@dimen/wSize4"
+                    android:paddingLeft="@dimen/wSize8"
+                    android:paddingRight="@dimen/wSize8"
+                    android:background="@drawable/back_btn_bg_color"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/navibar_icon_settings_highlight" />
+            </LinearLayout>
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d1d1d1" 
+            android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dictionaryResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="7"
+            android:paddingBottom="11dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="11dp"
+            android:scrollbars="vertical"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+        
+        <RelativeLayout
+            android:id="@+id/no_dictionary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="11dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="11dp" 
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/download_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rectangle_bt_bg_selector"
+                android:paddingBottom="@dimen/wSize4"
+                android:paddingLeft="@dimen/wSize8"
+                android:paddingRight="@dimen/wSize8"
+                android:paddingTop="@dimen/wSize4"
+                android:text="@string/dictionnary_download_text"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/download_text"
+                android:paddingBottom="@dimen/wSize4"
+                android:paddingTop="@dimen/wSize4"
+                android:paddingLeft="@dimen/wSize4"
+                android:text="7.66M"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:gravity="center">
+            
+           <TextView
+            android:id="@+id/baike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:textColor="@color/dictionary_baike_divider"
+            android:background="@drawable/custom_transparent_press_selector"
+            android:text="@string/baike"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/wSize14" /> 
+            
+           <View android:id="@+id/dictionary_divideline1"
+               android:layout_width="1px"
+               android:layout_height="13dp"
+               android:layout_toRightOf="@id/baike"
+               android:layout_marginTop="11dp"
+               android:layout_marginBottom="11dp"
+               android:layout_marginLeft="@dimen/wSize2"
+               android:layout_marginRight="@dimen/wSize2"
+               android:background="@color/dictionary_baike_divider"/>
+          
+           <TextView
+            android:id="@+id/youdao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:textColor="@color/dictionary_baike_divider"
+            android:text="@string/youdao"
+            android:background="@drawable/custom_transparent_press_selector"
+            android:layout_toRightOf="@id/dictionary_divideline1"
+            android:textSize="@dimen/wSize14" /> 
+            
+           <View android:id="@+id/dictionary_divideline2"
+               android:layout_width="1px"
+               android:layout_height="13dp"
+               android:layout_toRightOf="@id/youdao"
+               android:layout_marginTop="11dp"
+               android:layout_marginBottom="11dp"
+               android:layout_marginLeft="@dimen/wSize2"
+               android:layout_marginRight="@dimen/wSize2"
+               android:background="@color/dictionary_baike_divider"/>
+           
+           <TextView
+            android:id="@+id/iciba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:textColor="@color/dictionary_baike_divider"
+            android:text="@string/iciba"
+            android:background="@drawable/custom_transparent_press_selector"
+            android:layout_toRightOf="@id/dictionary_divideline2"
+            android:textSize="@dimen/wSize14" /> 
+            
+           <TextView
+            android:id="@+id/dictionarySupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:textColor="#333333"
+            android:text="@string/dictionnary_support"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/wSize12" /> 
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/topArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mainLayout"
+        android:src="@drawable/icon_read_pop_box_top_arrow" />
+
+    <ImageView
+        android:id="@+id/bottomArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mainLayout"
+        android:src="@drawable/icon_read_pop_box_bottom_arrow" />
+
+</RelativeLayout>

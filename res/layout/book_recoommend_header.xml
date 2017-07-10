@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wSize48"
+            android:gravity="center"
+            android:text="@string/readed"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/tSize14" />
+
+        <TextView
+            android:id="@+id/readed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wSize8"
+            android:gravity="center"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/tSize14" />
+
+          <Button
+            android:id="@+id/buy_book"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize44"
+            android:layout_marginBottom="@dimen/wSize16"
+            android:layout_marginLeft="@dimen/wSize32"
+            android:layout_marginRight="@dimen/wSize32"
+            android:layout_marginTop="@dimen/wSize24"
+            android:background="@drawable/btn_red_s12"
+            android:text="@string/share_book"
+            android:textColor="@color/bg_main"
+            android:visibility="gone"
+            android:textSize="@dimen/tSize16" />
+        <Button
+            android:id="@+id/share_book"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize44"
+            android:layout_marginBottom="@dimen/wSize16"
+            android:layout_marginLeft="@dimen/wSize32"
+            android:layout_marginRight="@dimen/wSize32"
+            android:layout_marginTop="@dimen/wSize24"
+            android:background="@drawable/border_btn_red"
+            android:text="@string/share_book"
+            android:textColor="@color/red_main"
+            android:textSize="@dimen/tSize16" />
+
+  <!--       <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize8"
+            android:layout_marginLeft="@dimen/wSize16"
+            android:layout_marginRight="@dimen/wSize16"
+            android:layout_marginTop="@dimen/wSize32" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/other_book"
+                android:textColor="@color/text_sub"
+                android:textSize="@dimen/tSize12" />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red_sub"
+                android:textSize="@dimen/tSize12" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hariline" /> -->
+    </LinearLayout>
+
+<!--     <com.jingdong.app.reader.util.ListViewForScrollView
+        android:id="@+id/book_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:divider="@null" /> -->
+
+
+</LinearLayout>

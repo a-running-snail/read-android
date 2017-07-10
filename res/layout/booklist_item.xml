@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:descendantFocusability="blocksDescendants"
+   	android:background="@drawable/list_item_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_left" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/wSize16" >
+
+                <ImageView
+                    android:id="@+id/user_book_cover"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/imageViewLabel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/empty_string"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_left"
+                    android:layout_marginRight="41dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/user_book_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_main"
+                            android:textSize="@dimen/book_title" />
+
+                        <TextView
+                            android:id="@+id/user_book_author"
+                            android:layout_width="@dimen/wSize166"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_book_name"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/hariline"
+                            android:textSize="@dimen/book_content" />
+
+                        <!--
+                          <TextView
+                            android:id="@+id/book_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/book_content"/>
+                        -->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/top" >
+
+                        <TextView
+                            android:id="@+id/readtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:drawablePadding="4dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/hariline"
+                            android:textSize="@dimen/book_content" />
+
+                        <TextView
+                            android:id="@+id/read"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/readtime"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/hariline"
+                            android:textSize="@dimen/book_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/statueButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/wSize24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/border_btn_red"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/wSize12"
+                        android:paddingRight="@dimen/wSize12"
+                        android:textColor="@color/red_main"
+                        android:textSize="@dimen/tSize13" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:background="@color/hariline" />
+    </LinearLayout>
+
+    <!--
+         <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_cover"
+        android:scaleType="fitXY" />
+    -->
+
+</FrameLayout>

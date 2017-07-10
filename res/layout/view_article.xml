@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:texarea="http://schemas.android.com/apk/res/com.jingdong.app.reader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/timeline_user_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbar_dropdown_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp" >
+
+        <include layout="@layout/common_user_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical" >
+
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.jingdong.app.reader.view.RightDrawableTextView
+                    android:id="@+id/timeline_user_name"
+                    style="@style/timeline_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/username_vipimage_gap"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_sub"
+                    android:textSize="@dimen/stSize16" />
+
+                <TextView
+                    android:id="@+id/timeline_update_time"
+                    style="@style/timeline_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-2dp"
+                    android:textColor="@color/text_sub"
+                    android:text="bbb"
+                    android:textSize="@dimen/stSize12" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/timeline_author_bottom_gap" />
+
+    <com.jingdong.app.reader.view.TextAreaForDetail 
+        android:id="@+id/mainTextArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/timeline_padding"
+        android:layout_marginRight="@dimen/timeline_padding"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/timeline_body_font_size"
+        texarea:titleMaxLines="@integer/timeline_single_line"
+        texarea:truncation="false" />
+
+    <LinearLayout
+        android:id="@+id/quotationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wSize14"
+        android:layout_marginLeft="@dimen/timeline_padding"
+        android:layout_marginRight="@dimen/timeline_padding"
+        android:background="#e5e5e5"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/timeline_padding"
+        android:paddingRight="@dimen/timeline_padding" >
+
+        <TextView
+            android:id="@+id/timeline_quotation_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/picture_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/wSize7"
+            android:drawablePadding="@dimen/username_vipimage_gap"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/tSize14" />
+
+        <com.jingdong.app.reader.view.TextAreaForDetail
+            android:id="@+id/quotationTextArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wSize7"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/tSize14"
+            texarea:titleMaxLines="@integer/timeline_single_line"
+            texarea:truncation="true" />
+    </LinearLayout>
+
+</LinearLayout>

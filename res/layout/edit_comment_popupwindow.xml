@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_sub"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/commentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/readingcard_rectangle_bg"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <EditText
+            android:id="@+id/commentContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="5"
+            android:padding="4dp"
+            android:textSize="@dimen/wSize14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/timeline_divider_color" />
+
+        <TextView
+            android:id="@+id/commentBt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/wSize14"
+            android:paddingRight="@dimen/wSize14"
+            android:background="@drawable/actionbar_dropdown_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="回复"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/wSize14" />
+    </LinearLayout>
+
+</LinearLayout>

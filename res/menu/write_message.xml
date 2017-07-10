@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/write_message"
+        android:icon="@drawable/navibar_icon_compose_new"
+        android:showAsAction="always"
+        android:title="@string/write_message"/>
+    
+</menu>

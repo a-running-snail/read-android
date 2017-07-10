@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_select_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/r_bg_main"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.jingdong.app.reader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl1_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl1"
+                app:border_color="@color/r_theme" />
+            <TextView
+                android:id="@+id/wl1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl1"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+            
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout 
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl2_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl2"
+                app:border_color="@color/r_theme" />
+            
+			<TextView
+                android:id="@+id/wl2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl2"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl3_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl3"
+                app:border_color="@color/r_theme"/>
+            
+            <TextView
+                android:id="@+id/wl3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl3"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl4_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl4"
+                app:border_color="@color/r_theme" />
+            <TextView
+                android:id="@+id/wl4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl4"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+            
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl5_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl5"
+                app:border_color="@color/r_theme" />
+            
+			<TextView
+                android:id="@+id/wl5_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl5"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl6_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl6"
+                app:border_color="@color/r_theme"/>
+            
+            <TextView
+                android:id="@+id/wl6_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl6"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl7_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl7"
+                app:border_color="@color/r_theme" />
+            
+            <TextView
+                android:id="@+id/wl7_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl7"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl8_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl8"
+                app:border_color="@color/r_theme" />
+            
+            <TextView
+                android:id="@+id/wl8_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl8"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/layout9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/wl9_imageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wl9"
+                app:border_color="@color/r_theme" />
+            
+            <TextView
+                android:id="@+id/wl9_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wl9"
+                android:textColor="?attr/r_text_main"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/color_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/r_hariline"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <View
+        android:id="@+id/color_space1"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="?attr/r_bg_sub"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <View
+        android:id="@+id/color_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/r_hariline"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+</LinearLayout>

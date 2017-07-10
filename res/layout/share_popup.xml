@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_sub"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_sub"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/wSize24"
+            android:paddingTop="@dimen/wSize24" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/popup_sina"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp" >
+
+                    <ImageView
+                        android:id="@+id/img_sina"
+                        android:layout_width="@dimen/wSize60"
+                        android:layout_height="@dimen/wSize60"
+                        android:src="@drawable/share_sina" />
+
+                    <TextView
+                        android:id="@+id/sina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_sina"
+                        android:layout_marginTop="@dimen/wSize4"
+                        android:gravity="center_horizontal"
+                        android:text="新浪微博"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/wSize12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/popup_weixin"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp" >
+
+                    <ImageView
+                        android:id="@+id/img_weixin"
+                        android:layout_width="@dimen/wSize60"
+                        android:layout_height="@dimen/wSize60"
+                        android:src="@drawable/share_wechat" />
+
+                    <TextView
+                        android:id="@+id/weixin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_weixin"
+                        android:layout_marginTop="@dimen/wSize4"
+                        android:gravity="center_horizontal"
+                        android:text="微信好友"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/wSize12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/popup_weixin_friend"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp" >
+
+                    <ImageView
+                        android:id="@+id/img_weixin_friend"
+                        android:layout_width="@dimen/wSize60"
+                        android:layout_height="@dimen/wSize60"
+                        android:src="@drawable/share_friendscircle" />
+
+                    <TextView
+                        android:id="@+id/weixin_friend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_weixin_friend"
+                        android:layout_marginTop="@dimen/wSize4"
+                        android:gravity="center_horizontal"
+                        android:text="微信朋友圈"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/wSize12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/popup_more"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp" >
+
+                    <ImageView
+                        android:id="@+id/img_more"
+                        android:layout_width="@dimen/wSize60"
+                        android:layout_height="@dimen/wSize60"
+                        android:src="@drawable/share_more" />
+
+                    <TextView
+                        android:id="@+id/weixin_friend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_more"
+                        android:layout_marginTop="@dimen/wSize4"
+                        android:gravity="center_horizontal"
+                        android:text="更多"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/wSize12" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize44"
+            android:background="@color/bg_sub" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/red_main"
+                android:textSize="@dimen/wSize16" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

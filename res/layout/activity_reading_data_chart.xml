@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/wSize24" >
+
+                    <com.jingdong.app.reader.view.RoundNetworkImageView
+                        android:id="@+id/thumb_nail"
+                        android:layout_width="68dp"
+                        android:layout_height="68dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/me"
+                        android:src="@drawable/defaultavatar_small" />
+
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/avatar_round_stroke_bold" />
+
+                    <ImageView
+                        android:id="@+id/avatar_label"
+                        android:layout_width="@dimen/avatar_homepage_vip_size"
+                        android:layout_height="@dimen/avatar_homepage_vip_size"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="-1dp"
+                        android:layout_marginRight="5dp"
+                        android:contentDescription="@string/me"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+                
+                <TextView
+                    android:id="@+id/user_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/tSize16"
+                    android:textStyle="bold" 
+                    />
+
+            </LinearLayout>
+
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/hSize48"
+                android:layout_marginTop="@dimen/hSize48"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="128dp" >
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/read_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/book_total"
+                                    android:layout_width="48dp"
+                                    android:layout_height="20dp"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/text_sub"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="48dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="2dp"
+                                    android:gravity="center"
+                                    android:text="读过"
+                                    android:textColor="@color/text_sub"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/read_over_count"
+                                    android:layout_width="48dp"
+                                    android:layout_height="20dp"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/red_sub"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="48dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="2dp"
+                                    android:gravity="center"
+                                    android:text="读完"
+                                    android:textColor="@color/red_sub"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2" />
+
+                    <RelativeLayout
+                        android:layout_width="128dp"
+                        android:layout_height="128dp" >
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/note_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/note_total"
+                                    android:layout_width="48dp"
+                                    android:layout_height="20dp"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/text_sub"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="48dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="2dp"
+                                    android:gravity="center"
+                                    android:text="笔记"
+                                    android:textColor="@color/text_sub"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/note_share_count"
+                                    android:layout_width="48dp"
+                                    android:layout_height="20dp"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/red_sub"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="48dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="2dp"
+                                    android:gravity="center"
+                                    android:text="分享"
+                                    android:textColor="@color/red_sub"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                     <LinearLayout android:id="@+id/readedLinearLayout" 
+                        android:layout_width="128dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        
+                        <TextView android:id="@+id/readedTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我读过的图书 >"
+                        android:textColor="@color/red_sub"
+                        android:textSize="14dp" />
+                        
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2" />
+
+                     <LinearLayout android:id="@+id/myNoteLinearLayout" 
+                        android:layout_width="128dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        
+                        <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="我写下的笔记 >"
+                        android:textColor="@color/red_sub"
+                        android:textSize="14dp" />
+                        
+                    </LinearLayout>
+                    
+                    
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_dataviz_regdays" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="入驻时长"
+                            android:textColor="@color/text_sub"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/reg_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="--天"
+                            android:textColor="@color/text_main"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="24dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_dataviz_bookreivews" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="书评数"
+                            android:textColor="@color/red_sub"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/book_comment_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="--条"
+                            android:textColor="@color/red_main"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_dataviz_readtime" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="阅读总时长"
+                            android:textColor="@color/text_sub"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/read_total_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="--小时"
+                            android:textColor="@color/text_main"
+                            android:textSize="18dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="24dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_dataviz_sharebooks" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="分享图书"
+                            android:textColor="@color/red_sub"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/book_share_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="--本"
+                            android:textColor="@color/red_main"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/book_category_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="240dp"
+                        android:layout_height="240dp" >
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/book_category_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:text="阅读品类"
+                            android:textColor="@color/text_main"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/book_category_no_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="24dp"
+                        android:text="你还没有阅读过任何书籍哦"
+                        android:textColor="@color/text_sub"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

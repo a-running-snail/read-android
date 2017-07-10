@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/modify_info_padding" >
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/modify_info_padding"
+            android:background="@drawable/grey_rect_background"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/change_thumbnail"
+                android:layout_width="@dimen/modify_user_thumbnail"
+                android:layout_height="@dimen/modify_user_thumbnail"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/timeline_padding" >
+
+                <ImageView
+                    android:id="@+id/edit_thumbnail"
+                    android:layout_width="@dimen/modify_user_thumbnail"
+                    android:layout_height="@dimen/modify_user_thumbnail"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/timeline_thumbnail"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avata_female" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:contentDescription="@string/timeline_thumbnail"
+                    android:src="@drawable/icon_camera" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/edit_name"
+                style="@style/user_book_name"
+                android:layout_width="@dimen/modify_name_width"
+                android:layout_height="@dimen/modify_name_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/timeline_padding"
+                android:background="@drawable/button_nl"
+                android:gravity="center_horizontal"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <RadioGroup
+                android:id="@+id/sex_radio_group"
+                android:layout_width="@dimen/modify_name_width"
+                android:layout_height="@dimen/modify_name_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/timeline_padding"
+                android:layout_marginTop="@dimen/timeline_padding"
+                android:orientation="horizontal" >
+
+                <com.jingdong.app.reader.view.LeftDrawabelRadioButton
+                    android:id="@+id/male"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/modify_name_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/profile_gender_male"
+                    android:drawablePadding="@dimen/thumbnail_margin"
+                    android:gravity="center"
+                    android:text="@string/male"
+                    android:textOff="@string/male"
+                    android:textOn="@string/male" />
+
+                <com.jingdong.app.reader.view.LeftDrawabelRadioButton
+                    android:id="@+id/female"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/modify_name_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_bg"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/profile_gender_female"
+                    android:drawablePadding="@dimen/thumbnail_margin"
+                    android:gravity="center"
+                    android:text="@string/female"
+                    android:textOff="@string/female"
+                    android:textOn="@string/female" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            style="@style/user_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/modify_info_padding"
+            android:gravity="left|center_vertical"
+            android:text="@string/user_modify_summary" />
+
+        <EditText
+            android:id="@+id/edit_summary"
+            style="@style/user_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/modify_info_padding"
+            android:background="@drawable/grey_rect_background"
+            android:gravity="top"
+            android:inputType="text|textMultiLine|textAutoCorrect"
+            android:minLines="@integer/timeline_comment_minline"
+            android:padding="@dimen/quote_padding" />
+
+        <TextView
+            style="@style/user_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/modify_info_padding"
+            android:gravity="left|center_vertical"
+            android:text="@string/user_modify_email" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/user_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_rect_background"
+            android:gravity="top"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/quote_padding"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</ScrollView>

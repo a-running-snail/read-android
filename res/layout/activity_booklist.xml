@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+
+    <com.jingdong.app.reader.view.xlistview.XListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_item_color"
+        android:background="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp" />
+    
+    <com.jingdong.app.reader.view.EmptyLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+    <include
+        android:id="@+id/screen_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        layout="@layout/view_loading"/>
+
+    <include
+        android:id="@+id/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/net_error_view"
+        android:visibility="gone" />
+    -->
+
+</RelativeLayout>

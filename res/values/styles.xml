@@ -1,0 +1,881 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="CustomDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@color/dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="list_view_style_no_divider">
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:listSelector">@drawable/item_selected_bg</item>
+        <item name="android:background">@color/timeline_bg</item>
+        <item name="android:divider">@color/hariline</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="wrap_height_match_width">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_height_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="max_7line_text" parent="wrap_height_match_width">
+        <item name="android:maxLines">@integer/timeline_max_4line</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="timeline_user_name">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/stSize16</item>
+    </style>
+
+    <style name="timeline_update_time" parent="wrap_height_match_width">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/text_sub</item>
+        <item name="android:textSize">@dimen/stSize12</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="timeline_book_name">
+        <item name="android:textColor">@color/timeline_book_title</item>
+        <item name="android:textSize">@dimen/user_follow_number</item>
+    </style>
+
+    <style name="timeline_title" parent="timeline_book_name">
+        <item name="android:textColor">@color/dark_grey_hl</item>
+    </style>
+
+    <style name="timeline_main_content">
+        <item name="android:textColor">@color/community_color_title</item>
+        <item name="android:textSize">@dimen/stSize14</item>
+    </style>
+
+    <style name="timeline_quote_content">
+      <!--   <item name="android:textColor">@color/pie_chart_dark_gray</item> -->
+        <item name="android:textColor">@color/community_color_title</item>
+        <item name="android:textSize">@dimen/stSize14</item>
+    </style>
+
+    <style name="timeline_recommand" parent="wrap_height_match_width">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#b8b8b826</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="timeline_comment">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/tab_textcolor</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="view_pager_tab_bar_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/tab_button_bg</item>
+        <item name="android:textColor">@color/tab_button_textcolor</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="user_text">
+        <item name="android:textColor">@color/tab_textcolor</item>
+        <item name="android:textSize">@dimen/user_follow_number</item>
+    </style>
+
+    <style name="user_detail_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/user_info</item>
+        <item name="android:paddingLeft">@dimen/user_detail</item>
+        <item name="android:paddingRight">@dimen/user_detail</item>
+    </style>
+
+    <style name="user_detail_text" parent="@style/user_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="user_detail_arrow" parent="@style/user_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableRight">@drawable/icon_arrow</item>
+    </style>
+
+    <style name="user_more_value" parent="@style/user_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/text_space</item>
+        <item name="android:textColor">@color/dark_grey_hl</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="user_book_name">
+        <item name="android:textColor">@color/dark_grey_hl</item>
+        <item name="android:textSize">@dimen/user_follow_number</item>
+    </style>
+
+    <style name="user_book_author">
+        <item name="android:textColor">@color/tab_textcolor</item>
+        <item name="android:textSize">@dimen/user_more</item>
+    </style>
+
+    <style name="user_follow_button" parent="wrap_height_wrap_content">
+        <item name="android:background">@drawable/user_follow_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textOff">@string/user_follow_not</item>
+        <item name="android:textOn">@string/user_follow_done</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="chat">
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/stSize16</item>
+    </style>
+
+    <style name="notifity_text">
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/tSize16</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="list_view_style_no_focus">
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:divider">#00000000</item>
+        <item name="android:dividerHeight">0px</item>
+    </style>
+
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
+    </style>
+
+    <style name="custom_ratingbar_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_progress</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="custom_ratingbar_style_big" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_progress_big</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxHeight">32dip</item>
+        <item name="android:stepSize">0.5</item>
+    </style>
+
+    <style name="fullscreen_transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+
+　　</style>
+
+    <style name="NightTheme">
+        <item name="r_theme">@color/n_theme</item>
+        <item name="r_bg_main">@color/n_bg_main</item>
+        <item name="r_bg_sub">@color/n_bg_sub</item>
+        <item name="r_hariline">@color/n_hariline</item>
+        <item name="r_text_main">@color/n_text_main</item>
+        <item name="r_text_sub">@color/n_text_sub</item>
+        <item name="r_text_disable">@color/n_text_disable</item>
+        <item name="r_bg_click">@color/n_bg_click</item>
+        <item name="read_back_img">@drawable/reader_btn_back_night</item>
+        <item name="read_search_img">@drawable/reader_btn_search_night</item>
+        <item name="read_bookmark_marked_img">@drawable/reader_btn_bookmark_marked_night</item>
+        <item name="read_bookmark_unmark_img">@drawable/reader_btn_bookmark_unmark_night</item>
+        <item name="bookmark_list_img">@drawable/reader_icon_list_bookmark_night</item>
+        <item name="read_toc_img">@drawable/reader_btn_toc_night</item>
+        <item name="read_note_img">@drawable/reader_btn_note_night</item>
+        <item name="read_setting_img">@drawable/reader_btn_setting_night</item>
+        <item name="read_brightness_up_img">@drawable/reader_icon_brightness_up_night</item>
+        <item name="read_brightness_down_img">@drawable/reader_icon_brightness_down_night</item>
+        <item name="read_fontsize_up_img">@drawable/reader_btn_fontsize_up_night</item>
+        <item name="read_fontsize_down_img">@drawable/reader_btn_fontsize_down_night</item>
+        <item name="read_daylight_mode_img">@drawable/reader_btn_theme_daylight_standard</item>
+        <item name="read_night_mode_img">@drawable/reader_btn_theme_night_standard</item>
+        <item name="read_switch_off_line_img">@drawable/switchoff_line_night</item>
+        <item name="read_switch_off_dot_img">@drawable/switchoff_dot_night</item>
+        <item name="read_switch_on_line_img">@drawable/switchon_line_night</item>
+        <item name="read_switch_on_dot_img">@drawable/switchon_dot_night</item>
+        <item name="read_slider_tune_zero_img">@drawable/progress_tune_zero_night</item>
+        <item name="read_slider_tune_img">@drawable/progress_tune_night</item>
+        <item name="read_slider_progress_img">@drawable/progress_bg_night</item>
+        <item name="read_progress_forward_img">@drawable/reader_icon_progress_forward_night</item>
+        <item name="read_progress_back_img">@drawable/reader_icon_progress_back_night</item>
+        <item name="read_page_indicator_bg">@drawable/read_page_indicator_light_bg</item>
+        <item name="read_list_item_selected_img">@drawable/reader_icon_list_selected_night</item>
+        <item name="read_list_item_unselected_img">@drawable/reader_icon_list_unselected_night</item>
+        <item name="read_item_enabled_img">@drawable/reader_icon_list_checkmark_night</item>
+        <item name="read_round_corner_disable_bg">@drawable/read_round_corner_rectangle_disable_night</item>
+        <item name="read_round_corner_enable_bg">@drawable/read_round_corner_rectangle_enable_night</item>
+        <item name="read_round_corner_bg">@drawable/read_round_corner_rectangle_night</item>
+        <item name="read_pressed_bg">@drawable/selector_bg_night</item>
+        <item name="read_bookmark_null_img">@drawable/bookmark_null_night</item>
+        <item name="read_note_null_img">@drawable/note_null_night</item>
+        <item name="read_button_bg_img">@drawable/reader_btn_night_s12</item>
+        <item name="read_back_cover_note_img">@drawable/backcover_note_night</item>
+        <item name="read_back_cover_time_img">@drawable/backcover_time_night</item>
+        <item name="read_back_cover_share_img">@drawable/backcover_share_night</item>
+        <item name="read_button_playlist_img">@drawable/reader_btn_audio_night</item>
+        <item name="read_button_more_img">@drawable/reader_btn_more</item>
+        <item name="read_icon_arrow_right_img">@drawable/reader_icon_arrow_right_night</item>
+    </style>
+
+    <style name="MintTheme">
+        <item name="r_theme">@color/m_theme</item>
+        <item name="r_bg_main">@color/m_bg_main</item>
+        <item name="r_bg_sub">@color/m_bg_sub</item>
+        <item name="r_hariline">@color/m_hariline</item>
+        <item name="r_text_main">@color/m_text_main</item>
+        <item name="r_text_sub">@color/m_text_sub</item>
+        <item name="r_text_disable">@color/m_text_disable</item>
+        <item name="r_bg_click">@color/m_bg_click</item>
+        <item name="read_back_img">@drawable/reader_btn_back_mint</item>
+        <item name="read_search_img">@drawable/reader_btn_search_mint</item>
+        <item name="read_bookmark_marked_img">@drawable/reader_btn_bookmark_marked_mint</item>
+        <item name="read_bookmark_unmark_img">@drawable/reader_btn_bookmark_unmark_mint</item>
+        <item name="bookmark_list_img">@drawable/reader_icon_list_bookmark_mint</item>
+        <item name="read_toc_img">@drawable/reader_btn_toc_mint</item>
+        <item name="read_note_img">@drawable/reader_btn_note_mint</item>
+        <item name="read_setting_img">@drawable/reader_btn_setting_mint</item>
+        <item name="read_brightness_up_img">@drawable/reader_icon_brightness_up_mint</item>
+        <item name="read_brightness_down_img">@drawable/reader_icon_brightness_down_mint</item>
+        <item name="read_fontsize_up_img">@drawable/reader_btn_fontsize_up_mint</item>
+        <item name="read_fontsize_down_img">@drawable/reader_btn_fontsize_down_mint</item>
+        <item name="read_daylight_mode_img">@drawable/reader_btn_theme_daylight_standard</item>
+        <item name="read_night_mode_img">@drawable/reader_btn_theme_night_standard</item>
+        <item name="read_switch_off_line_img">@drawable/switchoff_line_mint</item>
+        <item name="read_switch_off_dot_img">@drawable/switchoff_dot_mint</item>
+        <item name="read_switch_on_line_img">@drawable/switchon_line_mint</item>
+        <item name="read_switch_on_dot_img">@drawable/switchon_dot_mint</item>
+        <item name="read_slider_tune_zero_img">@drawable/progress_tune_zero_mint</item>
+        <item name="read_slider_tune_img">@drawable/progress_tune_mint</item>
+        <item name="read_slider_progress_img">@drawable/progress_bg_mint</item>
+        <item name="read_progress_forward_img">@drawable/reader_icon_progress_forward_mint</item>
+        <item name="read_progress_back_img">@drawable/reader_icon_progress_back_mint</item>
+        <item name="read_page_indicator_bg">@drawable/read_page_indicator_dark_bg</item>
+        <item name="read_list_item_selected_img">@drawable/reader_icon_list_selected_mint</item>
+        <item name="read_list_item_unselected_img">@drawable/reader_icon_list_unselected_mint</item>
+        <item name="read_item_enabled_img">@drawable/reader_icon_list_checkmark_mint</item>
+        <item name="read_round_corner_disable_bg">@drawable/read_round_corner_rectangle_disable_mint</item>
+        <item name="read_round_corner_enable_bg">@drawable/read_round_corner_rectangle_enable_mint</item>
+        <item name="read_round_corner_bg">@drawable/read_round_corner_rectangle_mint</item>
+        <item name="read_pressed_bg">@drawable/selector_bg_mint</item>
+        <item name="read_bookmark_null_img">@drawable/bookmark_null_mint</item>
+        <item name="read_note_null_img">@drawable/note_null_mint</item>
+        <item name="read_button_bg_img">@drawable/reader_btn_mint_s12</item>
+        <item name="read_back_cover_note_img">@drawable/backcover_note_mint</item>
+        <item name="read_back_cover_time_img">@drawable/backcover_time_mint</item>
+        <item name="read_back_cover_share_img">@drawable/backcover_share_mint</item>
+        <item name="read_button_playlist_img">@drawable/reader_btn_audio_mint</item>
+        <item name="read_button_more_img">@drawable/reader_btn_more</item>
+        <item name="read_icon_arrow_right_img">@drawable/reader_icon_arrow_right_mint</item>
+    </style>
+
+    <style name="SoftTheme">
+        <item name="r_theme">@color/s_theme</item>
+        <item name="r_bg_main">@color/s_bg_main</item>
+        <item name="r_bg_sub">@color/s_bg_sub</item>
+        <item name="r_hariline">@color/s_hariline</item>
+        <item name="r_text_main">@color/s_text_main</item>
+        <item name="r_text_sub">@color/s_text_sub</item>
+        <item name="r_text_disable">@color/s_text_disable</item>
+        <item name="r_bg_click">@color/s_bg_click</item>
+        <item name="read_back_img">@drawable/reader_btn_back_soft</item>
+        <item name="read_search_img">@drawable/reader_btn_search_soft</item>
+        <item name="read_bookmark_marked_img">@drawable/reader_btn_bookmark_marked_soft</item>
+        <item name="read_bookmark_unmark_img">@drawable/reader_btn_bookmark_unmark_soft</item>
+        <item name="bookmark_list_img">@drawable/reader_icon_list_bookmark_soft</item>
+        <item name="read_toc_img">@drawable/reader_btn_toc_soft</item>
+        <item name="read_note_img">@drawable/reader_btn_note_soft</item>
+        <item name="read_setting_img">@drawable/reader_btn_setting_soft</item>
+        <item name="read_brightness_up_img">@drawable/reader_icon_brightness_up_soft</item>
+        <item name="read_brightness_down_img">@drawable/reader_icon_brightness_down_soft</item>
+        <item name="read_fontsize_up_img">@drawable/reader_btn_fontsize_up_soft</item>
+        <item name="read_fontsize_down_img">@drawable/reader_btn_fontsize_down_soft</item>
+        <item name="read_daylight_mode_img">@drawable/reader_btn_theme_daylight_standard</item>
+        <item name="read_night_mode_img">@drawable/reader_btn_theme_night_standard</item>
+        <item name="read_switch_off_line_img">@drawable/switchoff_line_soft</item>
+        <item name="read_switch_off_dot_img">@drawable/switchoff_dot_soft</item>
+        <item name="read_switch_on_line_img">@drawable/switchon_line_soft</item>
+        <item name="read_switch_on_dot_img">@drawable/switchon_dot_soft</item>
+        <item name="read_slider_tune_zero_img">@drawable/progress_tune_zero_soft</item>
+        <item name="read_slider_tune_img">@drawable/progress_tune_soft</item>
+        <item name="read_slider_progress_img">@drawable/progress_bg_soft</item>
+        <item name="read_progress_forward_img">@drawable/reader_icon_progress_forward_soft</item>
+        <item name="read_progress_back_img">@drawable/reader_icon_progress_back_soft</item>
+        <item name="read_page_indicator_bg">@drawable/read_page_indicator_dark_bg</item>
+        <item name="read_list_item_selected_img">@drawable/reader_icon_list_selected_soft</item>
+        <item name="read_list_item_unselected_img">@drawable/reader_icon_list_unselected_soft</item>
+        <item name="read_item_enabled_img">@drawable/reader_icon_list_checkmark_soft</item>
+        <item name="read_round_corner_disable_bg">@drawable/read_round_corner_rectangle_disable_soft</item>
+        <item name="read_round_corner_enable_bg">@drawable/read_round_corner_rectangle_enable_soft</item>
+        <item name="read_round_corner_bg">@drawable/read_round_corner_rectangle_soft</item>
+        <item name="read_pressed_bg">@drawable/selector_bg_soft</item>
+        <item name="read_bookmark_null_img">@drawable/bookmark_null_soft</item>
+        <item name="read_note_null_img">@drawable/note_null_soft</item>
+        <item name="read_button_bg_img">@drawable/reader_btn_soft_s12</item>
+        <item name="read_back_cover_note_img">@drawable/backcover_note_soft</item>
+        <item name="read_back_cover_time_img">@drawable/backcover_time_soft</item>
+        <item name="read_back_cover_share_img">@drawable/backcover_share_soft</item>
+        <item name="read_button_playlist_img">@drawable/reader_btn_audio_soft</item>
+        <item name="read_button_more_img">@drawable/reader_btn_more</item>
+        <item name="read_icon_arrow_right_img">@drawable/reader_icon_arrow_right_soft</item>
+    </style>
+
+    <style name="WhiteTheme">
+        <item name="r_theme">@color/r_theme</item>
+        <item name="r_bg_main">@color/r_bg_main</item>
+        <item name="r_bg_sub">@color/r_bg_sub</item>
+        <item name="r_hariline">@color/r_hariline</item>
+        <item name="r_text_main">@color/r_text_main</item>
+        <item name="r_text_sub">@color/r_text_sub</item>
+        <item name="r_text_disable">@color/r_text_disable</item>
+        <item name="r_bg_click">@color/r_bg_click</item>
+        <item name="read_back_img">@drawable/reader_btn_back_standard</item>
+        <item name="read_search_img">@drawable/reader_btn_search_standard</item>
+        <item name="read_bookmark_marked_img">@drawable/reader_btn_bookmark_marked_standard</item>
+        <item name="read_bookmark_unmark_img">@drawable/reader_btn_bookmark_unmark_standard</item>
+        <item name="bookmark_list_img">@drawable/reader_icon_list_bookmark_standard</item>
+        <item name="read_toc_img">@drawable/reader_btn_toc_standard</item>
+        <item name="read_note_img">@drawable/reader_btn_note_standard</item>
+        <item name="read_setting_img">@drawable/reader_btn_setting_standard</item>
+        <item name="read_brightness_up_img">@drawable/reader_icon_brightness_up_standard</item>
+        <item name="read_brightness_down_img">@drawable/reader_icon_brightness_down_standard</item>
+        <item name="read_fontsize_up_img">@drawable/reader_btn_fontsize_up_standard</item>
+        <item name="read_fontsize_down_img">@drawable/reader_btn_fontsize_down_standard</item>
+        <item name="read_daylight_mode_img">@drawable/reader_btn_theme_daylight_standard</item>
+        <item name="read_night_mode_img">@drawable/reader_btn_theme_night_standard</item>
+        <item name="read_switch_off_line_img">@drawable/switchoff_line_standard</item>
+        <item name="read_switch_off_dot_img">@drawable/switchoff_dot_standard</item>
+        <item name="read_switch_on_line_img">@drawable/switchon_line_standard</item>
+        <item name="read_switch_on_dot_img">@drawable/switchon_dot_standard</item>
+        <item name="read_slider_tune_zero_img">@drawable/progress_tune_zero_standard</item>
+        <item name="read_slider_tune_img">@drawable/progress_tune_standard</item>
+        <item name="read_slider_progress_img">@drawable/progress_bg_standard</item>
+        <item name="read_progress_forward_img">@drawable/reader_icon_progress_forward_standard</item>
+        <item name="read_progress_back_img">@drawable/reader_icon_progress_back_standard</item>
+        <item name="read_page_indicator_bg">@drawable/read_page_indicator_dark_bg</item>
+        <item name="read_list_item_selected_img">@drawable/reader_icon_list_selected_standard</item>
+        <item name="read_list_item_unselected_img">@drawable/reader_icon_list_unselected_standard</item>
+        <item name="read_item_enabled_img">@drawable/reader_icon_list_checkmark_standard</item>
+        <item name="read_round_corner_disable_bg">@drawable/read_round_corner_rectangle_disable_standard</item>
+        <item name="read_round_corner_enable_bg">@drawable/read_round_corner_rectangle_enable_standard</item>
+        <item name="read_round_corner_bg">@drawable/read_round_corner_rectangle_standard</item>
+        <item name="read_pressed_bg">@drawable/selector_bg_standard</item>
+        <item name="read_bookmark_null_img">@drawable/bookmark_null_standard</item>
+        <item name="read_note_null_img">@drawable/note_null_standard</item>
+        <item name="read_button_bg_img">@drawable/reader_btn_standard_s12</item>
+        <item name="read_back_cover_note_img">@drawable/backcover_note_standard</item>
+        <item name="read_back_cover_time_img">@drawable/backcover_time_standard</item>
+        <item name="read_back_cover_share_img">@drawable/backcover_share_standard</item>
+        <item name="read_button_playlist_img">@drawable/reader_btn_audio_standard</item>
+        <item name="read_button_more_img">@drawable/reader_btn_more</item>
+        <item name="read_icon_arrow_right_img">@drawable/reader_icon_arrow_right_standard</item>
+    </style>
+
+    <style name="navigation_menu_view_title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/bottom_tab_color_selector</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="navigation_msg_view">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">2dp</item>
+    </style>
+
+    <style name="navigation_msg_view_text">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffff00</item>
+        <item name="android:background">#00ff00</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="context_menu_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="common_dialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!-- <style name="loading_dialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+ -->
+    <style name="loading_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.1</item>
+    </style>
+
+    <style name="transparent" parent="@android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/gifitactivitybg</item>
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_loading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/import_book_selector</item>
+    </style>
+
+    <!-- appliction主题风格 -->
+    <style name="ThemeActivity" mce_bogus="1" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- activity之间跳转动画 -->
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_right_out</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- 界面Title -->
+    <style name="layout_title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFCC</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <!-- 所有大按钮设定 -->
+    <style name="common_button">
+        <item name="android:layout_height">@dimen/hSize30</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/android_big_button_x</item>
+    </style>
+    <!-- 选择信息spinner_left -->
+    <style name="spinner_left">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <!-- Title右侧按钮，文字颜色：黑色 -->
+    <style name="title_right_button">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:background">@drawable/right_title_btn</item>
+    </style>
+    <!-- 文本颜色：黑色 -->
+    <style name="text_color_black">
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <!-- 文本输入框样式 -->
+    <style name="edit_text">
+        <item name="android:background">@drawable/edit_text_x</item>
+    </style>
+    <!-- 分割线-横向 -->
+    <style name="line1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#FFCCCCCC</item>
+    </style>
+
+    <!-- 分割线-纵向 -->
+    <style name="line_vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#FFCCCCCC</item>
+    </style>
+
+    <!-- 详情列表导航 -->
+    <style name="product_detail_navigation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@drawable/none</item>
+        <item name="android:background">@drawable/android_product_info_little4_x</item>
+    </style>
+
+    <!-- 详情列表加载效果 -->
+    <style name="product_detail_loading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">100dp</item>
+    </style>
+
+    <!-- 商品列表排序按钮 -->
+    <style name="product_list_sort_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@drawable/none</item>
+    </style>
+
+    <style name="general_padding">
+        <item name="android:padding">10dp</item>
+    </style>
+    <!-- 大星号Rattingbar -->
+    <style name="bigStarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/blue_star_rating_bar_full</item>
+        <item name="android:minHeight">34dip</item>
+        <item name="android:maxHeight">70dip</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+    </style>
+
+    <!-- 去掉activity打开的动画 -->
+    <style name="Theme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <!-- ColorPickView的Dialog的设置 -->
+    <style name="color_picker" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/color_picker_animation</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="color_picker_animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/color_picker_push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/color_picker_push_down_out</item>
+    </style>
+
+   <!--  <style name="context_menu_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+ -->
+    <!-- tab style begin -->
+    <style name="item_tab_tabgroupview">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/hSize45</item>
+        <item name="android:background">@drawable/item_tab_bg</item>
+        <item name="android:paddingBottom">@dimen/hSize7</item>
+        <item name="android:paddingLeft">@dimen/wSize7</item>
+        <item name="android:paddingRight">@dimen/wSize7</item>
+        <item name="android:paddingTop">@dimen/hSize7</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="item_tab_linearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/tab_child_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="item_tab_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_button_black_33bad7</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- tab style end -->
+
+
+    <!-- 图书列表：图书名 -->
+    <style name="book_list_bookname">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tSize16</item>
+        <item name="android:textColor">#221b11</item>
+    </style>
+
+    <!-- 图书列表：作者等 -->
+    <style name="book_list_author">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tSize14</item>
+        <item name="android:textColor">@color/font_book_author</item>
+    </style>
+
+    <!-- 图书列表：右边价格 -->
+    <style name="book_list_price">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tSize15</item>
+        <item name="android:textColor">@color/font_dark_red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 我的京东列表字体 -->
+    <style name="list_myjd_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/tSize18</item>
+        <item name="android:textColor">#504c46</item>
+    </style>
+
+    <!-- 我的电子书刊：下载、阅读按钮 -->
+    <style name="button_myjd_download">
+        <item name="android:layout_width">@dimen/wSize65</item>
+        <item name="android:layout_height">@dimen/hSize30</item>
+        <item name="android:background">@drawable/button_white_bg</item>
+        <item name="android:duplicateParentState">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color_504c46_turn_green</item>
+        <item name="android:textSize">@dimen/tSize14</item>
+    </style>
+
+    <!-- 我的京东里面价格 -->
+    <style name="text_myjd_price" parent="@style/book_list_price">
+        <item name="android:textSize">@dimen/tSize14</item>
+    </style>
+
+    <!-- 我的京东：优惠券、畅读卡列表字体 -->
+    <style name="text_myjd_card_list" parent="@style/book_list_author">
+        <item name="android:textColor">#221b11</item>
+    </style>
+
+    <!-- 带白色背景框的列表item -->
+    <style name="list_item_with_white_border">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/list_item_white_bg</item>
+        <item name="android:duplicateParentState">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">@dimen/hSize10</item>
+        <item name="android:paddingLeft">@dimen/wSize8</item>
+        <item name="android:paddingTop">@dimen/hSize8</item>
+        <item name="android:paddingRight">@dimen/wSize8</item>
+        <item name="android:layout_marginLeft">@dimen/wSize5</item>
+        <item name="android:layout_marginRight">@dimen/wSize5</item>
+        <item name="android:layout_marginTop">@dimen/hSize3</item>
+        <item name="android:layout_marginBottom">@dimen/hSize2</item>
+    </style>
+
+    <!-- 图书详情页按钮：免费下载、在线畅读、加入购物车、立即购买 -->
+    <style name="button_bookinfo">
+        <item name="android:layout_width">@dimen/wSize95</item>
+        <item name="android:layout_height">@dimen/hSize40</item>
+        <item name="android:duplicateParentState">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 绑定畅读卡、购买畅读卡按钮、登陆注册按钮、对话框确认取消按钮 -->
+    <style name="button_bindcard">
+        <item name="android:layout_width">@dimen/wSize150</item>
+        <item name="android:layout_height">@dimen/hSize40</item>
+        <item name="android:duplicateParentState">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:textSize">@dimen/tSize15</item>
+    </style>
+
+    <!-- 绑定畅读卡、购买畅读卡按钮、登陆注册按钮、对话框确认取消按钮 -->
+    <style name="button_white_big">
+        <item name="android:layout_height">@dimen/hSize40</item>
+        <item name="android:duplicateParentState">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_color_221b11_turn_green</item>
+        <item name="android:textSize">@dimen/tSize20</item>
+        <item name="android:background">@drawable/button_white_bg</item>
+    </style>
+
+    <style name="Theme.Black">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <!-- <item name="android:windowExitAnimation">@anim/fade_out</item> -->
+    </style>
+
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    
+    <!-- 我的京东列表字体 -->
+    <style name="community_hotword_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/custom_press_selector</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/stSize14</item>
+        <item name="android:textColor">#504c46</item>
+    </style>
+    
+     <style name="MyNoTitleBar" >
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+    <style name="BookShelfTopBarAnimation">
+        <item name="android:windowEnterAnimation">@anim/bookshelf_topbar_show</item>
+        <item name="android:windowExitAnimation">@anim/bookshelf_topbar_hide</item>
+    </style>
+
+    <style name="BookShelfBottomBarAnimation">
+        <item name="android:windowEnterAnimation">@anim/bookshelf_bottombar_show</item>
+        <item name="android:windowExitAnimation">@anim/bookshelf_bottombar_hide</item>
+    </style>
+    
+</resources>

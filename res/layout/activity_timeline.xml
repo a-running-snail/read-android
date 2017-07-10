@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jingdong.app.reader.view.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8E8E8"
+        android:orientation="horizontal">
+        <RelativeLayout 
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1">
+        	<TextView
+        	    android:id="@+id/tab_square"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="match_parent"
+        	    android:gravity="center_horizontal|center_vertical"
+        	    android:text="广场"
+        	    android:textSize="@dimen/stSize14"
+        	    android:textColor="@color/community_color_topbar" />
+        	 <View android:id="@+id/square_dot"
+            	android:layout_width="15dp"
+            	android:layout_height="15dp"
+            	android:background="@drawable/triangle_white_bg" 
+            	android:layout_alignParentBottom="true"
+            	android:layout_centerHorizontal="true"/>
+		</RelativeLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/black_dot" />
+        
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/tab_friend_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="朋友圈"
+                    android:textSize="@dimen/stSize14" 
+                    android:textColor="@color/community_color_topbar"/>
+                <View android:id="@+id/friend_dot"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/triangle_white_bg"
+                    android:visibility="gone" />
+         </RelativeLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/black_dot" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/tab_find"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="发现"
+                android:textSize="@dimen/stSize14"
+                android:textColor="@color/community_color_topbar" />
+            <View android:id="@+id/find_dot"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/triangle_white_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        </LinearLayout>
+        
+    <!--     <FrameLayout android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true">
+            
+            <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/triangle_white_bg" />
+            
+        </FrameLayout>
+        
+        
+        <ImageView  android:id="@+id/tab_bottom_image"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/icon_bg_line"
+        	android:layout_alignParentBottom="true"/> 
+        	-->
+</RelativeLayout>
+    
+  
+
+ <!--    <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+     
+     <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	</LinearLayout> 
+-->	
+     <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    
+</LinearLayout>

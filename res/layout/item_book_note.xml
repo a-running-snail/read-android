@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:texarea="http://schemas.android.com/apk/res/com.jingdong.app.reader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_reading_data_title" />
+
+    <com.jingdong.app.reader.view.TextArea
+        android:id="@+id/note_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/timeline_padding"
+        android:paddingRight="@dimen/timeline_padding"
+        texarea:contentMaxLines="3"
+        texarea:titleMaxLines="@integer/timeline_single_line"
+        texarea:truncation="true" />
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_sub"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_main"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_top"
+                android:background="@color/bg_sub" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/hariline" />
+
+            <RelativeLayout
+                android:id="@+id/me_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="@dimen/padding_left"
+                    android:paddingTop="@dimen/padding_left"
+                    android:text="提到我的"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:id="@+id/atme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_arrow_right" />
+
+                <LinearLayout
+                    android:id="@+id/atme_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/wSize8"
+                    android:layout_toLeftOf="@id/atme"
+                    android:background="@drawable/red_dot"
+                    android:visibility="gone"
+                    android:gravity="center" >
+
+<!--                     <TextView
+                        android:id="@+id/atme_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tSize12" /> -->
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:layout_marginRight="@dimen/padding_left"
+                android:background="@color/hariline" />
+
+            <RelativeLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="@dimen/padding_left"
+                    android:paddingTop="@dimen/padding_left"
+                    android:text="@string/book_comment"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:id="@+id/comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_arrow_right" />
+
+                <LinearLayout
+                    android:id="@+id/comments_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/wSize8"
+                    android:layout_toLeftOf="@id/comments"
+                    android:background="@drawable/red_dot"
+                    android:visibility="gone"
+                    android:gravity="center" >
+
+<!--                     <TextView
+                        android:id="@+id/comments_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tSize12" /> -->
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:layout_marginRight="@dimen/padding_left"
+                android:background="@color/hariline" />
+
+            <RelativeLayout
+                android:id="@+id/message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="@dimen/padding_left"
+                    android:paddingTop="@dimen/padding_left"
+                    android:text="@string/private_message"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_arrow_right" />
+
+                <LinearLayout
+                    android:id="@+id/message_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/wSize8"
+                    android:layout_toLeftOf="@id/message"
+                    android:background="@drawable/red_dot"
+                    android:visibility="gone"
+                    android:gravity="center" >
+
+    <!--                 <TextView
+                        android:id="@+id/message_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tSize12" /> -->
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/padding_left"
+                android:layout_marginRight="@dimen/padding_left"
+                android:background="@color/hariline" />
+
+            <RelativeLayout
+                android:id="@+id/notification_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="@dimen/padding_left"
+                    android:paddingTop="@dimen/padding_left"
+                    android:text="@string/notification_message"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:id="@+id/notifition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_arrow_right" />
+
+                <LinearLayout
+                    android:id="@+id/notivfity_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/wSize8"
+                    android:layout_toLeftOf="@id/notifition"
+                    android:background="@drawable/red_dot"
+                    android:visibility="gone"
+                    android:gravity="center" >
+
+<!--                     <TextView
+                        android:id="@+id/notifity_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tSize12" /> -->
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/hariline" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

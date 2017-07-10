@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/rebind_book"
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:layout_gravity="center"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="@string/rebind_book_title"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+                android:text="@string/rebind_book_button"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@drawable/icon_arrow" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/hariline"
+        android:dividerHeight="1dp"
+        android:background="@color/bg_main"
+        android:layerType="software"
+        android:listSelector="@drawable/item_selected_bg"
+        android:longClickable="true"
+        android:scrollbars="none" />
+
+</LinearLayout>

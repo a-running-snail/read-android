@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="21dp"
+    android:paddingRight="@dimen/timeline_padding_right"
+    android:paddingTop="@dimen/timeline_padding_right" >
+
+    <com.jingdong.app.reader.view.PartClickableTextView
+        android:id="@+id/message_text"
+        style="@style/timeline_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:lineSpacingExtra="@dimen/timeline_text_extra_space"
+        android:maxLines="2"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/message_time"
+        style="@style/timeline_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="2dp"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/timeline_padding_bottom"
+        android:background="@color/timeline_divider_color" />
+
+</LinearLayout>

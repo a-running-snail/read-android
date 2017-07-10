@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- ViewPager是一个控件 -->
+
+    <com.jingdong.app.reader.view.customviewpager.JDViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        >
+    </com.jingdong.app.reader.view.customviewpager.JDViewPager>
+
+    <LinearLayout
+        android:id="@+id/view_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/view_pager"
+        android:orientation="horizontal" >
+    </LinearLayout>
+ 
+    </RelativeLayout> 
+
+</LinearLayout>

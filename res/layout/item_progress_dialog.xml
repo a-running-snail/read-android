@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/context_dialog"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:background="@drawable/bg_popup_local"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/layout_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:visibility="gone" >
+
+		<TextView
+			android:id="@+id/dialog_title"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hSize50"
+			android:layout_marginLeft="@dimen/wSize15"
+			android:layout_marginRight="@dimen/wSize15"
+			android:gravity="center_vertical"
+			android:text="对话框的Title"
+			android:textColor="#221b11"
+			android:textSize="@dimen/tSize20" />
+
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/hSize1"
+			android:layout_marginLeft="@dimen/wSize3"
+			android:layout_marginRight="@dimen/wSize3"
+			android:background="@drawable/line_horizontal_menu" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/messageLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginBottom="@dimen/hSize20"
+		android:layout_marginLeft="@dimen/wSize15"
+		android:layout_marginRight="@dimen/wSize15"
+		android:layout_marginTop="@dimen/hSize20"
+		android:gravity="center"
+		android:visibility="gone" >
+
+		<ImageView
+			android:id="@+id/indeterminateSytle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/wSize15"
+			android:src="@drawable/icon_loading"
+			android:visibility="gone" />
+
+		<TextView
+			android:id="@+id/dialog_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:lineSpacingMultiplier="1.2"
+			android:text="删除"
+			android:textColor="@color/white"
+			android:textSize="@dimen/tSize18"
+			android:visibility="gone" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/addView"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_marginLeft="@dimen/hSize35"
+		android:layout_marginRight="@dimen/hSize20"
+		android:layout_weight="1"
+		android:orientation="horizontal" >
+	</LinearLayout>
+
+</LinearLayout>

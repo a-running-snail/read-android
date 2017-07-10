@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+   	android:background="@drawable/list_item_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/book_cover"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="fitXY"
+                android:src="@drawable/book_cover_default" />
+
+            <ImageView
+                android:id="@+id/imageViewLabel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/empty_string"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/bookInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/book_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/text_main"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/book_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_main"
+                        android:textSize="12dp" />
+
+                    <LinearLayout android:id="@+id/book_info_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/book_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="left|bottom"
+                            android:maxLines="2"
+                            android:textColor="@color/text_sub"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout android:id="@+id/special_price_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp" 
+                        android:visibility="gone">
+
+                        <LinearLayout android:id="@+id/priceLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/price_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="left|bottom"
+                            android:textColor="@color/text_main"
+                            android:text="原价："
+                            android:textSize="12dp"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/original_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="left|bottom"
+                            android:textColor="@color/text_main"
+                            android:textSize="12dp" />
+                        </LinearLayout>
+                         <LinearLayout android:id="@+id/jdpriceLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                         <TextView
+                            android:id="@+id/jdprice_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="left|bottom"
+                            android:textColor="@color/text_main"
+                            android:text="特价："
+                            android:textSize="12dp" 
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/special_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="left|bottom"
+                            android:textColor="@color/red_sub"
+                            android:includeFontPadding="false"
+                            android:textSize="14dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/icon_arrow_right" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/hariline"
+        />
+
+</LinearLayout>

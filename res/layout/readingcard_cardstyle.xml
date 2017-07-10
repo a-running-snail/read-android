@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/header_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <View android:id="@+id/topline"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" 
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+        
+        <TextView android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_sub"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="20dp"
+            android:text="@string/month_card"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/hariline" />
+
+    </LinearLayout>
+    
+
+    <TextView
+        android:id="@+id/foot"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_sub"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/readingcard_rectangle_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout android:id="@+id/card_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/changdu_card_7day"
+             >
+             <FrameLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 
+                 <ImageView android:id="@+id/card_status"
+                     android:layout_width="wrap_content"
+                 	 android:layout_height="wrap_content"/>
+                 
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="京东电子书畅读VIP"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView android:id="@+id/card_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+            </LinearLayout>
+             </FrameLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卡    号："
+                    android:textColor="@color/subtitle_color"
+                    android:textSize="@dimen/tSize13" />
+
+                <TextView
+                    android:id="@+id/card_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/subtitle_color"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/tSize13" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="已畅读："
+                    android:textColor="@color/subtitle_color"
+                    android:textSize="@dimen/tSize13" />
+
+                <TextView
+                    android:id="@+id/readed_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="10/1000"
+                    android:textColor="@color/subtitle_color"
+                    android:textSize="@dimen/tSize13" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期："
+                    android:textColor="@color/subtitle_color"
+                    android:textSize="@dimen/tSize13" />
+
+                <TextView
+                    android:id="@+id/valide_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/subtitle_color"
+                    android:textSize="@dimen/tSize13" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

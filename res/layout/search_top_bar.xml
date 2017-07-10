@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/custom_top_bar_height"
+    android:background="@color/custom_top_bar_background_color" >
+
+    <RelativeLayout
+        android:id="@+id/left_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/custom_top_bar_menu_padding"
+        android:paddingRight="@dimen/custom_top_bar_menu_padding" >
+
+        <ImageView
+            android:id="@+id/sub_menu_left_image"
+            android:layout_width="@dimen/custom_top_bar_menu_image_width"
+            android:layout_height="@dimen/custom_top_bar_menu_image_height"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/custom_top_bar_menu_padding"
+        android:paddingRight="@dimen/custom_top_bar_menu_padding" >
+
+        <RelativeLayout
+            android:id="@+id/right_menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/sub_menu_right_left_image"
+                android:layout_width="@dimen/custom_top_bar_menu_image_width"
+                android:layout_height="@dimen/custom_top_bar_menu_image_height"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_menu_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/custom_top_bar_menu_padding"
+            android:layout_toRightOf="@id/right_menu_left"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/sub_menu_right_right_image"
+                android:layout_width="@dimen/custom_top_bar_menu_image_width"
+                android:layout_height="@dimen/custom_top_bar_menu_image_height"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/center_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_toRightOf="@id/left_menu"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_top_bar_bottom_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/custom_top_bar_bottom_divider_color" />
+
+</RelativeLayout>

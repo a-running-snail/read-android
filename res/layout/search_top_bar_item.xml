@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <!--
+         <AutoCompleteTextView
+        android:id="@+id/searchtext_autoComplete"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hSize30"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_myjd_search_textview"
+        android:dropDownWidth="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/please_input_search_word"
+        android:imeOptions="actionDone"
+        android:longClickable="false"
+        android:paddingLeft="@dimen/wSize25"
+        android:paddingRight="@dimen/wSize28"
+        android:singleLine="true"
+        android:textColor="#9f8363"
+        android:textColorHint="#9f8363"
+        android:textSize="@dimen/tSize14" >
+    </AutoCompleteTextView>
+    -->
+
+
+    <EditText
+        android:id="@+id/edittext_serach"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hSize30"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/r_bg_sub"
+        android:hint="@string/please_input_search_word"
+        android:imeOptions="actionSearch"
+        android:longClickable="true"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:maxLength="50"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/tSize14" >
+
+    </EditText>
+
+</LinearLayout>

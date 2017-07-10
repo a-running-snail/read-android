@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/index_bg" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/hariline" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/bookstore_index_recomment_header_iv"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:background="@drawable/bookstore_index_recomment_icon" />
+
+        <TextView
+            android:id="@+id/bookstore_index_recomment_header_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/loadmore_text_color"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/hariline" />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_rect_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/user_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/item_selected_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.jingdong.app.reader.view.RoundNetworkImageView
+                android:id="@+id/followed_user_avatar"
+                style="@style/wrap_height_wrap_content"
+                android:layout_width="@dimen/small_user_thumbnail"
+                android:layout_height="@dimen/small_user_thumbnail"
+                android:layout_marginRight="@dimen/thumbnail_margin"
+                android:contentDescription="@string/timeline_thumbnail"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/followed_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_light_grey" />
+
+        <LinearLayout
+            android:id="@+id/reading_book_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/item_selected_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/reading_book_cover"
+                style="@style/wrap_height_wrap_content"
+                android:layout_width="45dp"
+                android:layout_height="69dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/shadow_black"
+                android:contentDescription="@string/book"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingBottom="4dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_default_cover" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/reading_book_name"
+                    style="@style/user_book_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:maxLines="2" />
+
+                <TextView
+                    android:id="@+id/reading_book_author"
+                    style="@style/user_book_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/in_bookstore"
+                    style="@style/user_book_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/timeline_book_title"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

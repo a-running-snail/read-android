@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/show_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/wSize16"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:paddingTop="@dimen/padding_top"
+        android:text="您的账号存在安全风险，请输入验证码进行登录"
+        android:textColor="@color/subtitle_color"
+        android:textSize="@dimen/wSize14" />
+
+    <LinearLayout
+        android:id="@+id/image_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" 
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/image_verification_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_bt_white_bg"
+            android:hint="@string/verification_text_tip"
+            android:inputType="text"
+            android:textColorHint="@color/hariline"
+            android:padding="@dimen/wSize8"
+            android:layout_weight="2"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginLeft="10dp"
+            android:background="#E1E1E3"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView android:id="@+id/image_verification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/phone_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/phone_verify_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_bt_white_bg"
+            android:hint="@string/verification_text_tip"
+            android:inputType="text"
+            android:textColorHint="@color/hariline"
+            android:padding="@dimen/wSize8"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button android:id="@+id/get_verification_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/red_main"
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/rectangle_bt_transparent_bg"
+                android:text="获取短信验证码" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_button_unable_xbg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/hariline"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>

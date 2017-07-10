@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/bookmarkBgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/bookmarkBg"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/texture_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/bookmarkBg"
+            android:background="@drawable/viewpager_overlay_shadow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/bookmarkBg"
+            android:background="@drawable/viewpager_overlay_shadow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/bookmarkBg"
+            android:background="@drawable/viewpager_overlay_shadow" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/arrowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#00000000"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="56dp" >
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_read_arrow" />
+
+        <TextView
+            android:id="@+id/arrowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_add_bookmark_1"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bookmarkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="22dp" >
+
+        <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_read_bookmark" />
+    </LinearLayout>
+
+</RelativeLayout>

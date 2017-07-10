@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/custom_top_bar_pupopwindow_item_divider_margin"
+    android:paddingRight="@dimen/custom_top_bar_pupopwindow_item_divider_margin" >
+
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="sasadsadsadsadsasda"
+        android:textColor="@color/text_main"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/item_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/red_dot"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_top_bar_pupopwindow_item_height"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/hariline" />
+    </LinearLayout>
+
+</FrameLayout>

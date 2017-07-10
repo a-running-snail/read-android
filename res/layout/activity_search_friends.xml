@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sina_weibo"
+        style="@style/user_detail_row"
+        android:layout_marginLeft="@dimen/timeline_padding"
+        android:layout_marginRight="@dimen/timeline_padding"
+        android:layout_marginTop="@dimen/timeline_padding"
+        android:background="@drawable/grey_rect_background" >
+
+        <TextView
+            style="@style/user_detail_text"
+            android:drawableLeft="@drawable/connection_sina"
+            android:drawablePadding="@dimen/left_pic_padding"
+            android:text="@string/sina_weibo" />
+
+        <TextView
+            style="@style/user_detail_arrow"
+            android:contentDescription="@string/user_note"
+            android:drawablePadding="@dimen/thumbnail_margin" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

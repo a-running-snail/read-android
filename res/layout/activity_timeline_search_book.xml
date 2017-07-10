@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#45cccccc" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfcfc"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="6dp"
+        android:paddingTop="4dp" >
+
+        <EditText
+            android:id="@+id/search_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/searchbox_b95"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dip"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/searchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/reader_btn_search_night" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="@string/search"
+                android:textColor="@color/text_sub" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/search_result"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/book_store_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/book_store_search_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/icon_margin_top"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bookstore_icon_search_null" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:gravity="center_horizontal"
+            android:text="@string/book_sign_option"
+            android:textColor="@color/text_sub"
+            android:textSize="@dimen/tSize14" />
+
+        <Button
+            android:id="@+id/lackbook_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_margin_bottom"
+            android:layout_marginLeft="@dimen/padding_top"
+            android:layout_marginRight="@dimen/padding_top"
+            android:background="@drawable/border_btn_red"
+            android:gravity="center"
+            android:text="@string/book_sign"
+            android:textColor="@color/red_main"
+            android:textSize="@dimen/tSize16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/recently_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mention_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+
+                <TextView
+                    android:id="@+id/recently_mention_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dip"
+                    android:background="#f2f2f2"
+                    android:gravity="center_vertical"
+                    android:text="@string/recently_mention"
+                    android:textColor="@color/text_sub"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/recently_mention_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main" />
+
+            <LinearLayout
+                android:id="@+id/readinng_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="16dip"
+                    android:background="#f2f2f2"
+                    android:gravity="center_vertical"
+                    android:text="@string/recently_reading"
+                    android:textColor="@color/text_sub"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/hariline" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/recently_reading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_main" />
+
+                <LinearLayout
+                    android:id="@+id/empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f2f2f2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_empty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tip_books"
+                        android:textColor="@color/text_sub" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

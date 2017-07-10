@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize32"
+            android:background="@color/bg_sub"
+            android:orientation="vertical" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize32"
+                android:text="@string/find_ebook"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/find_ebook_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize32"
+                android:text="@string/hwo_to_buy_ebook"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hwo_to_buy_ebook_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize32"
+                android:text="@string/pay_ebook"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_ebook_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize50"
+                android:text="@string/download_ebook"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/download_ebook_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize50"
+                android:text="@string/download_ebook_divice"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/download_ebook_divice_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize32"
+                android:text="@string/order_ebook"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_ebook_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize32"
+                android:text="@string/hwoto_return_ebook"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hwoto_return_ebook_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize50"
+                android:text="@string/delete_ebook"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_ebook_content"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize32"
+                android:text="@string/printf_info"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/printf_info_answer"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize50"
+                android:text="@string/copy_info"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/copy_info_answer"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/wSize14"
+            android:layout_marginTop="@dimen/wSize14"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wSize32"
+                android:text="@string/contact_costomer"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/costomer_center"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/wSize16"
+                android:text="@string/costomer_center_contetnt"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/hariline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wSize32"
+            android:background="@color/bg_sub"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</ScrollView>

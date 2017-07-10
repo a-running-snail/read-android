@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top"
+        android:background="@color/bg_sub"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="@string/changduka_exchange_bind"
+        android:textColor="@color/gray_lunch_bg"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="@dimen/text_long_changdu"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left"
+            android:text="@string/exchange_code"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/exchange_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/input_exchange_num"
+            android:inputType="text"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColorHint="@color/hariline"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+    <Button
+        android:id="@+id/exchange_bind_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/login_button_unable_xbg"
+        android:text="@string/bind"
+        android:textColor="@color/text_sub"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/between_top"
+        android:background="@color/bg_sub"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="@string/changduka_account_bind"
+        android:textColor="@color/gray_lunch_bg"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="@dimen/text_long_changdu"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left"
+            android:text="@string/books_num"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/readingcard_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/input_readingcard_num"
+            android:inputType="text"
+            android:textColorHint="@color/hariline"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginRight="@dimen/padding_left"
+        android:background="@color/hariline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:paddingRight="@dimen/padding_left" >
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="@dimen/text_long_changdu"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingTop="@dimen/padding_left"
+            android:text="@string/password"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/password_text"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/read_card_pwd_part1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/changdu_edittext_bg"
+                    android:inputType="text"
+                    android:maxLength="4"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:textColorHint="@color/hariline"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/read_card_pwd_part2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/changdu_edittext_bg"
+                    android:inputType="text"
+                    android:maxLength="4"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:textColorHint="@color/hariline"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/read_card_pwd_part3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/changdu_edittext_bg"
+                    android:inputType="text"
+                    android:maxLength="4"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:textColorHint="@color/hariline"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/read_card_pwd_part4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/changdu_edittext_bg"
+                    android:inputType="text"
+                    android:maxLength="4"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:textColorHint="@color/hariline"
+                    android:textSize="@dimen/text_size" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/hariline" />
+    
+    <Button
+        android:id="@+id/kami_bind_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/login_button_unable_xbg"
+        android:text="@string/bind"
+        android:textColor="@color/text_sub"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/wSize12"
+        android:text="@string/big_and_small"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/padding_left"
+        android:textColor="@color/text_sub"
+        android:textSize="@dimen/tSize12" />
+
+</LinearLayout>

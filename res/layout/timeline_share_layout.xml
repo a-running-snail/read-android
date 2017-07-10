@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/share_top" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:paddingBottom="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        android:textColor="@color/text_main"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_main"
+            android:textSize="16dp" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:progressDrawable="@drawable/rating_star"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_main"
+            android:paddingBottom="30dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_main"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_main"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:textColor="@color/text_main"
+            android:textSize="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_sub"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <TextView
+            android:id="@+id/digest"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:textColor="@color/text_main"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:src="@drawable/share_bottom" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="bookPageViewTextSizeLevel">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>24</item>
+        <item>26</item>
+        <item>34</item>
+        <item>48</item>
+    </integer-array>
+    
+    <integer-array name="bookPageViewLineSpaceLevel">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </integer-array>
+    
+	<integer-array name="bookPageViewBlockSpaceLevel">
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>70</item>
+        <item>90</item>
+    </integer-array>
+    
+	<integer-array name="bookPageViewPageEdgeSpaceLevel">
+        <item>140</item>
+        <item>100</item>
+        <item>60</item>
+    </integer-array>
+
+    <string-array name="navigation_tab_menu">
+        <item>@string/book_store</item>
+        <item>@string/book_case</item>
+        <item>@string/community</item>
+        <item>@string/me</item>
+    </string-array>
+    
+    <string-array name="page_animation">
+        <item>@string/PageAnimationDefault</item>
+        <item>@string/PageAnimationSlide</item>
+        <item>@string/PageAnimationTurning</item>
+        <item>@string/PageNoAnimation</item>
+    </string-array>
+
+    <declare-styleable name="color_picker">
+
+        <!-- 背景圆的半径 -->
+        <attr name="circle_radius" format="dimension" />
+        <!-- 可滑动小球的半径 -->
+        <attr name="center_radius" format="dimension" />
+        <!-- 可滑动小球的颜色 -->
+        <attr name="center_color" format="color" />
+    </declare-styleable>
+
+    <!-- 各纹理背景的文字颜色 -->
+    <integer-array name="bookPageViewTextColor">
+        <item>0xFF23201E</item>
+        <item>0xFF36312D</item>
+        <item>0xFF111111</item>
+        <item>0xFF383A38</item>
+        <item>0xFF323428</item>
+        <item>0xFF231C1E</item>
+        <item>0xFF3B332A</item>
+        <item>0xFFC1C9D2</item>
+        <item>0xFFCDCECD</item>
+    </integer-array>
+</resources>

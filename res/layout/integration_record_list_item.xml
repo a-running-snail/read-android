@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal" >
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp">
+       <View 
+           android:layout_width="1.5dp"
+           android:layout_height="match_parent"
+           android:layout_gravity="center"
+           android:background="@color/hariline"/>
+	   <com.jingdong.app.reader.me.view.DrawView
+	       android:layout_width="18dp"
+	       android:layout_height="18dp"
+        	android:layout_gravity="center"/>
+    </FrameLayout>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+       android:layout_marginLeft="30dp"
+       android:paddingTop="15dp"
+       android:paddingBottom="15dp"
+       android:orientation="vertical">
+       <TextView 
+           android:id="@+id/record_info_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="16dp"
+           android:text="签到获得10积分"/>
+       <TextView 
+           android:id="@+id/record_time_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/text_color"
+           android:text="2015-05-05"/>
+   </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <bitmap android:src="@drawable/navibar_icon_overflow_new"  android:gravity="center" />
+    </item>
+    
+    <item>
+        <bitmap android:src="@drawable/actionbar_dropdown_reddot"  android:gravity="center" />
+    </item>
+
+</layer-list>

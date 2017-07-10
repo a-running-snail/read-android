@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#45cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/book_list_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:gravity="left"
+            android:textSize="@dimen/book_list_title_text_size" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/book_list_author_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="15dip"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/book_list_title_text_size" />
+
+            <TextView
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:drawableLeft="@drawable/toolbar_like_hl"
+                android:text="@string/forward"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/book_list_title_text_size" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#45cccccc" />
+
+    <FrameLayout
+        android:id="@+id/commonArea"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/invited"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/icon_at"
+                    android:gravity="center"
+                    android:text="@string/invited_to_answer"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/recomments"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/icon_plus"
+                    android:gravity="center"
+                    android:text="@string/recommended_books"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#45cccccc" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#45cccccc" />
+
+    <ListView
+        android:id="@+id/recom_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

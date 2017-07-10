@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dip"
+   	android:descendantFocusability="blocksDescendants"
+   	android:background="@drawable/list_item_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+         android:paddingRight="16dip"
+>
+
+        <ImageView
+            android:id="@+id/user_book_cover"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:orientation="vertical"
+>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/user_book_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingBottom="2dp"
+                        android:singleLine="true"
+                        android:textColor="#404040"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/user_book_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#bfbfbf"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="8dp"
+                       >
+
+                        <com.jingdong.app.reader.view.RoundNetworkImageView
+                            android:id="@+id/user_avatar"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/me" />
+
+                        <View
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/avatar_round_stroke" />
+
+                        <ImageView
+                            android:id="@+id/avatar_label"
+                            android:layout_width="@dimen/avatar_vip_size"
+                            android:layout_height="@dimen/avatar_vip_size"
+                            android:layout_gravity="right|bottom"
+                            android:contentDescription="@string/me"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:text="ffff"
+                        android:textColor="#404040"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/icon_area"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="14dp" >
+
+                <ImageView
+                    android:id="@+id/action_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/bookshelf_download" />
+
+                <com.jingdong.app.reader.view.CustomPieProgress
+                    xmlns:PieProgress="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pie_progress"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right|center_vertical"
+                    PieProgress:backgroundColor="#ed7057"
+                    PieProgress:borderWidth="1dp"
+                    PieProgress:foregroundColor="#ed7057"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/hariline"
+        
+        />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dragAndDrop="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.jingdong.app.reader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:orientation="vertical" >
+        
+       <com.jingdong.app.reader.view.bookshelf.DragGridView
+            android:id="@+id/mDragGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:listSelector="@color/transparent"
+            android:numColumns="@integer/default_books_case_column"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="48dp"
+            android:overScrollMode="never"
+            android:verticalSpacing="11dp" >
+        </com.jingdong.app.reader.view.bookshelf.DragGridView> 
+
+        <!-- 签到按钮 -->
+        <com.jingdong.app.reader.extension.integration.FloatingActionButton
+            android:id="@+id/fabbutton"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            app1:text="签到"
+            /> 
+    </FrameLayout>
+    
+</LinearLayout>

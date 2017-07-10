@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/icon_read_pop_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/noteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/noteCopy"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/copy"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+            
+			<Button
+                android:id="@+id/noteLine"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/note_line"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+            
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+			<Button
+                android:id="@+id/noteText"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/user_note"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+            
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <LinearLayout
+                android:id="@+id/more"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reader_btn_more" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/back"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reader_btn_back_standard" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/noteShare"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/share"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/noteDictionary"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/dictionary_and_baike"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+<!-- 
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/noteBaike"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/baike"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+ -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/editText"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/user_note"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/editShare"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/share"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/editCopy"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/copy"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/editDelete"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/delete"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shareLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/shareCommunity"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/note_public_to_jdreader"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/shareSinaWeibo"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/note_share_to_weibo"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/shareWXFriends"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/note_share_to_wxfriend"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="#d1d1d1" />
+
+            <Button
+                android:id="@+id/shareWeChat"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_note_button_selector"
+                android:text="@string/note_share_to_wechat"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/topArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mainLayout"
+        android:src="@drawable/icon_read_pop_box_top_arrow" />
+
+    <ImageView
+        android:id="@+id/bottomArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mainLayout"
+        android:src="@drawable/icon_read_pop_box_bottom_arrow" />
+
+</RelativeLayout>

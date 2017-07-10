@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/wSize32"
+    android:paddingBottom="@dimen/wSize16"
+    android:background="@color/bg_sub"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_sub"
+        android:text="@string/sendbook_again_tip"
+        android:gravity="center"
+        android:textSize="@dimen/tSize14" />
+    
+    <ImageView
+        android:id="@+id/goto_sendbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/wSize16"
+        android:src="@drawable/goto_sendbook" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/followed_users_reading_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/followed_users_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/list_view_style_no_focus" >
+    </ListView>
+    
+    
+
+</LinearLayout>

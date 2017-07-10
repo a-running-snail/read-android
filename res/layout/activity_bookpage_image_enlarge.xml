@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.photo.mzread.com/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:gravity="center"
+    android:background="#FF000000"
+    android:clickable = "true"
+    android:orientation="vertical" >
+    
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        />
+<!--    
+    <com.android.mzbook.photoview.GestureImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.3"
+        />
+   -->  
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wSize30"
+        android:paddingBottom="@dimen/wSize30"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        
+        <TextView android:id="@+id/save_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_bg_save_image"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16"
+            android:paddingTop="@dimen/wSize6"
+            android:paddingBottom="@dimen/wSize6"
+            android:text="@string/save"
+            android:textColor="@color/white"/>
+        
+        <TextView android:id="@+id/share_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_bg_save_image"
+            android:paddingLeft="@dimen/wSize16"
+            android:paddingRight="@dimen/wSize16"
+            android:paddingTop="@dimen/wSize6"
+            android:paddingBottom="@dimen/wSize6"
+            android:layout_marginLeft="@dimen/wSize20"
+            android:text="@string/share"
+            android:textColor="@color/white"/>
+        
+    </LinearLayout>
+    
+</FrameLayout>

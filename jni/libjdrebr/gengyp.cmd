@@ -1,0 +1,1 @@
+gyp -I ./common.gypi --depth=. demo\drm_api_demo.gyp

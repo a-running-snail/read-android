@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/readSettingMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_read_pop_box"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lightseek_background"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/empty_string"
+                android:src="?attr/read_brightness_down_img" />
+
+            <SeekBar
+                android:id="@+id/lightSeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:progressDrawable="?attr/read_slider_progress_img"
+                android:thumb="?attr/read_slider_tune_zero_img" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/empty_string"
+                android:src="?attr/read_brightness_up_img" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?attr/r_hariline" />
+
+        <LinearLayout
+            android:id="@+id/modifySystemLight"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/modifyText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/read_light_sync_to_system"
+                android:textColor="?attr/r_text_main"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="38dp"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/switch_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?attr/read_switch_off_line_img" />
+
+                <ImageView
+                    android:id="@+id/switchOn_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="?attr/read_switch_on_dot_img" />
+
+                <ImageView
+                    android:id="@+id/switchOff_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="?attr/read_switch_off_dot_img" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/r_hariline"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="?attr/r_bg_sub"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?attr/r_hariline"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            android:id="@+id/volumePage"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/volumePageText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userVolumeChangePage"
+                android:textColor="?attr/r_text_main"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="38dp"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/switch_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?attr/read_switch_off_line_img" />
+
+                <ImageView
+                    android:id="@+id/switchOn_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="?attr/read_switch_on_dot_img" />
+
+                <ImageView
+                    android:id="@+id/switchOff_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="?attr/read_switch_off_dot_img" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="?attr/r_hariline" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/verticalPageing"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/verticalPageingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/verticalPageingText"
+                android:textColor="?attr/r_text_main"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="38dp"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/switch_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="?attr/read_switch_off_line_img" />
+
+                <ImageView
+                    android:id="@+id/switchOn_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="?attr/read_switch_on_dot_img" />
+
+                <ImageView
+                    android:id="@+id/switchOff_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="?attr/read_switch_off_dot_img" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/readSettingMore"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="33dp"
+        android:src="@drawable/icon_read_pop_box_bottom_arrow" />
+
+</RelativeLayout>

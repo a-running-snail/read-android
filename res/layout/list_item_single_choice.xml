@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content" >
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/single_choice_text"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/wSize15"
+        android:layout_marginTop="@dimen/hSize15"
+        android:layout_width="wrap_content"
+        android:text="删除ccccccccc"
+        android:duplicateParentState="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textSize="@dimen/tSize18" />
+	<RadioButton 
+	    android:id="@+id/radioBt"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:duplicateParentState="true"
+	    android:focusable="false"
+	    android:clickable="false"
+	    android:button="@drawable/radio_single_box"
+	    android:focusableInTouchMode="false"
+	    android:layout_centerVertical="true"
+	    android:layout_marginTop="@dimen/hSize15"
+	    android:layout_marginRight="@dimen/wSize10"
+	    />
+</RelativeLayout>

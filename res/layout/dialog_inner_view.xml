@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+  
+    >
+
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+		android:id="@+id/confirm_book_name"   
+        android:background="@drawable/grey_rect_3" 
+        android:paddingLeft="10dp"
+        android:maxLength="18"
+        android:layout_margin="4dip"    
+  	
+        />
+
+
+</LinearLayout>
