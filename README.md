@@ -1,4 +1,4 @@
-mzread-android
+read-android
 ==============
 
 #建立工程
